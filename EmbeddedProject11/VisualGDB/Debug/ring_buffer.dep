@@ -1,5 +1,5 @@
 VisualGDB/Debug/ring_buffer.o: \
- C:/Users/Hp/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nxp_lpc/2.2/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.c \
+ C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected\ Projects/3.\ Firmware\ for\ LPC1768/2.\ Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.c \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\string.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
@@ -18,8 +18,8 @@ VisualGDB/Debug/ring_buffer.o: \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h \
- C:/Users/Hp/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nxp_lpc/2.2/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.h \
- C:/Users/Hp/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nxp_lpc/2.2/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h \
+ C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected\ Projects/3.\ Firmware\ for\ LPC1768/2.\ Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.h \
+ C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected\ Projects/3.\ Firmware\ for\ LPC1768/2.\ Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h \
  c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
@@ -43,8 +43,8 @@ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\cdefs.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_locale.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\strings.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\string.h:
-C:/Users/Hp/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nxp_lpc/2.2/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.h:
-C:/Users/Hp/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.nxp_lpc/2.2/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h:
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected\ Projects/3.\ Firmware\ for\ LPC1768/2.\ Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.h:
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected\ Projects/3.\ Firmware\ for\ LPC1768/2.\ Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h:
 c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:

@@ -6,28 +6,258 @@
     <GDB>10.2.90</GDB>
     <Revision>1</Revision>
   </ToolchainVersion>
-  <BspID>com.sysprogs.arm.nxp_lpc</BspID>
-  <BspVersion>2.2</BspVersion>
+  <BspID>com.visualgdb.bsp.in-place</BspID>
+  <BspVersion>1.0</BspVersion>
   <McuID>LPC1768</McuID>
-  <MCUDefinitionFile>LPC17xx_40xx/DeviceDefinitions/LPC175X_6X.xml</MCUDefinitionFile>
+  <BSPSubdirectory>BSP</BSPSubdirectory>
+  <MCUDefinitionFile>LPC175X_6X.xml</MCUDefinitionFile>
   <MCUProperties>
-    <Entries>
-      <KeyValue>
-        <Key>com.sysprogs.bspoptions.primary_memory</Key>
-        <Value>flash</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.toolchainoptions.arm.libctype</Key>
-        <Value>--specs=nano.specs</Value>
-      </KeyValue>
-      <KeyValue>
-        <Key>com.sysprogs.toolchainoptions.arm.syscallspecs</Key>
-        <Value>--specs=nosys.specs</Value>
-      </KeyValue>
-    </Entries>
+    <Entries />
   </MCUProperties>
   <BSPSourceFolderName>Device-specific files</BSPSourceFolderName>
+  <InPlaceMCU>
+    <ID>LPC1768</ID>
+    <UserFriendlyName>LPC1768</UserFriendlyName>
+    <CompilationFlags>
+      <PreprocessorMacros>
+        <string>ARM_MATH_CM3</string>
+        <string>CHIP_LPC175X_6X</string>
+        <string>CORE_M3</string>
+        <string>SDC_DMA_DESABLE</string>
+        <string>flash_layout</string>
+        <string>LPC1768</string>
+      </PreprocessorMacros>
+      <IncludeDirectories>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include</string>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/RTOS</string>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx</string>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/config_175x_6x</string>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/config_177x_8x</string>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common</string>
+        <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom</string>
+        <string>$$SYS:BSP_ROOT$$/Common</string>
+      </IncludeDirectories>
+      <LDFLAGS>--specs=nano.specs --specs=nosys.specs</LDFLAGS>
+      <LinkerScript>$$SYS:BSP_ROOT$$/LPC17xx_40xx/LinkerScripts/LPC1768_flash.lds</LinkerScript>
+      <COMMONFLAGS>-mcpu=cortex-m3 -mthumb</COMMONFLAGS>
+      <EnableLinkerGroups>true</EnableLinkerGroups>
+    </CompilationFlags>
+    <AdditionalSourceFiles>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/adc_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/can_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/clock_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/cmp_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/crc_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/dac_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/eeprom_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/emc_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/gpdma_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/gpioint_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/gpio_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/i2c_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/i2s_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/iocon_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/lcd_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/rtc_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sdc_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sdmmc_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/spi_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ssp_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/stopwatch_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sysctl_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sysinit_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/timer_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/uart_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/wwdt_17xx_40xx.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/eeprom.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/fpu_init.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/iap.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.c</string>
+      <string>$$SYS:BSP_ROOT$$/Common/startup.c</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/StartupFiles/ORIGINAL_cr_startup_lpc175x_6x.c</string>
+    </AdditionalSourceFiles>
+    <AdditionalHeaderFiles>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/arm_common_tables.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/arm_math.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm0.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm0plus.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm3.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm4.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm4_simd.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cmFunc.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cmInstr.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_sc000.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_sc300.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/RTOS/cmsis_os.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/adc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/can_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_lpc175x_6x.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_lpc177x_8x.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_lpc407x_8x.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/clock_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/cmp_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/cmsis.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/crc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/dac_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/eeprom_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/emc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/fmc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/gpdma_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/gpioint_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/gpio_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/i2c_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/i2s_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/iocon_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/lcd_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/mcpwm_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/qei_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/romapi_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/rtc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sdc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sdmmc_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/spifi_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/spi_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ssp_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sysctl_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/timer_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/uart_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/usb_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/wwdt_17xx_40xx.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/config_175x_6x/cmsis_175x_6x.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/config_177x_8x/cmsis_177x_8x.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/eeprom.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/error.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/fpu_init.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/iap.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/ring_buffer.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/sdmmc.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/stopwatch.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_adc.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_cdc.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_cdcuser.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_core.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_desc.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_dfu.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_dfuuser.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_hid.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_hiduser.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_hw.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_msc.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_mscuser.h</string>
+      <string>$$SYS:BSP_ROOT$$/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/usbd_rom/usbd_rom_api.h</string>
+      <string>$$SYS:BSP_ROOT$$/Common/sys_config.h</string>
+    </AdditionalHeaderFiles>
+    <AdditionalSystemVars>
+      <SysVarEntry>
+        <Key>com.sysprogs.bspoptions.arm.core</Key>
+        <Value>M3</Value>
+      </SysVarEntry>
+      <SysVarEntry>
+        <Key>com.sysprogs.nxp.device_family</Key>
+        <Value>CHIP_LPC175X_6X</Value>
+      </SysVarEntry>
+      <SysVarEntry>
+        <Key>com.sysprogs.nxp.ph.eedef</Key>
+        <Value>EEPROMDEF_IS</Value>
+      </SysVarEntry>
+      <SysVarEntry>
+        <Key>com.sysprogs.nxp.ph.dma</Key>
+        <Value>SDC_DMA_DESABLE</Value>
+      </SysVarEntry>
+    </AdditionalSystemVars>
+    <ConfigurableProperties>
+      <PropertyGroups>
+        <PropertyGroup>
+          <Properties>
+            <PropertyEntry xsi:type="Enumerated">
+              <Name>Execute from</Name>
+              <UniqueID>com.sysprogs.bspoptions.primary_memory</UniqueID>
+              <OmitPrefixIfEmpty>false</OmitPrefixIfEmpty>
+              <SuggestionList>
+                <Suggestion>
+                  <UserFriendlyName>FLASH</UserFriendlyName>
+                  <InternalValue>flash</InternalValue>
+                </Suggestion>
+                <Suggestion>
+                  <UserFriendlyName>SRAM</UserFriendlyName>
+                  <InternalValue>sram</InternalValue>
+                </Suggestion>
+              </SuggestionList>
+              <DefaultEntryIndex>0</DefaultEntryIndex>
+              <AllowFreeEntry>false</AllowFreeEntry>
+            </PropertyEntry>
+            <PropertyEntry xsi:type="Enumerated">
+              <Name>C Library Type</Name>
+              <UniqueID>com.sysprogs.toolchainoptions.arm.libctype</UniqueID>
+              <OmitPrefixIfEmpty>false</OmitPrefixIfEmpty>
+              <SuggestionList>
+                <Suggestion>
+                  <UserFriendlyName>Default</UserFriendlyName>
+                  <InternalValue />
+                </Suggestion>
+                <Suggestion>
+                  <UserFriendlyName>Newlib-nano</UserFriendlyName>
+                  <InternalValue>--specs=nano.specs</InternalValue>
+                </Suggestion>
+                <Suggestion>
+                  <UserFriendlyName>Newlib-nano with floating point support in printf()</UserFriendlyName>
+                  <InternalValue>--specs=nano.specs -u _printf_float</InternalValue>
+                </Suggestion>
+                <Suggestion>
+                  <UserFriendlyName>Newlib-nano with floating point support in printf() and scanf()</UserFriendlyName>
+                  <InternalValue>--specs=nano.specs -u _printf_float -u _scanf_float</InternalValue>
+                </Suggestion>
+              </SuggestionList>
+              <DefaultEntryIndex>1</DefaultEntryIndex>
+              <AllowFreeEntry>false</AllowFreeEntry>
+            </PropertyEntry>
+            <PropertyEntry xsi:type="Enumerated">
+              <Name>Implementations for _sbrk(), etc.</Name>
+              <UniqueID>com.sysprogs.toolchainoptions.arm.syscallspecs</UniqueID>
+              <OmitPrefixIfEmpty>false</OmitPrefixIfEmpty>
+              <SuggestionList>
+                <Suggestion>
+                  <UserFriendlyName>None</UserFriendlyName>
+                  <InternalValue />
+                </Suggestion>
+                <Suggestion>
+                  <UserFriendlyName>Minimal (no semihosting)</UserFriendlyName>
+                  <InternalValue>--specs=nosys.specs</InternalValue>
+                </Suggestion>
+                <Suggestion>
+                  <UserFriendlyName>Support semihosting</UserFriendlyName>
+                  <InternalValue>--specs=rdimon.specs</InternalValue>
+                </Suggestion>
+              </SuggestionList>
+              <DefaultEntryIndex>1</DefaultEntryIndex>
+              <AllowFreeEntry>false</AllowFreeEntry>
+            </PropertyEntry>
+          </Properties>
+          <CollapsedByDefault>false</CollapsedByDefault>
+        </PropertyGroup>
+      </PropertyGroups>
+    </ConfigurableProperties>
+    <HierarchicalPath>NXP_LPC\LPC17xx</HierarchicalPath>
+    <FamilyID>LPC17xx</FamilyID>
+    <FLASHSize>524288</FLASHSize>
+    <RAMSize>65536</RAMSize>
+    <FLASHBase>0</FLASHBase>
+    <RAMBase>268435456</RAMBase>
+    <MCUDefinitionFile>LPC175X_6X.xml</MCUDefinitionFile>
+    <AdditionalSourcesRequiredForTesting>false</AdditionalSourcesRequiredForTesting>
+  </InPlaceMCU>
   <MCUMakFile>nxp_lpc.mak</MCUMakFile>
+  <ReferencedFrameworks />
   <FrameworkProperties>
     <Entries />
   </FrameworkProperties>

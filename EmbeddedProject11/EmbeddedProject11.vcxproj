@@ -13,9 +13,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{FF2080F8-14BC-47BF-A055-1A66CAD5AA4E}</ProjectGuid>
-    <BSP_ID>com.sysprogs.arm.nxp_lpc</BSP_ID>
-    <BSP_VERSION>2.2</BSP_VERSION>
-    <InPlaceBSPSubdir />
+    <BSP_ID>com.visualgdb.bsp.in-place</BSP_ID>
+    <BSP_VERSION>1.0</BSP_VERSION>
+    <InPlaceBSPSubdir>BSP</InPlaceBSPSubdir>
     <RelativeBSPPath />
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -44,7 +44,18 @@
     <PreserveSubdirectoriesForObjectFiles>False</PreserveSubdirectoriesForObjectFiles>
     <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
   </PropertyGroup>
-  <ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link>
+      <PreprocessLinkerScript>true</PreprocessLinkerScript>
+      <RemoveUnusedSections>false</RemoveUnusedSections>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <ClCompile>
+      <DumpStackUsage>true</DumpStackUsage>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
   </ItemGroup>
