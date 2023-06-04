@@ -59,6 +59,7 @@ static struct netif lpc_netif;
 /*****************************************************************************
  * Public types/enumerations/variables
  ****************************************************************************/
+uint16_t LED1_Count = 0;
 
 /*****************************************************************************
  * Private functions
@@ -206,10 +207,14 @@ int main(void)
 		}
 
 		//Toggle Led for every one second
-		if (((SysTick_GetMS()) % 1000) == 0)
+		if (LED1_Count == 1000)
 		{
-			Board_LED_Set(1, led_toggle_flag);
-			led_toggle_flag = ~led_toggle_flag;
+			Board_LED_Set(1, 0);
+		}
+		else if (LED1_Count == 2000)
+		{
+			Board_LED_Set(1, 1);
+			LED1_Count = 0;
 		}
 	}
 
