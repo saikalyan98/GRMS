@@ -1,0 +1,6 @@
+lpc_core/lpc_board/board_common/mem_tests.c:53:6:mem_test_walking0	32	static
+lpc_core/lpc_board/board_common/mem_tests.c:99:6:mem_test_walking1	32	static
+lpc_core/lpc_board/board_common/mem_tests.c:145:6:mem_test_address	24	static
+lpc_core/lpc_board/board_common/mem_tests.c:181:6:mem_test_invaddress	24	static
+lpc_core/lpc_board/board_common/mem_tests.c:217:6:mem_test_pattern	32	static
+lpc_core/lpc_board/board_common/mem_tests.c:257:6:mem_test_pattern_seed	40	static

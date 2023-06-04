@@ -1,0 +1,9 @@
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:65:6:lpc_norflash_init	4	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:69:6:lpc_norflash_get_size	16	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:76:8:lpc_norflash_get_sector_offset	16	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:81:6:lpc_norflash_get_id	24	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:110:6:lpc_norflash_toggle_bit_check	24	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:122:6:lpc_norflash_erase_sector	16	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:133:6:lpc_norflash_write_word	16	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:142:8:lpc_norflash_write_buffer	32	static
+lpc_core/lpc_board/board_common/lpc_norflash_sst39vf320.c:154:8:lpc_norflash_read_word	16	static

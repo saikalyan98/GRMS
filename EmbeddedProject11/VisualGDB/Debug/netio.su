@@ -1,0 +1,3 @@
+lwip/contrib/apps/netio/netio.c:9:14:netio_recv	24	static
+lwip/contrib/apps/netio/netio.c:31:14:netio_accept	24	static
+lwip/contrib/apps/netio/netio.c:42:6:netio_init	16	static

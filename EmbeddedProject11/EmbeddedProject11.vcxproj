@@ -52,9 +52,19 @@
       <PreprocessLinkerScript>true</PreprocessLinkerScript>
       <RemoveUnusedSections>false</RemoveUnusedSections>
       <GenerateMapFile>true</GenerateMapFile>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript />
+      <AdditionalOptions />
     </Link>
     <ClCompile>
       <DumpStackUsage>true</DumpStackUsage>
+      <AdditionalIncludeDirectories>lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -63,7 +73,10 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="LEDBlink.c" />
+    <ClCompile Include="TCP_Echo_Test.c" />
+    <ClCompile Include="lpc_core\lpc_board\board_common\lpc_phy_smsc87x0.c" />
+    <ClInclude Include="lwip\Config Files\lpc_17xx40xx_emac_config.h" />
+    <ClInclude Include="lwip\Config Files\lwipopts.h" />
     <None Include="nxp_lpc.props" />
     <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.c" />
     <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\can_17xx_40xx.c" />
@@ -179,5 +192,155 @@
     <None Include="EmbeddedProject11-Debug.vgdbsettings" />
     <None Include="EmbeddedProject11-Release.vgdbsettings" />
     <None Include="nxp_lpc.xml" />
+    <None Include=".visualgdb\CodeDB\EmbeddedProject11-Debug-VisualGDB\PreambleTimestamp.txt" />
+    <ClCompile Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board.c" />
+    <ClCompile Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board_sysinit.c" />
+    <None Include="lwip\README.txt" />
+    <ClCompile Include="lwip\lpclwip\arch\lpc17xx_40xx_emac.c" />
+    <ClCompile Include="lwip\lpclwip\arch\lpc17xx_40xx_systick_arch.c" />
+    <ClCompile Include="lwip\lpclwip\arch\lpc_debug.c" />
+    <None Include="lwip\lwip\doc\contrib.txt" />
+    <None Include="lwip\lwip\doc\rawapi.txt" />
+    <None Include="lwip\lwip\doc\savannah.txt" />
+    <None Include="lwip\lwip\doc\snmp_agent.txt" />
+    <None Include="lwip\lwip\doc\sys_arch.txt" />
+    <ClCompile Include="lwip\lwip\src\api\api_lib.c" />
+    <ClCompile Include="lwip\lwip\src\api\api_msg.c" />
+    <ClCompile Include="lwip\lwip\src\api\err.c" />
+    <ClCompile Include="lwip\lwip\src\api\netbuf.c" />
+    <ClCompile Include="lwip\lwip\src\api\netdb.c" />
+    <ClCompile Include="lwip\lwip\src\api\netifapi.c" />
+    <ClCompile Include="lwip\lwip\src\api\sockets.c" />
+    <ClCompile Include="lwip\lwip\src\api\tcpip.c" />
+    <ClCompile Include="lwip\lwip\src\core\def.c" />
+    <ClCompile Include="lwip\lwip\src\core\dhcp.c" />
+    <ClCompile Include="lwip\lwip\src\core\dns.c" />
+    <ClCompile Include="lwip\lwip\src\core\init.c" />
+    <ClCompile Include="lwip\lwip\src\core\mem.c" />
+    <ClCompile Include="lwip\lwip\src\core\memp.c" />
+    <ClCompile Include="lwip\lwip\src\core\netif.c" />
+    <ClCompile Include="lwip\lwip\src\core\pbuf.c" />
+    <ClCompile Include="lwip\lwip\src\core\raw.c" />
+    <ClCompile Include="lwip\lwip\src\core\stats.c" />
+    <ClCompile Include="lwip\lwip\src\core\sys.c" />
+    <ClCompile Include="lwip\lwip\src\core\tcp.c" />
+    <ClCompile Include="lwip\lwip\src\core\tcp_in.c" />
+    <ClCompile Include="lwip\lwip\src\core\tcp_out.c" />
+    <ClCompile Include="lwip\lwip\src\core\timers.c" />
+    <ClCompile Include="lwip\lwip\src\core\udp.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\autoip.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\icmp.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\igmp.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\inet.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\inet_chksum.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\ip.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\ip_addr.c" />
+    <ClCompile Include="lwip\lwip\src\core\ipv4\ip_frag.c" />
+    <ClCompile Include="lwip\lwip\src\core\snmp\asn1_dec.c" />
+    <ClCompile Include="lwip\lwip\src\core\snmp\asn1_enc.c" />
+    <ClCompile Include="lwip\lwip\src\core\snmp\mib2.c" />
+    <ClCompile Include="lwip\lwip\src\core\snmp\mib_structs.c" />
+    <ClCompile Include="lwip\lwip\src\core\snmp\msg_in.c" />
+    <ClCompile Include="lwip\lwip\src\core\snmp\msg_out.c" />
+    <ClCompile Include="lwip\lwip\src\netif\etharp.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ethernetif.c" />
+    <ClCompile Include="lwip\lwip\src\netif\slipif.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\auth.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\chap.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\chpms.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\fsm.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\ipcp.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\lcp.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\magic.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\md5.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\pap.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\ppp.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\ppp_oe.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\randm.c" />
+    <ClCompile Include="lwip\lwip\src\netif\ppp\vj.c" />
+    <ClInclude Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board.h" />
+    <ClInclude Include="lpc_core\lpc_board\board_common\board_api.h" />
+    <ClInclude Include="lpc_core\lpc_board\board_common\lpc_phy.h" />
+    <ClInclude Include="lwip\contrib\apps\ping\ping.h" />
+    <ClInclude Include="lwip\contrib\apps\tcpecho\tcpecho.h" />
+    <ClInclude Include="lwip\contrib\apps\udpecho\udpecho.h" />
+    <ClInclude Include="lwip\lpclwip\arch\cc.h" />
+    <ClInclude Include="lwip\lpclwip\arch\lpc17xx_40xx_emac.h" />
+    <ClInclude Include="lwip\lpclwip\arch\lpc_arch.h" />
+    <ClInclude Include="lwip\lpclwip\arch\perf.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\autoip.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\icmp.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\igmp.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\inet.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\inet_chksum.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\ip.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\ip_addr.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\ip_frag.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\icmp.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\inet.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\ip.h" />
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\ip_addr.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\api.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\api_msg.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\arch.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\debug.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\def.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\dhcp.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\dns.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\err.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\init.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\mem.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\memp.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\memp_std.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\netbuf.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\netdb.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\netif.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\netifapi.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\opt.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\pbuf.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\raw.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\sio.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp_asn1.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp_msg.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp_structs.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\sockets.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\stats.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\sys.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\tcp.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\tcpip.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\tcp_impl.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\timers.h" />
+    <ClInclude Include="lwip\lwip\src\include\lwip\udp.h" />
+    <ClInclude Include="lwip\lwip\src\include\netif\etharp.h" />
+    <ClInclude Include="lwip\lwip\src\include\netif\ppp_oe.h" />
+    <ClInclude Include="lwip\lwip\src\include\netif\slipif.h" />
+    <ClInclude Include="lwip\lwip\src\include\posix\netdb.h" />
+    <ClInclude Include="lwip\lwip\src\include\posix\sys\socket.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\auth.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\chap.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\chpms.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\fsm.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\ipcp.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\lcp.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\magic.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\md5.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\pap.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\ppp.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\pppdebug.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\ppp_impl.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\randm.h" />
+    <ClInclude Include="lwip\lwip\src\netif\ppp\vj.h" />
+    <ClInclude Include="lwip\lwip\test\unit\lwipopts.h" />
+    <ClInclude Include="lwip\lwip\test\unit\lwip_check.h" />
+    <ClInclude Include="lwip\lwip\test\unit\core\test_mem.h" />
+    <ClInclude Include="lwip\lwip\test\unit\etharp\test_etharp.h" />
+    <ClInclude Include="lwip\lwip\test\unit\tcp\tcp_helper.h" />
+    <ClInclude Include="lwip\lwip\test\unit\tcp\test_tcp.h" />
+    <ClInclude Include="lwip\lwip\test\unit\tcp\test_tcp_oos.h" />
+    <ClInclude Include="lwip\lwip\test\unit\udp\test_udp.h" />
+    <ClCompile Include="lwip\contrib\apps\ping\ping.c" />
+    <ClCompile Include="lwip\contrib\apps\tcpecho_raw\echo.c" />
+    <ClCompile Include="lwip\contrib\apps\udpecho\udpecho.c" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,5 @@
+<LPCOpenCfg>
+	<symbol name="varCPUCore" value="m3"/>
+	<symbol name="prjChipFamilyDir" value="chip_17xx_40xx"/>
+	<symbol name="prjBoardFamilyDir" value="boards_17xx"/>
+</LPCOpenCfg>

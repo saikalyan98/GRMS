@@ -1,0 +1,8 @@
+lwip/contrib/apps/sntp/sntp.c:290:1:sntp_process	32	static
+lwip/contrib/apps/sntp/sntp.c:316:1:sntp_initialize_request	16	static
+lwip/contrib/apps/sntp/sntp.c:341:1:sntp_retry	24	static
+lwip/contrib/apps/sntp/sntp.c:400:1:sntp_recv	32	static
+lwip/contrib/apps/sntp/sntp.c:486:1:sntp_send_request	24	static
+lwip/contrib/apps/sntp/sntp.c:541:1:sntp_request	24	static
+lwip/contrib/apps/sntp/sntp.c:577:1:sntp_init	8	static
+lwip/contrib/apps/sntp/sntp.c:598:1:sntp_stop	8	static

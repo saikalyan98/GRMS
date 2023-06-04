@@ -9,10 +9,6 @@
       <UniqueIdentifier>{7970bd51-6687-49bc-aa0b-e56e449b2de7}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource files">
-      <UniqueIdentifier>{d541f000-1439-4449-8549-c8f3c115236b}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
-    </Filter>
     <Filter Include="Source files\Device-specific files">
       <UniqueIdentifier>{9964d31c-d6d5-4edf-8de4-684e5577544e}</UniqueIdentifier>
     </Filter>
@@ -28,11 +24,1322 @@
     <Filter Include="Header files\Device-specific files\Semihosting/Profiler">
       <UniqueIdentifier>{cc46a879-f065-4934-bfd5-12df840e7f32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source files\.visualgdb">
+      <UniqueIdentifier>{225eb1f4-32ca-4ec2-83c8-ce6d826be355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\.visualgdb\CodeDB">
+      <UniqueIdentifier>{c7608ba6-b8d5-44bd-a047-10350c76e67e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\.visualgdb\CodeDB\EmbeddedProject11-Debug-VisualGDB">
+      <UniqueIdentifier>{b1740667-00e5-4506-8191-2d0082a96fc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP">
+      <UniqueIdentifier>{53785406-c5ca-45ec-a9f6-cedb506b02a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\Common">
+      <UniqueIdentifier>{0571b4a3-6b45-4dab-9015-ba55e062e6c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx">
+      <UniqueIdentifier>{c643b501-a61e-4dab-a86d-736d6f227969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx">
+      <UniqueIdentifier>{d7ea98aa-87b3-4c8b-9a32-8119d2e51729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS">
+      <UniqueIdentifier>{5f2bd879-6d8c-4e33-ba5c-bc6d92a433b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS">
+      <UniqueIdentifier>{4003efcf-7a3c-4944-a1b8-082daf62bb0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include">
+      <UniqueIdentifier>{5feadf12-e20d-4b32-b499-46d425b41727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\RTOS">
+      <UniqueIdentifier>{170c1ef6-0d9c-4892-a1a3-d90ea233b9a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip">
+      <UniqueIdentifier>{b5e7c2ce-2e0b-4d23-b625-bc259c36a54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx">
+      <UniqueIdentifier>{b93d6ef6-4674-46ce-8588-f19fc5453cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_175x_6x">
+      <UniqueIdentifier>{6ea16d62-5215-4191-92cb-20d33b83140d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_177x_8x">
+      <UniqueIdentifier>{9c55483b-7793-444b-a83b-981ab34b5918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common">
+      <UniqueIdentifier>{7971f792-d050-467e-8269-68cfee3b086e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom">
+      <UniqueIdentifier>{21ce6a62-fa22-44bc-be67-dbeaaedb3df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\BSP\LPC17xx_40xx\StartupFiles">
+      <UniqueIdentifier>{69b7cd5c-97c9-4b20-ae04-484eb9c0bb16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core">
+      <UniqueIdentifier>{8828d3d7-bd0e-4949-95d6-2121f81f0dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_board">
+      <UniqueIdentifier>{dc791dc2-de30-4363-9608-1780fd8c5688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_board\boards_17xx">
+      <UniqueIdentifier>{f156c5e1-db03-4668-93a3-92d845dde2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769">
+      <UniqueIdentifier>{368d6ab7-26b8-40dc-92ac-b37be825176e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\RTE">
+      <UniqueIdentifier>{5f169e52-c336-4fea-8a4f-99db79999e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\RTE\_nxp_lpcxpresso_1769">
+      <UniqueIdentifier>{d0bbb600-059b-44ab-ab14-493bb8d0b514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_board\board_common">
+      <UniqueIdentifier>{b2898db6-6268-4a44-a1a9-cce50c8bf669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip">
+      <UniqueIdentifier>{e88264b9-586a-40c0-ad7b-4c0116bb9bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_17xx_40xx">
+      <UniqueIdentifier>{93d68a2c-0a54-4213-9fee-bc2ed7e0649a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_17xx_40xx\config_175x_6x">
+      <UniqueIdentifier>{dc4520ff-8df1-480e-889d-ff6fedf54ee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_17xx_40xx\RTE">
+      <UniqueIdentifier>{8d9d81b7-c0fa-4a31-8876-7215d14a23cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_17xx_40xx\RTE\_chip_175x_6x_lib">
+      <UniqueIdentifier>{a526ed12-cfa8-4fa7-8837-e8a6cb8a5093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_17xx_40xx\usbd_lib">
+      <UniqueIdentifier>{17666ed2-a177-47f6-9c38-778638f57246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_17xx_40xx\usbd_lib\keil">
+      <UniqueIdentifier>{1789b736-6cbf-4984-8f7b-6bf4a423e8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\chip_common">
+      <UniqueIdentifier>{a7f814f3-9d07-4945-a30b-afc4914c9780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lpc_core\lpc_chip\usbd_rom">
+      <UniqueIdentifier>{4227ffc0-cddc-4ca3-bae8-3ee6a3ef01fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip">
+      <UniqueIdentifier>{90b92d2c-57d6-48e7-bace-dfcc56334e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib">
+      <UniqueIdentifier>{44ec988c-3d6c-42d8-83d7-0dafe04fe221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps">
+      <UniqueIdentifier>{8acb49c5-7937-443d-bb04-082147ece76b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\chargen">
+      <UniqueIdentifier>{d766a0a8-b9bc-4fc7-a8d4-4f523990a9d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\httpserver">
+      <UniqueIdentifier>{b1c01d48-79d7-47b9-a800-4998d74fa9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\httpserver_raw">
+      <UniqueIdentifier>{7edfeccd-0db3-43f9-b6b3-112f419aea82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\httpserver_raw\makefsdata">
+      <UniqueIdentifier>{7f854fa6-adce-44c0-9b4c-96b10cdfbdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\netbios">
+      <UniqueIdentifier>{1fcfbe43-2d00-4d1c-8d67-77b871e1e48d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\netio">
+      <UniqueIdentifier>{6ab2cdb0-3ff8-4d7b-831d-2dab1aa5871a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\ping">
+      <UniqueIdentifier>{9d21a7b4-c465-4cbd-b2ed-773cb8a0cbe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\rtp">
+      <UniqueIdentifier>{ab942619-40cc-4174-9798-35fd97205914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\shell">
+      <UniqueIdentifier>{07c27ffc-5ebb-4fb7-8366-8ad715d4c288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\smtp">
+      <UniqueIdentifier>{97f51dac-e834-4319-b5e1-c3d6b637495d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\snmp_private_mib">
+      <UniqueIdentifier>{84e42b57-83ca-4b11-ad16-0f30e7809a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\sntp">
+      <UniqueIdentifier>{34b805f1-96ca-47ed-9dca-e1dde9930c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\socket_examples">
+      <UniqueIdentifier>{558b23d4-38b5-4015-93de-ad7d2cd33013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\tcpecho">
+      <UniqueIdentifier>{1161d44e-49b3-4b18-ab70-51eace5860ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\tcpecho_raw">
+      <UniqueIdentifier>{d345ac6b-43f1-4c2b-b62f-8801ba417eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\apps\udpecho">
+      <UniqueIdentifier>{16fa64c8-896c-4b6e-a0d2-f6b631b0d7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports">
+      <UniqueIdentifier>{076c6475-8d50-4b6d-89d8-955a331fd3a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old">
+      <UniqueIdentifier>{0a3e60a9-49c8-42ad-9b7b-38838a2cd48d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\6502">
+      <UniqueIdentifier>{086431ee-38c1-44d6-a0a3-703855cb0753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\6502\include">
+      <UniqueIdentifier>{74aba85e-fd8b-489e-bf70-cd97e8f9b2e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\6502\include\arch">
+      <UniqueIdentifier>{598b7727-9a86-4945-93f7-29c37b88a541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\c16x">
+      <UniqueIdentifier>{e3966c43-487c-4a4b-8c18-9f975236d694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\c16x\include">
+      <UniqueIdentifier>{5e7a3627-0d35-4d75-b1cc-816c5b967f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\c16x\include\arch">
+      <UniqueIdentifier>{8e0f68d7-cab0-4578-9d56-f712e79f56a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\c16x\include\netif">
+      <UniqueIdentifier>{720b7bb7-8d83-4706-82f8-91e7e9358548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\c16x\netif">
+      <UniqueIdentifier>{aac069d2-2c3c-4fcd-821a-29033431d9a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\coldfire">
+      <UniqueIdentifier>{4309e98b-7851-4113-a247-4fd1705e66d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\coldfire\include">
+      <UniqueIdentifier>{4ca720fb-7a93-4ddc-9a7c-bcb2e990845f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\coldfire\include\arch">
+      <UniqueIdentifier>{0a29a452-feba-4b7e-b922-fca5e8ed73f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\coldfire\include\netif">
+      <UniqueIdentifier>{439d8440-c634-4429-b2b2-759015b0e0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\coldfire\netif">
+      <UniqueIdentifier>{1602c4ed-0204-44f2-845b-937977174e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\coldfire\proj">
+      <UniqueIdentifier>{52fb21b0-2791-4844-bf08-25fb26e306a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos">
+      <UniqueIdentifier>{f865778c-8293-4670-8726-4ebbf3bbddd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos">
+      <UniqueIdentifier>{f12bd250-4f09-4793-ae40-c2f708fbcaf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net">
+      <UniqueIdentifier>{934dcae3-383d-470a-bad7-f487a03d74c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip">
+      <UniqueIdentifier>{cb534a5d-8bcb-4e95-9103-cd1d8a6fb71b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current">
+      <UniqueIdentifier>{2da5beca-2893-4472-98c0-4c6d48a3a6c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\include">
+      <UniqueIdentifier>{733ad4fb-97a2-41c4-b3a0-056fbb3d690d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\include\arch">
+      <UniqueIdentifier>{4fe5e5fe-8cb1-4083-a9d1-6b949504605e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src">
+      <UniqueIdentifier>{e05913e8-6646-430e-a86b-82567cceea98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos">
+      <UniqueIdentifier>{a8fc6993-dadc-4fc7-bb13-e30a21ec932a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests">
+      <UniqueIdentifier>{97d28629-cdef-4012-9247-79e343f0254d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\rtxc">
+      <UniqueIdentifier>{a930470e-0bd3-4367-abb3-fc536ac86242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\rtxc\include">
+      <UniqueIdentifier>{7fcc6821-4a32-42d1-aeb4-5a5812479854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\rtxc\include\arch">
+      <UniqueIdentifier>{58c3e981-0687-4b01-9921-0c5e854dc54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\rtxc\include\netif">
+      <UniqueIdentifier>{ffaa1c5e-4484-4abd-ad38-753baee3fe63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\rtxc\netif">
+      <UniqueIdentifier>{e3e20717-367f-4e2c-894e-6e1e224a9dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ti_c6711">
+      <UniqueIdentifier>{e5651685-984e-4e00-8d44-d896f9321944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ti_c6711\include">
+      <UniqueIdentifier>{8ce72cda-68a8-4061-9d35-0b753ae3255e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ti_c6711\include\arch">
+      <UniqueIdentifier>{1a25aafe-2e98-4593-a994-f7052c3a982b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ti_c6711\include\netif">
+      <UniqueIdentifier>{a4b9a717-3492-4b14-9738-02ba1a05c807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ti_c6711\netif">
+      <UniqueIdentifier>{d474e2e8-63e1-47d2-8f17-6a1c4a055151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\ti_c6711\proj">
+      <UniqueIdentifier>{f7abbd11-73eb-4e7e-b9d3-109ff54a64b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro">
+      <UniqueIdentifier>{4b313174-3f33-4b55-b9ae-21e97afcb9fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\include">
+      <UniqueIdentifier>{8255eb6c-932c-4c2b-83b4-1ae3218da3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\include\arch">
+      <UniqueIdentifier>{f20a3718-0c4c-4530-9145-73d2054f8e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\include\netif">
+      <UniqueIdentifier>{4b3ad3fd-264f-4a72-8d39-5cc1458988be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\netif">
+      <UniqueIdentifier>{a9f256e2-f061-4a98-8507-df9109eefaf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\sw_services">
+      <UniqueIdentifier>{626d82cd-8b69-4af2-a0a0-6059c8efc814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\sw_services\lwip_v1_00_a">
+      <UniqueIdentifier>{62da4407-7487-40eb-bdf1-a4eb330e6657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\old\v2pro\sw_services\lwip_v1_00_a\src">
+      <UniqueIdentifier>{f648cdc6-e2db-40ec-9a3c-a9b595eb3820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix">
+      <UniqueIdentifier>{d966c3c1-8e6c-4022-8239-291aadc99cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\check">
+      <UniqueIdentifier>{5ebb2d6d-e017-465c-a280-43de7fe3529f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\include">
+      <UniqueIdentifier>{91ed7ad7-5f37-425e-943d-eef4b789e2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\include\arch">
+      <UniqueIdentifier>{10957719-c343-471b-ae97-ba7e42ec741c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\include\netif">
+      <UniqueIdentifier>{acd8e390-b1d6-4f28-a2be-5ec2427979b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\netif">
+      <UniqueIdentifier>{8e774d78-23aa-4a9b-aaaf-2d63d35c387c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\proj">
+      <UniqueIdentifier>{c1001828-199c-48cf-b98c-8d6b3b203c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\proj\lib">
+      <UniqueIdentifier>{ae90f350-74c0-443f-8a6f-6a36e7929202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\proj\minimal">
+      <UniqueIdentifier>{ae27a6b5-0530-48b4-a698-3c37feb7dbf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\unix\proj\unixsim">
+      <UniqueIdentifier>{38df1912-adc9-4935-8332-7f647b197aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\win32">
+      <UniqueIdentifier>{1f459cd6-07b0-489d-92e9-60fe1715e313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\win32\check">
+      <UniqueIdentifier>{f3c3a948-d676-4503-a24c-9ac4ef801b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\win32\check\sys">
+      <UniqueIdentifier>{054c30da-f671-4ce9-a5b4-dfefb2262e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\win32\include">
+      <UniqueIdentifier>{4c02fd1c-b82f-4485-9d55-8518eebb6076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\win32\include\arch">
+      <UniqueIdentifier>{ceaea99f-a4bf-4b96-93b4-bc882edfee5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\contrib\ports\win32\msvc8">
+      <UniqueIdentifier>{9da6140c-63e8-43ec-b7e1-754d93defeab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lpclwip">
+      <UniqueIdentifier>{43e472d8-6021-47f1-ba7d-f16d3b71b54c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lpclwip\arch">
+      <UniqueIdentifier>{5018f168-b3f5-49e8-a3e1-d1c4b3d46531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip">
+      <UniqueIdentifier>{0ff62708-dd72-4267-9ad5-c349f327849f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\doc">
+      <UniqueIdentifier>{0761ec5d-783e-41f5-b937-c8534eab1310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src">
+      <UniqueIdentifier>{9a354f8f-8c89-4136-be5c-10881f78d064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\api">
+      <UniqueIdentifier>{2d82ed32-5e40-4ea0-895b-9964060d598d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\core">
+      <UniqueIdentifier>{a5e51fbe-8557-4a57-b34d-406059dd96a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\core\ipv4">
+      <UniqueIdentifier>{a15db244-cf7e-4108-9bd0-35810ba03b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\core\ipv6">
+      <UniqueIdentifier>{d6aefcb3-cabc-44ba-a41d-3fa562b1f8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\core\snmp">
+      <UniqueIdentifier>{ab2e8ba1-ecf9-4e99-9243-6454fdb32488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include">
+      <UniqueIdentifier>{259575b4-82be-490d-a6b3-2b4b02b9a529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\ipv4">
+      <UniqueIdentifier>{68ace935-b54a-486b-982d-19f08d34f0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\ipv4\lwip">
+      <UniqueIdentifier>{58a958d6-470e-4fa6-9b3c-dff6af19d7fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\ipv6">
+      <UniqueIdentifier>{2d3aff07-5ffe-466b-a23b-c609f59628ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\ipv6\lwip">
+      <UniqueIdentifier>{188518c2-021f-4ea5-9c97-544fb99ce76e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\lwip">
+      <UniqueIdentifier>{5881dc60-0d85-4d76-9b08-8338d460af57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\netif">
+      <UniqueIdentifier>{0751ce08-4b20-4f40-82a0-114cb5a46261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\posix">
+      <UniqueIdentifier>{5c5bd950-6c8c-4896-a454-bc6b25ddffba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\include\posix\sys">
+      <UniqueIdentifier>{a20a22fa-8327-4729-817f-3f25e3e210b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\netif">
+      <UniqueIdentifier>{61e3e06d-ee22-4cd5-a95a-cefb689357a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\src\netif\ppp">
+      <UniqueIdentifier>{9ec3385b-cdb8-4da7-aae0-8b027bc48fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\test">
+      <UniqueIdentifier>{a0f33606-1d72-409c-87d5-f2ae8b86c65a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\test\unit">
+      <UniqueIdentifier>{31159ad4-3517-434a-a207-d91c61777fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\test\unit\core">
+      <UniqueIdentifier>{ed361cfb-88b0-4177-b2ca-c2c7a467994c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\test\unit\etharp">
+      <UniqueIdentifier>{fc6f7057-e742-43a7-a3e2-865a4b34cea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\test\unit\tcp">
+      <UniqueIdentifier>{e09d7448-c613-4e56-a2e6-84647207d875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\test\unit\udp">
+      <UniqueIdentifier>{fe4e6fb1-ae1b-4f15-a3e3-bf03c89c5af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\.visualgdb">
+      <UniqueIdentifier>{cdd13de5-4566-4263-baf4-d59ff4af2ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\.visualgdb\CodeDB">
+      <UniqueIdentifier>{c616ea37-8c1a-4a6e-b68c-752c123cb027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\.visualgdb\CodeDB\EmbeddedProject11-Debug-VisualGDB">
+      <UniqueIdentifier>{27d594dd-908d-43c0-a900-1ba3b01c82d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP">
+      <UniqueIdentifier>{0c735b7e-aee7-4161-b438-6f374a978b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\Common">
+      <UniqueIdentifier>{9e4fc61f-52bf-4b87-9c73-5a9ad28ec3ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx">
+      <UniqueIdentifier>{d802842b-e294-4383-93a3-ba69fcaa060c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx">
+      <UniqueIdentifier>{635e3f4b-f0a8-43c2-8f92-f89cfcb13359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS">
+      <UniqueIdentifier>{8a5b1eb1-b9cc-4396-9b96-8b7f81195821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS">
+      <UniqueIdentifier>{ed4030bc-c265-472e-8b20-ef439a7387ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\Include">
+      <UniqueIdentifier>{bd79af53-47de-4099-9b37-0e9b430e045b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\CMSIS\CMSIS\RTOS">
+      <UniqueIdentifier>{83f84e3c-3add-4a0a-9661-fa93b8b644ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip">
+      <UniqueIdentifier>{75fe889c-0fde-49c3-a60c-944ee1e86d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx">
+      <UniqueIdentifier>{6a7213dd-e7fc-4ab4-905d-220bf1e50522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_175x_6x">
+      <UniqueIdentifier>{bf56868a-9b98-4c53-b1f6-1267493a1027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\config_177x_8x">
+      <UniqueIdentifier>{21867e4b-0106-4840-b39b-7e41e9a892dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_common">
+      <UniqueIdentifier>{58497c86-669a-42bd-828f-1764213e11f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\usbd_rom">
+      <UniqueIdentifier>{b3723140-0151-4fde-bb69-23a6b7de9506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\BSP\LPC17xx_40xx\StartupFiles">
+      <UniqueIdentifier>{59103999-ac5f-4c22-a093-4947d6ed7eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core">
+      <UniqueIdentifier>{11c49f39-a02f-4f74-a55e-60b636259fa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_board">
+      <UniqueIdentifier>{79a2db83-c294-4b9b-af16-7646a6e18093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_board\boards_17xx">
+      <UniqueIdentifier>{741bc785-5bcf-41b3-8341-7e697f09e7cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769">
+      <UniqueIdentifier>{b3cfe84a-aaa7-439d-9bbc-5c8dec9fb970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\RTE">
+      <UniqueIdentifier>{7cb569ff-4650-466e-82e6-5227f7f3f6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\RTE\_nxp_lpcxpresso_1769">
+      <UniqueIdentifier>{bad5e615-7d45-4c35-947a-32db2a3b6499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_board\board_common">
+      <UniqueIdentifier>{e19b3909-6d4f-4192-8ebf-c9bc9361165d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip">
+      <UniqueIdentifier>{02ba89fb-4757-43d3-93f9-add2e80bb002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_17xx_40xx">
+      <UniqueIdentifier>{5c02dc8c-f390-49e7-92a7-64a350aa5b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_17xx_40xx\config_175x_6x">
+      <UniqueIdentifier>{3cb3c4fe-df40-4a12-926b-8170c59956b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_17xx_40xx\RTE">
+      <UniqueIdentifier>{0bf0712d-4415-40e3-95a7-a09146191b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_17xx_40xx\RTE\_chip_175x_6x_lib">
+      <UniqueIdentifier>{a827eeaa-20d0-4595-af53-24bd09dc58ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_17xx_40xx\usbd_lib">
+      <UniqueIdentifier>{33a5739b-6e84-4a22-abaa-d8b420c3199a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_17xx_40xx\usbd_lib\keil">
+      <UniqueIdentifier>{6323ea8e-0ff5-4ecf-8c84-3cdb47ed7f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\chip_common">
+      <UniqueIdentifier>{6ee53987-6632-4cb8-99de-1e15ff0f9873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lpc_core\lpc_chip\usbd_rom">
+      <UniqueIdentifier>{e6820c43-5265-43bd-a9fb-217951100c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip">
+      <UniqueIdentifier>{d36fd985-ecb2-42d8-96dc-c8cf24d5c558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib">
+      <UniqueIdentifier>{cb782303-fb5a-41db-b451-4864a8522bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps">
+      <UniqueIdentifier>{b68b4ca3-037d-4ebe-8748-ddb679244fdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\chargen">
+      <UniqueIdentifier>{136901b8-f51c-4ae7-b4be-1a8fb23c47e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\httpserver">
+      <UniqueIdentifier>{098886c6-9969-49fa-a24d-a052029cd164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\httpserver_raw">
+      <UniqueIdentifier>{2b6a8e46-3226-4169-b74d-8a3d2257dfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\httpserver_raw\makefsdata">
+      <UniqueIdentifier>{f98d3337-7816-45a3-b3ca-5c422de043fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\netbios">
+      <UniqueIdentifier>{3433695a-681b-4f03-bf68-cf2a57e058bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\netio">
+      <UniqueIdentifier>{6244d5c6-321b-4f66-bdcc-78c5d4ebcea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\ping">
+      <UniqueIdentifier>{92689a60-a302-41b6-9bf4-4ff2a4e49d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\rtp">
+      <UniqueIdentifier>{dc42daa4-604f-4f76-8456-07fd08a5b3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\shell">
+      <UniqueIdentifier>{ed44ca57-80b9-4ee6-8edc-35a08aea7da7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\smtp">
+      <UniqueIdentifier>{4afa6dc7-690f-43b2-9fad-adb8831aaf6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\snmp_private_mib">
+      <UniqueIdentifier>{aed4a848-6ef2-483b-8b52-b86255fa869e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\sntp">
+      <UniqueIdentifier>{42d888fc-7ccc-44be-adfb-0172b68b5118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\socket_examples">
+      <UniqueIdentifier>{4207d531-6bf6-4d91-90a9-940ba953435f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\tcpecho">
+      <UniqueIdentifier>{16bec7c9-a253-460c-b43b-09569a8d1efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\tcpecho_raw">
+      <UniqueIdentifier>{a1f2f999-e355-45a2-b34e-c7c3f7a87bff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\apps\udpecho">
+      <UniqueIdentifier>{cf3ec336-64d9-4be5-8f74-0c588578b77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports">
+      <UniqueIdentifier>{53eb85d5-de96-4b78-8b8a-fa9084531dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old">
+      <UniqueIdentifier>{eb30d64a-06cf-4067-9230-850431daa191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\6502">
+      <UniqueIdentifier>{287c2b6b-e31e-4470-bb82-fe09d0b1fc61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\6502\include">
+      <UniqueIdentifier>{642dd418-0f47-4797-88e4-28192bb4894f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\6502\include\arch">
+      <UniqueIdentifier>{41ba6ae4-550f-44e2-9a33-f4a7bb08e84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\c16x">
+      <UniqueIdentifier>{faace13e-cef5-46fa-948d-2fbee2aaf8fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\c16x\include">
+      <UniqueIdentifier>{6b99d5be-fb79-436f-afd6-c103ae4dad9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\c16x\include\arch">
+      <UniqueIdentifier>{8af21302-1995-45bd-9d2f-a51ba1720df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\c16x\include\netif">
+      <UniqueIdentifier>{b4f712f2-3c28-4bd4-b5bb-14e52ee55448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\c16x\netif">
+      <UniqueIdentifier>{b4ef36f7-7599-4479-884f-911f1fca0e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\coldfire">
+      <UniqueIdentifier>{72e7e5a1-4c1b-4fd9-9cde-d3f20e5e9f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\coldfire\include">
+      <UniqueIdentifier>{20564f52-2616-4256-9e3c-26a78f74f651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\coldfire\include\arch">
+      <UniqueIdentifier>{bc8cc5f8-6d2a-4aa5-9887-c61b07bb6d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\coldfire\include\netif">
+      <UniqueIdentifier>{6f67c59c-20bf-4d46-b698-32fe9e134a4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\coldfire\netif">
+      <UniqueIdentifier>{b49bb59d-10b1-460d-b9e6-0d6025a3fdfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\coldfire\proj">
+      <UniqueIdentifier>{da1c1975-328a-4e21-864b-8c748556be08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos">
+      <UniqueIdentifier>{5a5d8f6a-712b-429f-8b6f-f9cb4c14e47f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos">
+      <UniqueIdentifier>{d842354f-24e3-4232-8715-75e05bd77a0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net">
+      <UniqueIdentifier>{7e627c74-af9c-455b-af34-af0887abddee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip">
+      <UniqueIdentifier>{322ef5ac-be81-4866-aec7-ac891a577ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current">
+      <UniqueIdentifier>{8267c61e-14e2-416f-99a2-c09b2f7916d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\include">
+      <UniqueIdentifier>{f21c7d52-8030-43cd-8b2b-8a95aec6fb3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\include\arch">
+      <UniqueIdentifier>{d03939d9-f528-436a-9f8b-40c5f71a7ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src">
+      <UniqueIdentifier>{7c781369-474a-4763-8db2-405c465e4579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos">
+      <UniqueIdentifier>{a73b0129-4988-408c-87a0-050afb374659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests">
+      <UniqueIdentifier>{361e6a25-d930-423b-8602-51cc6d805127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\rtxc">
+      <UniqueIdentifier>{dcd0b797-bdbe-4b54-8101-5843a1d66014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\rtxc\include">
+      <UniqueIdentifier>{bd55f992-1e46-4e1e-b72a-eca3649d26f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\rtxc\include\arch">
+      <UniqueIdentifier>{78be78a5-28be-4f46-8dbe-d6ac50b379c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\rtxc\include\netif">
+      <UniqueIdentifier>{3b6f9279-88c5-4181-8255-997373ec6bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\rtxc\netif">
+      <UniqueIdentifier>{8ced9d19-9d50-45b3-b595-67a97b22634e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ti_c6711">
+      <UniqueIdentifier>{0f00de6c-59c2-4a46-bbc8-7c4766b1431b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ti_c6711\include">
+      <UniqueIdentifier>{c50848f9-f485-4efb-975b-776f1a1ca8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ti_c6711\include\arch">
+      <UniqueIdentifier>{6a963a7f-14bb-4691-b984-72fdeccafdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ti_c6711\include\netif">
+      <UniqueIdentifier>{abf8d5cc-a82e-4d97-9682-b260aecaca2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ti_c6711\netif">
+      <UniqueIdentifier>{9653e9e8-0ac7-4f4e-8a8a-3f8117a4f286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\ti_c6711\proj">
+      <UniqueIdentifier>{1f2fbb46-54ba-4d90-88fc-601bb8a8b567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro">
+      <UniqueIdentifier>{01d0f421-1379-4d61-9592-17450d65ee64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\include">
+      <UniqueIdentifier>{aaddb078-cfd1-4ffb-be48-80009bb26734}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\include\arch">
+      <UniqueIdentifier>{4deafd1a-b5f8-4d89-8830-d0119f302803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\include\netif">
+      <UniqueIdentifier>{15aa76e1-5156-417a-8714-10d79233548e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\netif">
+      <UniqueIdentifier>{a9aa5c5b-7201-4212-b1c0-c9db4c2ed00a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\sw_services">
+      <UniqueIdentifier>{7c491b81-6fa1-44d8-a502-58f3d04f4ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\sw_services\lwip_v1_00_a">
+      <UniqueIdentifier>{260faa79-adff-44be-83ef-3f3841cfe05f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\old\v2pro\sw_services\lwip_v1_00_a\src">
+      <UniqueIdentifier>{d1de3101-238a-4585-82d7-b646c2e1724a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix">
+      <UniqueIdentifier>{49f074c6-558e-4e4e-9765-84866c25c0b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\check">
+      <UniqueIdentifier>{28669eda-5f7f-4b63-9cbe-ead5f3bb1860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\include">
+      <UniqueIdentifier>{9aa8eacc-0a56-4d84-90bc-0bbb88d2636f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\include\arch">
+      <UniqueIdentifier>{76dc8025-72f4-44fd-8df0-76476c01abf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\include\netif">
+      <UniqueIdentifier>{c9acd4fb-6db8-40ef-97c2-89f220dcf92b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\netif">
+      <UniqueIdentifier>{dda08f2c-d759-4dd0-b17c-99128bef7196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\proj">
+      <UniqueIdentifier>{6f9fb13a-0e0d-4774-b027-8a108876bfeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\proj\lib">
+      <UniqueIdentifier>{00212176-76d8-44a4-8c47-f6ea2eeb55df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\proj\minimal">
+      <UniqueIdentifier>{d3b48f66-81b0-41ce-a54c-bb1eba18f264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\unix\proj\unixsim">
+      <UniqueIdentifier>{1ad9b76c-00c9-43b2-acdc-7c32e8bc0e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\win32">
+      <UniqueIdentifier>{dc5a78da-cfe2-4160-b989-a03d17700d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\win32\check">
+      <UniqueIdentifier>{334cd4c5-d850-4310-8b2e-d1f489168c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\win32\check\sys">
+      <UniqueIdentifier>{24abd259-c780-4bde-ac5d-0ee5fc774b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\win32\include">
+      <UniqueIdentifier>{d7189fea-109c-4750-aca9-be1c35712520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\win32\include\arch">
+      <UniqueIdentifier>{08f08365-42b2-4f8c-901f-cf8be746765a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\contrib\ports\win32\msvc8">
+      <UniqueIdentifier>{2f0e82a3-d3a2-4b6b-bad3-58540a3f99cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lpclwip">
+      <UniqueIdentifier>{cef9f0f1-9b6d-4cc0-bcbd-16c5fd1a62d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lpclwip\arch">
+      <UniqueIdentifier>{0d884e9e-c1ab-4da9-8339-dbc3b6316f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip">
+      <UniqueIdentifier>{019f3880-88b1-4236-8232-d6c3b4210278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\doc">
+      <UniqueIdentifier>{a8425f53-52bc-4a97-a322-5e9033f28ed4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src">
+      <UniqueIdentifier>{c7d1da8b-52d0-4605-a25b-052bf42fdec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\api">
+      <UniqueIdentifier>{01165972-d6f1-4afc-a53c-e71e81aeef39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\core">
+      <UniqueIdentifier>{5e4bef2c-6eeb-4dcc-8bea-7f1fffb5a9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\core\ipv4">
+      <UniqueIdentifier>{a29b5045-c989-41c9-bb06-4989db86c628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\core\ipv6">
+      <UniqueIdentifier>{935376f9-d2c4-491c-856b-fc9dfc619be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\core\snmp">
+      <UniqueIdentifier>{e6519cc4-c1f1-47ee-a19c-89618b1ee122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include">
+      <UniqueIdentifier>{c5dbb43d-f597-4400-8a56-3c6dfc57adea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\ipv4">
+      <UniqueIdentifier>{7827c9ea-e416-44ab-bd8b-903ee693e6ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\ipv4\lwip">
+      <UniqueIdentifier>{71f7da8c-fc8b-4bd9-b247-4a6c7def04fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\ipv6">
+      <UniqueIdentifier>{5b20f4d5-d408-46cc-a424-2d29008d4cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\ipv6\lwip">
+      <UniqueIdentifier>{5d394d2f-8f7a-4960-9a6a-16368ef156ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\lwip">
+      <UniqueIdentifier>{edbaba98-8d9d-44ed-8a17-485002c0b687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\netif">
+      <UniqueIdentifier>{08608410-f79c-41c5-a45d-36dc2305f13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\posix">
+      <UniqueIdentifier>{8d1b7de9-ce7e-493f-b015-de5fc59c5d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\include\posix\sys">
+      <UniqueIdentifier>{f8e3a3ea-a1c4-47d5-86fb-8c6db8b3604d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\netif">
+      <UniqueIdentifier>{f1839d02-accd-4344-b74c-945db87e1507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\src\netif\ppp">
+      <UniqueIdentifier>{9e06fc35-31b9-4592-a1d5-1680db2ac344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\test">
+      <UniqueIdentifier>{499ea3f3-1cc9-446b-88ab-127f03a9c4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\test\unit">
+      <UniqueIdentifier>{cd750f80-7424-40a6-b88b-49745096dbb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\test\unit\core">
+      <UniqueIdentifier>{c80cdb50-a772-4c80-a498-edc105430011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\test\unit\etharp">
+      <UniqueIdentifier>{4c2203e3-614c-462e-b7af-043e90c05bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\test\unit\tcp">
+      <UniqueIdentifier>{a3c6c334-eb01-4d43-9714-8f9bd20754b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\test\unit\udp">
+      <UniqueIdentifier>{7f478470-f644-4a90-865d-a672c873ac7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps">
+      <UniqueIdentifier>{3863e40c-da4c-4a15-b8e0-f5c45d9499a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\chargen">
+      <UniqueIdentifier>{6b6bb639-4199-42d3-a583-be32fa35d4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\httpserver">
+      <UniqueIdentifier>{7ef6b200-57ed-4511-903f-70289ef4a0cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\httpserver_raw">
+      <UniqueIdentifier>{05e78fb2-5b37-4903-9cd1-5a3f8fb115f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\httpserver_raw\makefsdata">
+      <UniqueIdentifier>{84e45e78-d298-4e7d-be3d-ff919edb64d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\netbios">
+      <UniqueIdentifier>{4e2bfdd0-efa6-4e93-9588-099574fb7e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\netio">
+      <UniqueIdentifier>{2b0af4e1-f15f-4df9-a1fd-c9ad87243bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\ping">
+      <UniqueIdentifier>{a5dbaeec-87b3-4600-af67-b43668d09095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\rtp">
+      <UniqueIdentifier>{2f1ba816-439c-4125-a7b8-b84166ccbda4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\shell">
+      <UniqueIdentifier>{f5741c31-6f74-4c16-9e61-f64244167ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\smtp">
+      <UniqueIdentifier>{53143a59-a6df-4536-9102-09afa578bad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\snmp_private_mib">
+      <UniqueIdentifier>{9aa2e8ce-6f67-4df6-b4df-3b70ad6f33ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\sntp">
+      <UniqueIdentifier>{1ce2add8-2b36-4db9-ba83-f80838dfcd77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\socket_examples">
+      <UniqueIdentifier>{a5ae0dad-a228-4ae2-92d2-f7cdd660d7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\tcpecho">
+      <UniqueIdentifier>{3ab346ad-a61e-415f-bdf0-5e81d739a628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\tcpecho_raw">
+      <UniqueIdentifier>{7807a185-c3d0-4c36-96a7-d26fcd3d5af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\apps\udpecho">
+      <UniqueIdentifier>{d1c193ce-049f-46ff-bbdc-d3465ca6f44e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports">
+      <UniqueIdentifier>{b52d01a9-6fa9-4af0-8f6a-c758980b69bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old">
+      <UniqueIdentifier>{f0418859-8fe9-46ce-ace0-ba89188600b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\6502">
+      <UniqueIdentifier>{cac939c3-ab57-4437-86ca-ab35781cfda4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\6502\include">
+      <UniqueIdentifier>{88cbe104-0240-406c-aeee-cae7bf1ca2cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\6502\include\arch">
+      <UniqueIdentifier>{16e845fb-3ef9-42d8-af34-2f50a8a88042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\c16x">
+      <UniqueIdentifier>{b765aca1-81b6-4118-9f27-8ad2722d14f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\c16x\include">
+      <UniqueIdentifier>{76acb754-c878-4ba5-ae4b-97af2cc1fd54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\c16x\include\arch">
+      <UniqueIdentifier>{ea1ba180-14bf-4066-a08b-c3672106ee81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\c16x\include\netif">
+      <UniqueIdentifier>{f6ece691-1871-4fa6-9fdd-096ba3a98c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\c16x\netif">
+      <UniqueIdentifier>{b3fb5e44-ae3a-4fa8-b5b7-7fea5bfd0da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\coldfire">
+      <UniqueIdentifier>{65c48249-1ca9-4db2-9e76-3e588f21fb56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\coldfire\include">
+      <UniqueIdentifier>{be2d0e3d-1035-4aa3-96a4-341150099964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\coldfire\include\arch">
+      <UniqueIdentifier>{a41f806c-335b-42a8-b1ac-c5259801e001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\coldfire\include\netif">
+      <UniqueIdentifier>{0ac19c27-8255-4295-be9b-7f5219e02bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\coldfire\netif">
+      <UniqueIdentifier>{6a2151b1-aa0f-4cab-a52a-3fd91e1eb7a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\coldfire\proj">
+      <UniqueIdentifier>{b7b723b8-24b8-40f9-9562-ba87172f0b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos">
+      <UniqueIdentifier>{8eefb60b-236b-473d-b07b-466f1f40c8e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos">
+      <UniqueIdentifier>{4a9609ac-6855-4f15-9140-e660392daba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net">
+      <UniqueIdentifier>{254a9b29-19d6-4368-ac60-edabc01b0d0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip">
+      <UniqueIdentifier>{3b6d03f6-b7bc-4263-8a8a-c952ca0be6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current">
+      <UniqueIdentifier>{d2098f62-32b6-4f92-848c-f0b674f5b60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\include">
+      <UniqueIdentifier>{b3a55f51-8dce-4f6e-81c2-3424e601b89e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\include\arch">
+      <UniqueIdentifier>{fc6e5e42-63fe-445d-b607-159477f46d60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src">
+      <UniqueIdentifier>{3e6baed6-e7bd-4fbf-91b8-ecd1b9b28653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos">
+      <UniqueIdentifier>{9f117558-93f7-4de3-aaab-1d1498712884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests">
+      <UniqueIdentifier>{929d9ddd-50f3-4b7e-9cdb-dbb1e0d0eb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\rtxc">
+      <UniqueIdentifier>{a748b524-4f42-4496-8dd3-c33ff639987a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\rtxc\include">
+      <UniqueIdentifier>{b4ab9239-ef33-43a0-aab6-07f1ad873d43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\rtxc\include\arch">
+      <UniqueIdentifier>{e5096037-b27d-4bd0-9231-0e8b94eb88eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\rtxc\include\netif">
+      <UniqueIdentifier>{c03fd211-9a5f-4a98-aa08-62425e5555bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\rtxc\netif">
+      <UniqueIdentifier>{bd5c6256-553f-4129-a9fc-509a3354e335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ti_c6711">
+      <UniqueIdentifier>{0c8314a2-8c87-4bcc-91cd-64f2b843a2d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ti_c6711\include">
+      <UniqueIdentifier>{3231c4da-67b2-4e59-8a25-4af80a124098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ti_c6711\include\arch">
+      <UniqueIdentifier>{3a9b8e3d-ccbb-4816-9e10-746e77c28e0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ti_c6711\include\netif">
+      <UniqueIdentifier>{208f4552-24d4-4b1e-af59-19be320edd14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ti_c6711\netif">
+      <UniqueIdentifier>{10f40b29-f8cc-4f5f-987f-3181930afef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\ti_c6711\proj">
+      <UniqueIdentifier>{b34bd92d-7cf5-418c-a242-25ed4e87b197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro">
+      <UniqueIdentifier>{112f03ac-c350-4029-9eee-ec573c278739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\include">
+      <UniqueIdentifier>{b80b8d92-45c0-43b5-80a0-507d7d965e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\include\arch">
+      <UniqueIdentifier>{bfd3311c-c0f8-4b23-b164-182bc2d90f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\include\netif">
+      <UniqueIdentifier>{d5879293-32d0-4c4e-b77c-d2c44467b0e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\netif">
+      <UniqueIdentifier>{44022d76-e4ab-405b-b370-1c27a83417c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\sw_services">
+      <UniqueIdentifier>{fdd6212d-f854-4248-aa37-f829bcb65519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\sw_services\lwip_v1_00_a">
+      <UniqueIdentifier>{b55caafc-bb90-4f84-8e05-3dba3cff90fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\old\v2pro\sw_services\lwip_v1_00_a\src">
+      <UniqueIdentifier>{42190e8b-e4ab-48d2-9a44-f3c01e2f2db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix">
+      <UniqueIdentifier>{8d5f4160-c222-49f4-8d94-b806478fb9bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\check">
+      <UniqueIdentifier>{469579fa-44f3-4675-9cf5-0a0a301d0c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\include">
+      <UniqueIdentifier>{a04e2198-1860-44ba-b80a-af1ac61e3e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\include\arch">
+      <UniqueIdentifier>{5f961119-ad8d-4c59-9524-fff78deff054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\include\netif">
+      <UniqueIdentifier>{6d3c19f7-9c6a-43d7-b257-22d05445fdb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\netif">
+      <UniqueIdentifier>{5a009036-677f-4663-9e06-584bc019ccab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\proj">
+      <UniqueIdentifier>{c888e127-62b3-4499-9183-72fdd060c1f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\proj\lib">
+      <UniqueIdentifier>{4a0f2b55-f8ba-4119-bf25-7568ddf31cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\proj\minimal">
+      <UniqueIdentifier>{bdf37187-8f01-466d-8e7d-ae1e58c99c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\unix\proj\unixsim">
+      <UniqueIdentifier>{2133363b-66c9-45d4-912c-845a43d23ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\win32">
+      <UniqueIdentifier>{0c7ca6a4-6823-4920-912f-773114c7aa2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\win32\check">
+      <UniqueIdentifier>{e2b41101-8149-4458-9e80-df84b26d99b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\win32\check\sys">
+      <UniqueIdentifier>{24626324-5e45-45df-a622-0e1139ef1b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\win32\include">
+      <UniqueIdentifier>{35ec6a26-3b94-4b28-b494-608b2c5fd8e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\win32\include\arch">
+      <UniqueIdentifier>{cf23816c-c726-4932-b3cb-7e86ec836ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\lwip\lwip\ports\win32\msvc8">
+      <UniqueIdentifier>{e6457751-4a87-40fc-b50c-04ed561ef559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps">
+      <UniqueIdentifier>{d23a8238-6b36-404d-b35d-0191c6482bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\chargen">
+      <UniqueIdentifier>{4b7d35f8-1798-49d3-a73f-68a466b7eaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\httpserver">
+      <UniqueIdentifier>{d1be6927-cef6-49ba-9e91-9acfcea505c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\httpserver_raw">
+      <UniqueIdentifier>{0552386b-69f8-4397-a22c-254d5e31b773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\httpserver_raw\makefsdata">
+      <UniqueIdentifier>{6fb5b225-1c77-4c54-8e27-316a3b3864bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\netbios">
+      <UniqueIdentifier>{a5ab4a7d-458b-4240-b004-f499081dc105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\netio">
+      <UniqueIdentifier>{9d2b000f-856a-4fe8-8259-6cec05d80553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\ping">
+      <UniqueIdentifier>{7ed954a1-51ad-4df8-9013-a326d21dc82f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\rtp">
+      <UniqueIdentifier>{5f43dbad-9c8a-4e6e-9690-826bcedf8500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\shell">
+      <UniqueIdentifier>{532363b7-d815-4154-aad0-ef1a32afb71c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\smtp">
+      <UniqueIdentifier>{65bb2724-22b4-4f0c-8fbd-1d331a9d75af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\snmp_private_mib">
+      <UniqueIdentifier>{0d97aac2-7a2e-4ac6-af59-00451407a054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\sntp">
+      <UniqueIdentifier>{3bd91a20-2fb3-434f-9662-d216c9bb10ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\socket_examples">
+      <UniqueIdentifier>{1863ec9b-63ac-46b1-8d02-069549347a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\tcpecho">
+      <UniqueIdentifier>{2726415e-00cc-4902-a933-3d6a43b625a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\tcpecho_raw">
+      <UniqueIdentifier>{8420a624-6c2b-4c60-9a4e-3501399cc9b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\apps\udpecho">
+      <UniqueIdentifier>{4e04f0dc-5d8b-4dd7-98ed-874f6866e2a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports">
+      <UniqueIdentifier>{ce822479-923a-4ca0-90f0-895121d50f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old">
+      <UniqueIdentifier>{758fbd3d-8f56-4cb6-843c-fb19ed0edb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\6502">
+      <UniqueIdentifier>{b8b5242e-2efa-42cc-812b-0f9746d5308c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\6502\include">
+      <UniqueIdentifier>{6594152f-f58d-4d67-878d-3fdacc825b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\6502\include\arch">
+      <UniqueIdentifier>{d8949e17-626d-4aec-b2c3-3e2c5d686f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\c16x">
+      <UniqueIdentifier>{05a01cd2-34cb-425a-8bcc-39df0e89af1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\c16x\include">
+      <UniqueIdentifier>{76bd8d3b-5c93-4884-864b-b19c279cec13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\c16x\include\arch">
+      <UniqueIdentifier>{5b855a03-5897-44eb-9617-604930c58171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\c16x\include\netif">
+      <UniqueIdentifier>{5f975dfe-79d5-4062-bd9e-eb5d3f28d9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\c16x\netif">
+      <UniqueIdentifier>{582c70ab-9347-4a4c-82ab-357905032593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\coldfire">
+      <UniqueIdentifier>{f013acc4-0e87-491a-932c-3a93d875dd78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\coldfire\include">
+      <UniqueIdentifier>{76483289-d4b1-4b6d-a513-7a5c00adbc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\coldfire\include\arch">
+      <UniqueIdentifier>{b1b1be52-cebc-4481-a0ba-fa9043340f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\coldfire\include\netif">
+      <UniqueIdentifier>{0f0b8392-0de2-476d-a8fa-a096147ac6f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\coldfire\netif">
+      <UniqueIdentifier>{5480c782-6d22-4850-a36e-8358aa8072c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\coldfire\proj">
+      <UniqueIdentifier>{6555235e-f14d-4fff-99bf-5adcd6e1edfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos">
+      <UniqueIdentifier>{509e90f3-508c-4c3e-8d4c-8dbfb0d2f15f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos">
+      <UniqueIdentifier>{5af64261-4936-4af6-bfcd-6a9440aa2f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net">
+      <UniqueIdentifier>{a7bfb7ec-c8e1-43ee-a690-c751d8d9aa19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip">
+      <UniqueIdentifier>{882d6610-eaa4-43b4-84bd-bed363aa9394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current">
+      <UniqueIdentifier>{76243e79-6a65-4e51-845a-2c57f237db03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\include">
+      <UniqueIdentifier>{56701948-3b7e-4289-a295-ab768f09cc37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\include\arch">
+      <UniqueIdentifier>{d5f79566-f243-4b72-a61b-1f9325be7232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src">
+      <UniqueIdentifier>{359b22cb-ea4a-4e33-afb2-9ff8ee056f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos">
+      <UniqueIdentifier>{d7a7271c-3cdf-4c58-b0ce-7007c78eb889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests">
+      <UniqueIdentifier>{31fadeb3-f916-4d16-81ad-57ff45a87577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\rtxc">
+      <UniqueIdentifier>{391c7328-04fc-4964-94a6-bffa319ad0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\rtxc\include">
+      <UniqueIdentifier>{72049f4b-8f1c-4506-8120-9bddde4094b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\rtxc\include\arch">
+      <UniqueIdentifier>{99fed08e-0121-426d-b485-fced23b2e4d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\rtxc\include\netif">
+      <UniqueIdentifier>{7b3becae-41e6-4264-800a-bb96d5ad058f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\rtxc\netif">
+      <UniqueIdentifier>{700feb05-41ec-4bfe-8b3a-0bdfb95a0589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ti_c6711">
+      <UniqueIdentifier>{796582ef-865d-482b-b371-99e71c4a19d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ti_c6711\include">
+      <UniqueIdentifier>{6c196744-4b43-4ed3-97e6-cfcc7e3b58fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ti_c6711\include\arch">
+      <UniqueIdentifier>{7cbcac91-5337-4128-be6e-1496bf5b82bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ti_c6711\include\netif">
+      <UniqueIdentifier>{eb6170f0-5af4-4103-9dc9-7ee9ae74e365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ti_c6711\netif">
+      <UniqueIdentifier>{5dd899ac-77d6-406d-94e8-ae4bf2f53e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\ti_c6711\proj">
+      <UniqueIdentifier>{105019ac-1cc1-4d62-a08b-f2de980377e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro">
+      <UniqueIdentifier>{c78ac73b-48e0-40ce-b192-b97a15eddd99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\include">
+      <UniqueIdentifier>{987f6578-d60b-4ce6-bc4e-a056c6b049d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\include\arch">
+      <UniqueIdentifier>{0388e514-4431-4908-8cb6-762e5021869e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\include\netif">
+      <UniqueIdentifier>{c0dba360-fa53-4a04-b497-5964479f9502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\netif">
+      <UniqueIdentifier>{eb7bf8bc-9b57-4e64-aa75-e395b5daa83e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\sw_services">
+      <UniqueIdentifier>{9e728fa9-bbf4-4f1c-89b3-265b7b66b0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\sw_services\lwip_v1_00_a">
+      <UniqueIdentifier>{0604b5b6-247d-493b-9084-1f74f7102956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\old\v2pro\sw_services\lwip_v1_00_a\src">
+      <UniqueIdentifier>{321477f9-7f24-4394-9df4-7347b7afb57e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix">
+      <UniqueIdentifier>{52ab43cf-6aa0-4262-84e7-37430d7692de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\check">
+      <UniqueIdentifier>{ec994795-8ace-42f3-be25-549f278ff4ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\include">
+      <UniqueIdentifier>{3128f4cc-686a-4c62-838f-f4c8a56084ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\include\arch">
+      <UniqueIdentifier>{2eaeac73-7dd4-49f8-8c85-ffc731a8862a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\include\netif">
+      <UniqueIdentifier>{9c8232ea-3bfc-4133-980c-f5cf49ac1b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\netif">
+      <UniqueIdentifier>{0de124c7-5cc9-4ba3-a2bd-def0a25aa9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\proj">
+      <UniqueIdentifier>{1ce000b2-e4a7-4fd9-9bdf-76c6c5113bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\proj\lib">
+      <UniqueIdentifier>{9799a629-040b-4e72-b410-110f4f309db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\proj\minimal">
+      <UniqueIdentifier>{4c51796a-6fc4-4879-8034-cb691123d5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\unix\proj\unixsim">
+      <UniqueIdentifier>{202bf857-01e8-4d52-9f81-c77663b3e508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\win32">
+      <UniqueIdentifier>{309a5378-d84f-4581-85d9-4a89d87490d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\win32\check">
+      <UniqueIdentifier>{88b2c913-9a66-4538-8dba-66502435282e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\win32\check\sys">
+      <UniqueIdentifier>{8d6d2fd4-390d-4842-b29f-7499b2437b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\win32\include">
+      <UniqueIdentifier>{da614255-ca92-436e-b1c7-4b9750b8654f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\win32\include\arch">
+      <UniqueIdentifier>{05e77623-1707-429c-a8cf-1ed163321ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\lwip\lwip\ports\win32\msvc8">
+      <UniqueIdentifier>{4a27a06a-d82c-4477-a6f1-61398f336bf9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LEDBlink.c">
-      <Filter>Source files</Filter>
-    </ClCompile>
     <None Include="nxp_lpc.props">
       <Filter>Source files\Device-specific files</Filter>
     </None>
@@ -378,38 +1685,721 @@
     <None Include="nxp_lpc.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <ClCompile Include="$(EFP_BASE)\Profiler\FastSemihosting.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClCompile Include="lpc_core\lpc_board\board_common\lpc_phy_smsc87x0.c">
+      <Filter>Source files\Device-specific files</Filter>
     </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\SamplingProfiler.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    <None Include=".visualgdb\CodeDB\EmbeddedProject11-Debug-VisualGDB\PreambleTimestamp.txt">
+      <Filter>Source files\.visualgdb\CodeDB\EmbeddedProject11-Debug-VisualGDB</Filter>
+    </None>
+    <ClCompile Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board.c">
+      <Filter>Source files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769</Filter>
     </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\InstrumentingProfiler.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClCompile Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board_sysinit.c">
+      <Filter>Source files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769</Filter>
     </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\TestResourceManager.cpp">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    <None Include="lwip\README.txt">
+      <Filter>Source files\lwip</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\apps\ping\ping.c">
+      <Filter>Source files\lwip\contrib\apps\ping</Filter>
     </ClCompile>
-    <ClCompile Include="$(EFP_BASE)\Profiler\ProfilerRTOS_FreeRTOS.c">
-      <Filter>Source files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClCompile Include="lwip\contrib\apps\tcpecho_raw\echo.c">
+      <Filter>Source files\lwip\contrib\apps\tcpecho_raw</Filter>
     </ClCompile>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfiler.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClCompile Include="lwip\contrib\apps\udpecho\udpecho.c">
+      <Filter>Source files\lwip\contrib\apps\udpecho</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lpclwip\arch\lpc17xx_40xx_emac.c">
+      <Filter>Source files\lwip\lpclwip\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lpclwip\arch\lpc17xx_40xx_systick_arch.c">
+      <Filter>Source files\lwip\lpclwip\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lpclwip\arch\lpc_debug.c">
+      <Filter>Source files\lwip\lpclwip\arch</Filter>
+    </ClCompile>
+    <None Include="lwip\lwip\doc\contrib.txt">
+      <Filter>Source files\lwip\lwip\doc</Filter>
+    </None>
+    <None Include="lwip\lwip\doc\rawapi.txt">
+      <Filter>Source files\lwip\lwip\doc</Filter>
+    </None>
+    <None Include="lwip\lwip\doc\savannah.txt">
+      <Filter>Source files\lwip\lwip\doc</Filter>
+    </None>
+    <None Include="lwip\lwip\doc\snmp_agent.txt">
+      <Filter>Source files\lwip\lwip\doc</Filter>
+    </None>
+    <None Include="lwip\lwip\doc\sys_arch.txt">
+      <Filter>Source files\lwip\lwip\doc</Filter>
+    </None>
+    <ClCompile Include="lwip\lwip\src\api\api_lib.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\api_msg.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\err.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\netbuf.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\netdb.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\netifapi.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\sockets.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\api\tcpip.c">
+      <Filter>Source files\lwip\lwip\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\def.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\dhcp.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\dns.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\init.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\mem.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\memp.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\netif.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\pbuf.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\raw.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\stats.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\sys.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\tcp.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\tcp_in.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\tcp_out.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\timers.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\udp.c">
+      <Filter>Source files\lwip\lwip\src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\autoip.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\icmp.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\igmp.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\inet.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\inet_chksum.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\ip.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\ip_addr.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\ipv4\ip_frag.c">
+      <Filter>Source files\lwip\lwip\src\core\ipv4</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\snmp\asn1_dec.c">
+      <Filter>Source files\lwip\lwip\src\core\snmp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\snmp\asn1_enc.c">
+      <Filter>Source files\lwip\lwip\src\core\snmp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\snmp\mib2.c">
+      <Filter>Source files\lwip\lwip\src\core\snmp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\snmp\mib_structs.c">
+      <Filter>Source files\lwip\lwip\src\core\snmp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\snmp\msg_in.c">
+      <Filter>Source files\lwip\lwip\src\core\snmp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\core\snmp\msg_out.c">
+      <Filter>Source files\lwip\lwip\src\core\snmp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\etharp.c">
+      <Filter>Source files\lwip\lwip\src\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ethernetif.c">
+      <Filter>Source files\lwip\lwip\src\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\slipif.c">
+      <Filter>Source files\lwip\lwip\src\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\auth.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\chap.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\chpms.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\fsm.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\ipcp.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\lcp.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\magic.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\md5.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\pap.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\ppp.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\ppp_oe.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\randm.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\lwip\src\netif\ppp\vj.c">
+      <Filter>Source files\lwip\lwip\src\netif\ppp</Filter>
+    </ClCompile>
+    <ClInclude Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board.h">
+      <Filter>Header files\lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SmallNumberCoder.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClInclude Include="lpc_core\lpc_board\board_common\board_api.h">
+      <Filter>Header files\lpc_core\lpc_board\board_common</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\SysprogsProfilerInterface.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClInclude Include="lpc_core\lpc_board\board_common\lpc_phy.h">
+      <Filter>Header files\lpc_core\lpc_board\board_common</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\ProfilerFreeRTOSHooks.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClInclude Include="lwip\contrib\apps\ping\ping.h">
+      <Filter>Header files\lwip\contrib\apps\ping</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\CustomRealTimeWatches.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClInclude Include="lwip\contrib\apps\tcpecho\tcpecho.h">
+      <Filter>Header files\lwip\contrib\apps\tcpecho</Filter>
     </ClInclude>
-    <ClInclude Include="$(EFP_BASE)\Profiler\DebuggerChecker.h">
-      <Filter>Header files\Device-specific files\Semihosting/Profiler</Filter>
+    <ClInclude Include="lwip\contrib\apps\udpecho\udpecho.h">
+      <Filter>Header files\lwip\contrib\apps\udpecho</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lpclwip\arch\cc.h">
+      <Filter>Header files\lwip\lpclwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lpclwip\arch\lpc17xx_40xx_emac.h">
+      <Filter>Header files\lwip\lpclwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lpclwip\arch\lpc_arch.h">
+      <Filter>Header files\lwip\lpclwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lpclwip\arch\perf.h">
+      <Filter>Header files\lwip\lpclwip\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\autoip.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\icmp.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\igmp.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\inet.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\inet_chksum.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\ip.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\ip_addr.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv4\lwip\ip_frag.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv4\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\icmp.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv6\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\inet.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv6\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\ip.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv6\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\ipv6\lwip\ip_addr.h">
+      <Filter>Header files\lwip\lwip\src\include\ipv6\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\api.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\api_msg.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\arch.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\debug.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\def.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\dhcp.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\dns.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\err.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\init.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\mem.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\memp.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\memp_std.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\netbuf.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\netdb.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\netif.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\netifapi.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\opt.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\pbuf.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\raw.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\sio.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp_asn1.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp_msg.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\snmp_structs.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\sockets.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\stats.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\sys.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\tcp.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\tcpip.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\tcp_impl.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\timers.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\lwip\udp.h">
+      <Filter>Header files\lwip\lwip\src\include\lwip</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\netif\etharp.h">
+      <Filter>Header files\lwip\lwip\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\netif\ppp_oe.h">
+      <Filter>Header files\lwip\lwip\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\netif\slipif.h">
+      <Filter>Header files\lwip\lwip\src\include\netif</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\posix\netdb.h">
+      <Filter>Header files\lwip\lwip\src\include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\include\posix\sys\socket.h">
+      <Filter>Header files\lwip\lwip\src\include\posix\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\auth.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\chap.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\chpms.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\fsm.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\ipcp.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\lcp.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\magic.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\md5.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\pap.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\ppp.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\pppdebug.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\ppp_impl.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\randm.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\src\netif\ppp\vj.h">
+      <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\lwipopts.h">
+      <Filter>Header files\lwip\lwip\test\unit</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\lwip_check.h">
+      <Filter>Header files\lwip\lwip\test\unit</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\core\test_mem.h">
+      <Filter>Header files\lwip\lwip\test\unit\core</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\etharp\test_etharp.h">
+      <Filter>Header files\lwip\lwip\test\unit\etharp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\tcp\tcp_helper.h">
+      <Filter>Header files\lwip\lwip\test\unit\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\tcp\test_tcp.h">
+      <Filter>Header files\lwip\lwip\test\unit\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\tcp\test_tcp_oos.h">
+      <Filter>Header files\lwip\lwip\test\unit\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\lwip\test\unit\udp\test_udp.h">
+      <Filter>Header files\lwip\lwip\test\unit\udp</Filter>
+    </ClInclude>
+    <ClCompile Include="lwip\contrib\apps\chargen\chargen.c">
+      <Filter>Source files\lwip\lwip\apps\chargen</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\httpserver\httpserver-netconn.c">
+      <Filter>Source files\lwip\lwip\apps\httpserver</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\httpserver_raw\fs.c">
+      <Filter>Source files\lwip\lwip\apps\httpserver_raw</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\httpserver_raw\fsdata.c">
+      <Filter>Source files\lwip\lwip\apps\httpserver_raw</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\httpserver_raw\httpd.c">
+      <Filter>Source files\lwip\lwip\apps\httpserver_raw</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\httpserver_raw\makefsdata\makefsdata.c">
+      <Filter>Source files\lwip\lwip\apps\httpserver_raw\makefsdata</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\apps\httpserver_raw\makefsdata\readme.txt">
+      <Filter>Source files\lwip\lwip\apps\httpserver_raw\makefsdata</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\apps\netbios\netbios.c">
+      <Filter>Source files\lwip\lwip\apps\netbios</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\netio\netio.c">
+      <Filter>Source files\lwip\lwip\apps\netio</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\ping\ping.c">
+      <Filter>Source files\lwip\lwip\apps\ping</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\rtp\rtp.c">
+      <Filter>Source files\lwip\lwip\apps\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\shell\shell.c">
+      <Filter>Source files\lwip\lwip\apps\shell</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\smtp\smtp.c">
+      <Filter>Source files\lwip\lwip\apps\smtp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\snmp_private_mib\lwip_prvmib.c">
+      <Filter>Source files\lwip\lwip\apps\snmp_private_mib</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\sntp\sntp.c">
+      <Filter>Source files\lwip\lwip\apps\sntp</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\socket_examples\socket_examples.c">
+      <Filter>Source files\lwip\lwip\apps\socket_examples</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\tcpecho\tcpecho.c">
+      <Filter>Source files\lwip\lwip\apps\tcpecho</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\tcpecho_raw\echo.c">
+      <Filter>Source files\lwip\lwip\apps\tcpecho_raw</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\apps\udpecho\udpecho.c">
+      <Filter>Source files\lwip\lwip\apps\udpecho</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\6502\lib_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\6502</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\6502\sys_c64.c">
+      <Filter>Source files\lwip\lwip\ports\old\6502</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\c16x\lib.c">
+      <Filter>Source files\lwip\lwip\ports\old\c16x</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\c16x\perf.c">
+      <Filter>Source files\lwip\lwip\ports\old\c16x</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\c16x\netif\cs8900if.c">
+      <Filter>Source files\lwip\lwip\ports\old\c16x\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\coldfire\perf.c">
+      <Filter>Source files\lwip\lwip\ports\old\coldfire</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\coldfire\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\coldfire</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\coldfire\netif\5272fec.c">
+      <Filter>Source files\lwip\lwip\ports\old\coldfire\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\coldfire\netif\tcpdump.c">
+      <Filter>Source files\lwip\lwip\ports\old\coldfire\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos\init.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos\sio.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\src\ecos</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests\httpd.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests\nc_test_slave.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests\socket.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests\sys_timeout.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests\tcpecho.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ecos\ecos\net\lwip_tcpip\current\tests\udpecho.c">
+      <Filter>Source files\lwip\lwip\ports\old\ecos\ecos\net\lwip_tcpip\current\tests</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\rtxc\lib.c">
+      <Filter>Source files\lwip\lwip\ports\old\rtxc</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\rtxc\perf.c">
+      <Filter>Source files\lwip\lwip\ports\old\rtxc</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\rtxc\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\rtxc</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\rtxc\netif\sioslipif.c">
+      <Filter>Source files\lwip\lwip\ports\old\rtxc\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ti_c6711\lib_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\ti_c6711</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ti_c6711\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\ti_c6711</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\old\ti_c6711\[Note] opt setting of lwIP .txt">
+      <Filter>Source files\lwip\lwip\ports\old\ti_c6711</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\old\ti_c6711\netif\ne2kif.c">
+      <Filter>Source files\lwip\lwip\ports\old\ti_c6711\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\ti_c6711\proj\lwIP.c">
+      <Filter>Source files\lwip\lwip\ports\old\ti_c6711\proj</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\v2pro\lib_arch.c">
+      <Filter>Source files\lwip\lwip\ports\old\v2pro</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\old\v2pro\Makefile">
+      <Filter>Source files\lwip\lwip\ports\old\v2pro</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\old\v2pro\perf.c">
+      <Filter>Source files\lwip\lwip\ports\old\v2pro</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\old\v2pro\netif\xemacif.c">
+      <Filter>Source files\lwip\lwip\ports\old\v2pro\netif</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\old\v2pro\sw_services\lwip_v1_00_a\src\Makefile">
+      <Filter>Source files\lwip\lwip\ports\old\v2pro\sw_services\lwip_v1_00_a\src</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\unix\lwip_chksum.c">
+      <Filter>Source files\lwip\lwip\ports\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\perf.c">
+      <Filter>Source files\lwip\lwip\ports\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\unix</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\unix\check\Makefile">
+      <Filter>Source files\lwip\lwip\ports\unix\check</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\unix\check\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\unix\check</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\delif.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\fifo.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\list.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\pcapif.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\sio.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\tapif.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\tcpdump.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\tunif.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\netif\unixif.c">
+      <Filter>Source files\lwip\lwip\ports\unix\netif</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\unix\proj\lib\Makefile">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\lib</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\lib\unixlib.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\minimal\echo.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\minimal</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\minimal\main.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\minimal</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\unix\proj\minimal\Makefile">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\minimal</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\minimal\mintapif.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\minimal</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\minimal\timer.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\minimal</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\unix\proj\unixsim\Makefile">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\unixsim</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\unixsim\simhost.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\unixsim</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\unixsim\simnode.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\unixsim</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\unix\proj\unixsim\simrouter.c">
+      <Filter>Source files\lwip\lwip\ports\unix\proj\unixsim</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\win32\pcapif.c">
+      <Filter>Source files\lwip\lwip\ports\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\win32\pcapif_helper.c">
+      <Filter>Source files\lwip\lwip\ports\win32</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\win32\readme.txt">
+      <Filter>Source files\lwip\lwip\ports\win32</Filter>
+    </None>
+    <ClCompile Include="lwip\contrib\ports\win32\sio.c">
+      <Filter>Source files\lwip\lwip\ports\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\win32\sys_arch.c">
+      <Filter>Source files\lwip\lwip\ports\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\win32\test.c">
+      <Filter>Source files\lwip\lwip\ports\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="lwip\contrib\ports\win32\check\time.c">
+      <Filter>Source files\lwip\lwip\ports\win32\check</Filter>
+    </ClCompile>
+    <None Include="lwip\contrib\ports\win32\msvc8\readme.txt">
+      <Filter>Source files\lwip\lwip\ports\win32\msvc8</Filter>
+    </None>
+    <ClCompile Include="TCP_Echo_Test.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lwip\Config Files\lpc_17xx40xx_emac_config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="lwip\Config Files\lwipopts.h">
+      <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

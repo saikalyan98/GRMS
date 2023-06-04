@@ -1,5 +1,5 @@
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:51:6:Chip_PMU_SleepState	16	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:64:6:Chip_PMU_DeepSleepState	16	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:77:6:Chip_PMU_PowerDownState	16	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:90:6:Chip_PMU_DeepPowerDownState	16	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:103:6:Chip_PMU_Sleep	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:51:6:Chip_PMU_SleepState	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:64:6:Chip_PMU_DeepSleepState	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:77:6:Chip_PMU_PowerDownState	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:90:6:Chip_PMU_DeepPowerDownState	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/pmu_17xx_40xx.c:103:6:Chip_PMU_Sleep	16	static

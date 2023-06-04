@@ -1,0 +1,15 @@
+<LPCOpenCfg>
+	<symbol name="varMemTarget"   value="iflash" options="default"/>
+	<symbol name="prjChipFamily"  value="175x_6x"/>
+	<symbol name="varUsbIpNum"    value="3503"/>
+	<symbol name="varChipFamilyDef" value="__LPC175X_6X__"/>
+
+	<template section="filelist" name="${varBoardLibName}" tool="xpresso">
+		<import src="${prjDestToRoot}/${prjBoardPath}" dest="src">
+			<copy>../../board_common/lpc_phy_smsc87x0.c</copy>
+		</import>
+		<import src="${prjDestToRoot}/${prjBoardPath}" dest="inc">
+			<copy>../../board_common/lpc_phy.h</copy>
+		</import>
+	</template>
+</LPCOpenCfg>

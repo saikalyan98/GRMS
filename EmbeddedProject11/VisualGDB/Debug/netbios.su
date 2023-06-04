@@ -1,0 +1,3 @@
+lwip/contrib/apps/netbios/netbios.c:156:1:netbios_name_decoding	40	static
+lwip/contrib/apps/netbios/netbios.c:260:1:netbios_recv	64	static
+lwip/contrib/apps/netbios/netbios.c:323:6:netbios_init	16	static

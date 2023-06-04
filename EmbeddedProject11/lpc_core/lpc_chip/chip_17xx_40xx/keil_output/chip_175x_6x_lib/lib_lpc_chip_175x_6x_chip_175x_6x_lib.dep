@@ -1,0 +1,200 @@
+Dependencies for Project 'lib_lpc_chip_175x_6x', Target 'chip_175x_6x_lib': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCCv506u6
+F (.\adc_17xx_40xx.c)(0x647A355A)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\adc_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\adc_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\adc_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\can_17xx_40xx.c)(0x647A355A)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\can_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\can_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\can_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\clock_17xx_40xx.c)(0x647A355A)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\clock_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\clock_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\clock_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\dac_17xx_40xx.c)(0x647A355B)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\dac_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\dac_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\dac_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\enet_17xx_40xx.c)(0x647A355B)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\enet_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\enet_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\enet_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\gpdma_17xx_40xx.c)(0x647A355B)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\gpdma_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\gpdma_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\gpdma_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\gpio_17xx_40xx.c)(0x647A355B)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\gpio_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\gpio_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\gpio_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\i2c_17xx_40xx.c)(0x647A355C)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\i2c_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\i2c_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\i2c_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\i2s_17xx_40xx.c)(0x647A355C)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\i2s_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\i2s_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\i2s_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\iocon_17xx_40xx.c)(0x647A355C)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\iocon_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\iocon_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\iocon_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\ritimer_17xx_40xx.c)(0x647A355C)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\ritimer_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\ritimer_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\ritimer_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\rtc_17xx_40xx.c)(0x647A355D)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\rtc_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\rtc_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\rtc_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\spi_17xx_40xx.c)(0x647A355D)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\spi_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\spi_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\spi_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\ssp_17xx_40xx.c)(0x647A355D)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\ssp_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\ssp_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\ssp_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\sysctl_17xx_40xx.c)(0x647A355D)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\sysctl_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\sysctl_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\sysctl_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\timer_17xx_40xx.c)(0x647A355E)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\timer_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\timer_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\timer_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\uart_17xx_40xx.c)(0x647A355E)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\uart_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\uart_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\uart_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\wwdt_17xx_40xx.c)(0x647A355E)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\wwdt_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\wwdt_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\wwdt_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (..\..\lpc_chip\chip_common\ring_buffer.c)(0x647A3560)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\ring_buffer.o --omf_browse .\keil_output\chip_175x_6x_lib\ring_buffer.crf --depend .\keil_output\chip_175x_6x_lib\ring_buffer.d)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\string.h)(0x5E8E5FEA)
+I (..\..\lpc_chip\chip_common\ring_buffer.h)(0x647A3560)
+I (..\..\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+F (.\pmu_17xx_40xx.c)(0x647A355C)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\pmu_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\pmu_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\pmu_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\stopwatch_17xx_40xx.c)(0x647A355D)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\stopwatch_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\stopwatch_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\stopwatch_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\chip_17xx_40xx.c)(0x647A355A)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\chip_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\chip_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\chip_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\sysinit_17xx_40xx.c)(0x647A355E)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\sysinit_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\sysinit_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\sysinit_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (..\chip_common\iap.c)(0x647A355F)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\iap.o --omf_browse .\keil_output\chip_175x_6x_lib\iap.crf --depend .\keil_output\chip_175x_6x_lib\iap.d)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx\chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx\cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)
+F (.\gpioint_17xx_40xx.c)(0x647A355B)(-c --cpu Cortex-M3 -D__EVAL -g -O3 --apcs=interwork --split_sections -I ..\..\..\..\software\lpc_core\lpc_chip\chip_17xx_40xx -I ..\..\..\..\software\lpc_core\lpc_chip\chip_common -I ..\..\..\..\software\CMSIS -I .\config_175x_6x-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\NXP\LPC17xx-D__UVISION_VERSION="538" -DCORE_M3-o .\keil_output\chip_175x_6x_lib\gpioint_17xx_40xx.o --omf_browse .\keil_output\chip_175x_6x_lib\gpioint_17xx_40xx.crf --depend .\keil_output\chip_175x_6x_lib\gpioint_17xx_40xx.d)
+I (chip.h)(0x647A355A)
+I (..\..\..\..\software\lpc_core\lpc_chip\chip_common\lpc_types.h)(0x647A355F)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdint.h)(0x5E8E5FEA)
+I (C:\Keil_v5\ARM\ARMCCv506u6\include\stdbool.h)(0x5E8E5FEA)
+I (.\config_175x_6x\sys_config.h)(0x647A355E)
+I (cmsis.h)(0x647A355A)
+I (.\config_175x_6x\cmsis_175x_6x.h)(0x647A355E)

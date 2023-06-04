@@ -1,0 +1,4 @@
+lwip/contrib/ports/old/c16x/lib.c:47:1:htons	16	static
+lwip/contrib/ports/old/c16x/lib.c:53:1:ntohs	16	static
+lwip/contrib/ports/old/c16x/lib.c:59:1:htonl	16	static
+lwip/contrib/ports/old/c16x/lib.c:68:1:ntohl	16	static
