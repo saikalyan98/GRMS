@@ -50,7 +50,9 @@
 #define JOYSTICK_PRESS_GPIO_PORT_NUM            0
 #define JOYSTICK_PRESS_GPIO_BIT_NUM             17
 #define LED0_GPIO_PORT_NUM                      2
-#define LED0_GPIO_BIT_NUM                       0
+#define LED0_GPIO_BIT_NUM						0
+#define LED1_GPIO_PORT_NUM						2
+#define LED1_GPIO_BIT_NUM						1
 
 /*****************************************************************************
  * Public types/enumerations/variables
@@ -130,9 +132,21 @@ void Board_UARTPutSTR(char *str)
 /* Sets the state of a board LED to on or off */
 void Board_LED_Set(uint8_t LEDNumber, bool On)
 {
-	/* There is only one LED */
-	if (LEDNumber == 0) {
+	/*Based on the LED Number, it's state will be set either as On or Off */
+	/*
+	 *LED0 - Port 2 Pin 0
+	 *LED1 - Port 2 Pin 1
+	 */
+	switch (LEDNumber)
+	{
+	case 0:
 		Chip_GPIO_WritePortBit(LPC_GPIO, LED0_GPIO_PORT_NUM, LED0_GPIO_BIT_NUM, On);
+		break;
+	case 1:
+		Chip_GPIO_WritePortBit(LPC_GPIO, LED1_GPIO_PORT_NUM, LED1_GPIO_BIT_NUM, On);
+		break;
+	default:
+		break;
 	}
 }
 

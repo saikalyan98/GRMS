@@ -91,6 +91,7 @@ static void prvSetupHardware(void)
  */
 int main(void)
 {
+	bool led_toggle_flag = 0;
 	uint32_t physts;
 	ip_addr_t ipaddr, netmask, gw;
 	static int prt_ip = 0;
@@ -202,6 +203,13 @@ int main(void)
 				DEBUGOUT("GATEWAY_IP : %s\r\n", ipaddr_ntoa_r((const ip_addr_t *)&lpc_netif.gw, tmp_buff, 16));
 				prt_ip = 1;
 			}
+		}
+
+		//Toggle Led for every one second
+		if (((SysTick_GetMS()) % 1000) == 0)
+		{
+			Board_LED_Set(1, led_toggle_flag);
+			led_toggle_flag = ~led_toggle_flag;
 		}
 	}
 
