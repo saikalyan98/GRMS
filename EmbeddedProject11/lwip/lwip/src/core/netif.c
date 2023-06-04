@@ -136,7 +136,7 @@ netif_init(void)
  * @return netif, or NULL if failed.
  */
 struct netif *
-netif_add(struct netif *netif, ip_addr_t *ipaddr, ip_addr_t *netmask,
+    netif_add(struct netif *netif, ip_addr_t *ipaddr, ip_addr_t *netmask,
   ip_addr_t *gw, void *state, netif_init_fn init, netif_input_fn input)
 {
 

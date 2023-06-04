@@ -1,5 +1,5 @@
 lwip/lwip/src/core/netif.c:106:1:netif_init	4	static
-lwip/lwip/src/core/netif.c:139:1:netif_add	24	static
+lwip/lwip/src/core/netif.c:139:5:netif_add	24	static
 lwip/lwip/src/core/netif.c:221:1:netif_set_addr	24	static
 lwip/lwip/src/core/netif.c:235:1:netif_remove	24	static
 lwip/lwip/src/core/netif.c:290:1:netif_find	24	static

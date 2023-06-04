@@ -1,4 +1,4 @@
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sysctl_17xx_40xx.h:153:20:Chip_SYSCTL_SetFLASHAccess	24	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/sysctl_17xx_40xx.h:153:20:Chip_SYSCTL_SetFLASHAccess	24	static
 lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769/board_sysinit.c:87:6:Board_SetupMuxing	8	static
 lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769/board_sysinit.c:93:6:Board_SetupClocking	8	static
 lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769/board_sysinit.c:102:6:Board_SystemInit	8	static
