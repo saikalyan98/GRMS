@@ -1,8 +1,8 @@
 lwip/contrib/apps/tcpecho_raw/echo.c:79:1:echo_init	16	static
-lwip/contrib/apps/tcpecho_raw/echo.c:105:1:echo_accept	32	static
-lwip/contrib/apps/tcpecho_raw/echo.c:140:1:echo_recv	40	static
-lwip/contrib/apps/tcpecho_raw/echo.c:224:1:echo_error	24	static
-lwip/contrib/apps/tcpecho_raw/echo.c:238:1:echo_poll	24	static
-lwip/contrib/apps/tcpecho_raw/echo.c:272:1:echo_sent	32	static
-lwip/contrib/apps/tcpecho_raw/echo.c:299:1:echo_send	32	static
-lwip/contrib/apps/tcpecho_raw/echo.c:348:1:echo_close	16	static
+lwip/contrib/apps/tcpecho_raw/echo.c:108:1:echo_accept	32	static
+lwip/contrib/apps/tcpecho_raw/echo.c:143:1:echo_recv	40	static
+lwip/contrib/apps/tcpecho_raw/echo.c:227:1:echo_error	24	static
+lwip/contrib/apps/tcpecho_raw/echo.c:241:1:echo_poll	24	static
+lwip/contrib/apps/tcpecho_raw/echo.c:275:1:echo_sent	32	static
+lwip/contrib/apps/tcpecho_raw/echo.c:302:1:echo_send	32	static
+lwip/contrib/apps/tcpecho_raw/echo.c:351:1:echo_close	16	static

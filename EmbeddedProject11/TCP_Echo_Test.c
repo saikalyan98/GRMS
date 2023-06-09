@@ -106,12 +106,12 @@ int main(void)
 
 	/* Static IP assignment */
 #if LWIP_DHCP
-	IP4_ADDR(&gw, 0, 0, 0, 0);
+	IP4_ADDR(&gw, 192, 168, 10, 1);
 	IP4_ADDR(&ipaddr, 0, 0, 0, 0);
-	IP4_ADDR(&netmask, 0, 0, 0, 0);
+	IP4_ADDR(&netmask, 255, 255, 255, 0);
 #else
 	IP4_ADDR(&gw, 192, 168, 10, 1);
-	IP4_ADDR(&ipaddr, 192, 168, 10, 50);
+	IP4_ADDR(&ipaddr, 192, 168, 10, 56);
 	IP4_ADDR(&netmask, 255, 255, 255, 0);
 //	APP_PRINT_IP(&ipaddr);
 #endif
@@ -140,7 +140,7 @@ int main(void)
 		   automatically, but in systems were memory is constrained, pbufs
 		   may not always be able to get allocated, so this function can be
 		   optionally enabled to re-queue receive buffers. */
-#if 0
+#if 1
 		while (lpc_rx_queue(&lpc_netif)) {}
 #endif
 

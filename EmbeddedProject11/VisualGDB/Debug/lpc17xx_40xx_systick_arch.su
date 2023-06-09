@@ -1,5 +1,5 @@
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm3.h:1405:22:NVIC_SetPriority	16	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm3.h:1532:26:SysTick_Config	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm3.h:1405:22:NVIC_SetPriority	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/CMSIS/CMSIS/Include/core_cm3.h:1532:26:SysTick_Config	16	static
 lwip/lpclwip/arch/lpc17xx_40xx_systick_arch.c:70:6:SysTick_Enable	16	static
 lwip/lpclwip/arch/lpc17xx_40xx_systick_arch.c:88:6:SysTick_Disable	4	static
 lwip/lpclwip/arch/lpc17xx_40xx_systick_arch.c:105:6:SysTick_Handler	4	static

@@ -78,26 +78,29 @@ void echo_close(struct tcp_pcb *tpcb, struct echo_state *es);
 void
 echo_init(void)
 {
-  echo_pcb = tcp_new();
-  if (echo_pcb != NULL)
-  {
-    err_t err;
+	ip_addr_t destIPADDR;
+	IP4_ADDR(&destIPADDR, 192, 168, 10, 13);
 
-    err = tcp_bind(echo_pcb, IP_ADDR_ANY, 7);
-    if (err == ERR_OK)
-    {
-      echo_pcb = tcp_listen(echo_pcb);
-      tcp_accept(echo_pcb, echo_accept);
-    }
-    else 
-    {
-      /* abort? output diagnostic? */
-    }
-  }
-  else
-  {
-    /* abort? output diagnostic? */
-  }
+	echo_pcb = tcp_new();
+	if (echo_pcb != NULL)
+	{
+		err_t err;
+
+		err = tcp_bind(echo_pcb, IP_ADDR_ANY, 9966);
+		if (err == ERR_OK)
+		{
+			//      echo_pcb = tcp_listen(echo_pcb);
+			tcp_connect(echo_pcb, &destIPADDR, 9966, echo_accept);
+		}
+		else
+		{
+			/* abort? output diagnostic? */
+		}
+	}
+	else
+	{
+		/* abort? output diagnostic? */
+	}
 }
 
 
