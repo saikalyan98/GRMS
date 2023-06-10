@@ -37,6 +37,7 @@ VisualGDB/Debug/timers.o: lwip/lwip/src/core/timers.c \
  lwip/lwip/src/include/lwip/tcpip.h \
  lwip/lwip/src/include/ipv4/lwip/ip_frag.h \
  lwip/lwip/src/include/netif/etharp.h lwip/lwip/src/include/lwip/dhcp.h \
+ lwip/lwip/src/include/lwip/udp.h \
  lwip/lwip/src/include/ipv4/lwip/autoip.h \
  lwip/lwip/src/include/ipv4/lwip/igmp.h lwip/lwip/src/include/lwip/dns.h \
  lwip/lwip/src/include/lwip/sys.h
@@ -86,6 +87,7 @@ lwip/lwip/src/include/lwip/tcpip.h:
 lwip/lwip/src/include/ipv4/lwip/ip_frag.h:
 lwip/lwip/src/include/netif/etharp.h:
 lwip/lwip/src/include/lwip/dhcp.h:
+lwip/lwip/src/include/lwip/udp.h:
 lwip/lwip/src/include/ipv4/lwip/autoip.h:
 lwip/lwip/src/include/ipv4/lwip/igmp.h:
 lwip/lwip/src/include/lwip/dns.h:

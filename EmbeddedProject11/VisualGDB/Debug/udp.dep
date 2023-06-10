@@ -25,7 +25,19 @@ VisualGDB/Debug/udp.o: lwip/lwip/src/core/udp.c \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
- C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/stdio.h
+ C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/stdio.h \
+ lwip/lwip/src/include/lwip/udp.h lwip/lwip/src/include/lwip/pbuf.h \
+ lwip/lwip/src/include/lwip/err.h lwip/lwip/src/include/lwip/netif.h \
+ lwip/lwip/src/include/ipv4/lwip/ip_addr.h \
+ lwip/lwip/src/include/lwip/def.h lwip/lwip/src/include/ipv4/lwip/ip.h \
+ lwip/lwip/src/include/lwip/memp.h lwip/lwip/src/include/lwip/memp_std.h \
+ lwip/lwip/src/include/lwip/mem.h \
+ lwip/lwip/src/include/ipv4/lwip/inet_chksum.h \
+ lwip/lwip/src/include/ipv4/lwip/icmp.h \
+ lwip/lwip/src/include/lwip/stats.h lwip/lwip/src/include/lwip/mem.h \
+ lwip/lwip/src/include/lwip/snmp.h lwip/lpclwip/arch/perf.h \
+ lwip/lwip/src/include/lwip/dhcp.h \
+ C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/string.h
 lwip/lwip/src/include/lwip/opt.h:
 lwip/contrib/ports/old/coldfire/proj/lwipopts.h:
 C:/SysGCC/arm-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h:
@@ -54,3 +66,21 @@ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h:
 C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/stdio.h:
+lwip/lwip/src/include/lwip/udp.h:
+lwip/lwip/src/include/lwip/pbuf.h:
+lwip/lwip/src/include/lwip/err.h:
+lwip/lwip/src/include/lwip/netif.h:
+lwip/lwip/src/include/ipv4/lwip/ip_addr.h:
+lwip/lwip/src/include/lwip/def.h:
+lwip/lwip/src/include/ipv4/lwip/ip.h:
+lwip/lwip/src/include/lwip/memp.h:
+lwip/lwip/src/include/lwip/memp_std.h:
+lwip/lwip/src/include/lwip/mem.h:
+lwip/lwip/src/include/ipv4/lwip/inet_chksum.h:
+lwip/lwip/src/include/ipv4/lwip/icmp.h:
+lwip/lwip/src/include/lwip/stats.h:
+lwip/lwip/src/include/lwip/mem.h:
+lwip/lwip/src/include/lwip/snmp.h:
+lwip/lpclwip/arch/perf.h:
+lwip/lwip/src/include/lwip/dhcp.h:
+C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/string.h:
