@@ -1,4 +1,4 @@
-# GMRS V1.0.0
+# GMRS V1.0.1
 This project deals with the Guest Room Management System. 
 
 Integrated the following:
@@ -6,6 +6,7 @@ Integrated the following:
 2. LPC1769 Peripherals.
 3. TCP/IP
 4. DHCP
+5. FreeModBus TCP
 
 Note:
 Firmware taken reference from NXP LPCOpen Software Development Packs.
