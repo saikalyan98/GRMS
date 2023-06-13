@@ -51,8 +51,12 @@
 #define JOYSTICK_PRESS_GPIO_BIT_NUM             17
 #define LED0_GPIO_PORT_NUM                      2
 #define LED0_GPIO_BIT_NUM						0
-#define LED1_GPIO_PORT_NUM						3
-#define LED1_GPIO_BIT_NUM						26
+#define LED1_GPIO_PORT_NUM						2
+#define LED1_GPIO_BIT_NUM						1
+#define LED2_GPIO_PORT_NUM						2
+#define LED2_GPIO_BIT_NUM						2
+#define LED3_GPIO_PORT_NUM						2
+#define LED3_GPIO_BIT_NUM						3
 
 /*****************************************************************************
  * Public types/enumerations/variables
@@ -145,6 +149,12 @@ void Board_LED_Set(uint8_t LEDNumber, bool On)
 		break;
 	case 1:
 		Chip_GPIO_WritePortBit(LPC_GPIO, LED1_GPIO_PORT_NUM, LED1_GPIO_BIT_NUM, On);
+		break;
+	case 2:
+		Chip_GPIO_WritePortBit(LPC_GPIO, LED2_GPIO_PORT_NUM, LED2_GPIO_BIT_NUM, On);
+		break;
+	case 3:
+		Chip_GPIO_WritePortBit(LPC_GPIO, LED3_GPIO_PORT_NUM, LED3_GPIO_BIT_NUM, On);
 		break;
 	default:
 		break;

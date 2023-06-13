@@ -1,4 +1,4 @@
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/clock_17xx_40xx.h:159:20:Chip_Clock_IsUSBPLLLocked	4	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/clock_17xx_40xx.h:182:20:Chip_Clock_IsUSBPLLConnected	4	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_17xx_40xx.c:55:6:SystemCoreClockUpdate	8	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_17xx_40xx.c:64:6:Chip_USB_Init	8	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/clock_17xx_40xx.h:159:20:Chip_Clock_IsUSBPLLLocked	4	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/clock_17xx_40xx.h:182:20:Chip_Clock_IsUSBPLLConnected	4	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_17xx_40xx.c:55:6:SystemCoreClockUpdate	8	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip_17xx_40xx.c:64:6:Chip_USB_Init	8	static

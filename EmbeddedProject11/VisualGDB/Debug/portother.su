@@ -1,0 +1,2 @@
+ModBus Src/port/portother.c:39:1:prvvMBTCPLogFrame	40	static
+ModBus Src/port/portother.c:119:1:vMBPortLog	24	static

@@ -1,4 +1,9 @@
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:681:20:Chip_ENET_Set100Mbps	16	static
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:691:20:Chip_ENET_Set10Mbps	16	static
-TCP_Echo_Test.c:69:13:prvSetupHardware	8	static
-TCP_Echo_Test.c:93:5:main	48	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:681:20:Chip_ENET_Set100Mbps	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:691:20:Chip_ENET_Set10Mbps	16	static
+TCP_Echo_Test.c:100:13:prvSetupHardware	8	static
+TCP_Echo_Test.c:124:5:main	48	static
+TCP_Echo_Test.c:212:1:eMBRegInputCB	24	static
+TCP_Echo_Test.c:235:10:TCP_Iteration	16	static
+TCP_Echo_Test.c:321:1:eMBRegHoldingCB	32	static
+TCP_Echo_Test.c:363:1:eMBRegCoilsCB	24	static
+TCP_Echo_Test.c:369:1:eMBRegDiscreteCB	16	static

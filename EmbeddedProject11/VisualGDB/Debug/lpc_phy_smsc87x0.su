@@ -1,4 +1,4 @@
-C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:563:20:Chip_ENET_IsMIIBusy	16	static
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:563:20:Chip_ENET_IsMIIBusy	16	static
 lpc_core/lpc_board/board_common/lpc_phy_smsc87x0.c:94:15:lpc_mii_write	24	static
 lpc_core/lpc_board/board_common/lpc_phy_smsc87x0.c:119:15:lpc_mii_read	24	static
 lpc_core/lpc_board/board_common/lpc_phy_smsc87x0.c:144:13:smsc_update_phy_sts	16	static

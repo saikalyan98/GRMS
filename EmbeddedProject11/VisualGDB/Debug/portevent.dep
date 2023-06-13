@@ -1,0 +1,24 @@
+VisualGDB/Debug/portevent.o: ModBus\ Src/port/portevent.c \
+ ModBus\ Src/modbus/include/mb.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/port.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h \
+ ModBus\ Src/modbus/include/mbport.h ModBus\ Src/modbus/include/mbproto.h \
+ ModBus\ Src/modbus/include/mbport.h
+ModBus\ Src/modbus/include/mb.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/port.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h:
+ModBus\ Src/modbus/include/mbport.h:
+ModBus\ Src/modbus/include/mbproto.h:
+ModBus\ Src/modbus/include/mbport.h:

@@ -1,0 +1,5 @@
+ModBus Src/modbus/tcp/mbtcp.c:80:1:eMBTCPDoInit	24	static
+ModBus Src/modbus/tcp/mbtcp.c:92:1:eMBTCPStart	4	static
+ModBus Src/modbus/tcp/mbtcp.c:97:1:eMBTCPStop	8	static
+ModBus Src/modbus/tcp/mbtcp.c:104:1:eMBTCPReceive	40	static
+ModBus Src/modbus/tcp/mbtcp.c:136:1:eMBTCPSend	32	static

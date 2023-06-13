@@ -60,7 +60,7 @@
     </Link>
     <ClCompile>
       <DumpStackUsage>true</DumpStackUsage>
-      <AdditionalIncludeDirectories>lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port;lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;ModBus Src/modbus/include;ModBus Src/port;ModBus Src/modbus/tcp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -73,10 +73,33 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="TCP_Echo_Test.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdiag.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncother.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbutils.c" />
+    <ClCompile Include="ModBus Src\modbus\mb.c" />
+    <ClCompile Include="ModBus Src\modbus\tcp\mbtcp.c" />
+    <ClCompile Include="ModBus Src\port\portevent.c" />
+    <ClCompile Include="ModBus Src\port\portother.c" />
+    <ClCompile Include="ModBus Src\port\porttcp.c" />
+    <ClCompile Include="TCP_ModBus.c" />
     <ClCompile Include="lpc_core\lpc_board\board_common\lpc_phy_smsc87x0.c" />
     <ClInclude Include="lwip\Config Files\lpc_17xx40xx_emac_config.h" />
     <ClInclude Include="lwip\Config Files\lwipopts.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mb.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mbconfig.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mbframe.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mbfunc.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mbport.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mbproto.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mbutils.h" />
+    <ClInclude Include="ModBus Src\modbus\tcp\mbtcp.h" />
+    <ClInclude Include="ModBus Src\port\mbconfig.h" />
+    <ClInclude Include="ModBus Src\port\port.h" />
+    <ClInclude Include="User_Config.h" />
     <None Include="nxp_lpc.props" />
     <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.c" />
     <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\can_17xx_40xx.c" />

@@ -1,1 +1,6 @@
-﻿
+﻿  LPC1768_flash.lds (preprocessor output)
+  Linking VisualGDB/Debug/EmbeddedProject11...
+  Map file saved to file://C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\VisualGDB\Debug\EmbeddedProject11.map
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 98KB out of 512KB (19%)
+  Used RAM: 2748 bytes out of 64KB (4%)
