@@ -1,4 +1,4 @@
-VisualGDB/Debug/port.o: ModBus\ Src/port/COMMON/port.c \
+VisualGDB/Debug/port.o: ModBus_Src/port/COMMON/port.c \
  C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/chip.h \
  C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h \
  c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \

@@ -55,7 +55,7 @@ extern "C" {
     DEBUGIN macros. If not defined, DEBUG* functions will be optimized
     out of the code at build time.
  */
-#define DEBUG_ENABLE
+//#define DEBUG_ENABLE
 
 /** Define DEBUG_SEMIHOSTING along with DEBUG_ENABLE to enable IO support
     via semihosting. You may need to use a C library that supports
@@ -67,7 +67,7 @@ extern "C" {
     is also the port used for Board_UARTPutChar, Board_UARTGetChar, and
     Board_UARTPutSTR functions.
  */
-#define DEBUG_UART LPC_UART3
+#define DEBUG_UART LPC_UART0
 
 /**
  * @}

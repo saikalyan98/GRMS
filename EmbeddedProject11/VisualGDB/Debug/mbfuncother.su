@@ -1,2 +1,2 @@
-ModBus Src/modbus/functions/mbfuncother.c:53:1:eMBSetSlaveID	24	static
-ModBus Src/modbus/functions/mbfuncother.c:81:1:eMBFuncReportSlaveID	16	static
+ModBus_Src/modbus/functions/mbfuncother.c:53:1:eMBSetSlaveID	24	static
+ModBus_Src/modbus/functions/mbfuncother.c:81:1:eMBFuncReportSlaveID	16	static

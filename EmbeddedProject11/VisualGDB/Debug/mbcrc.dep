@@ -1,5 +1,5 @@
-VisualGDB/Debug/mbcrc.o: ModBus\ Src/modbus/rtu/mbcrc.c \
- C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h \
+VisualGDB/Debug/mbcrc.o: ModBus_Src/modbus/rtu/mbcrc.c \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus_Src/port/COMMON/port.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
@@ -14,7 +14,7 @@ VisualGDB/Debug/mbcrc.o: ModBus\ Src/modbus/rtu/mbcrc.c \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
  c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus_Src/port/COMMON/port.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:

@@ -1,2 +1,2 @@
-ModBus Src/port/COMMON/port.c:32:1:EnterCriticalSection	4	static
-ModBus Src/port/COMMON/port.c:42:1:ExitCriticalSection	4	static
+ModBus_Src/port/COMMON/port.c:32:1:EnterCriticalSection	4	static
+ModBus_Src/port/COMMON/port.c:42:1:ExitCriticalSection	4	static

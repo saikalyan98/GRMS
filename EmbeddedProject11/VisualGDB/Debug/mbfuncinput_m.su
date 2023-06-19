@@ -1,2 +1,2 @@
-ModBus Src/modbus/functions/mbfuncinput_m.c:73:1:eMBMasterReqReadInputRegister	32	static
-ModBus Src/modbus/functions/mbfuncinput_m.c:97:1:eMBMasterFuncReadInputRegister	32	static
+ModBus_Src/modbus/functions/mbfuncinput_m.c:73:1:eMBMasterReqReadInputRegister	32	static
+ModBus_Src/modbus/functions/mbfuncinput_m.c:97:1:eMBMasterFuncReadInputRegister	32	static

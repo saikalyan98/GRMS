@@ -73,6 +73,8 @@
 
 /* ------------------------ FreeModbus includes --------------------------- */
 #include "mb.h"
+#include "mbconfig.h"
+#include "user_mb_app.h"
 
 /* ----------------------- Static variables ---------------------------------*/
 static USHORT usRegInputStart = REG_INPUT_START;
@@ -94,7 +96,7 @@ uint16_t OneSec_Count = 0;
 /*****************************************************************************
  * Public types/enumerations/variables
  ****************************************************************************/
-extern USHORT   usMRegHoldBuf[10][6];
+extern USHORT usMRegHoldBuf[MB_MASTER_TOTAL_SLAVE_NUM][M_REG_HOLDING_NREGS];
 
 /*****************************************************************************
  * Private functions
@@ -221,17 +223,17 @@ int main(void)
 				{
 					OneSec_Count = 0;
 					/* Configure the Touch Panel Button 1 LED for Manual Operation */
-					eMBMasterReqWriteHoldingRegister(182, 20, 1, 100);
+					eMBMasterReqWriteHoldingRegister(0, 20, 1, 100);
 
 					/* Read the Touch Panel Button 1 Holding Register */
-					eMBMasterReqReadHoldingRegister(182, 0,	1, 100);
-					if (usMRegHoldBuf[182][0])
+					eMBMasterReqReadHoldingRegister(0, 0,	1, 100);
+					if (usMRegHoldBuf[0][0])
 					{
-						eMBMasterReqWriteHoldingRegister(182, 10, 1, 100);
+						eMBMasterReqWriteHoldingRegister(0, 10, 1, 100);
 					}
 					else
 					{
-						eMBMasterReqWriteHoldingRegister(182, 10, 0, 100);
+						eMBMasterReqWriteHoldingRegister(0, 10, 0, 100);
 					}
 				}
 				

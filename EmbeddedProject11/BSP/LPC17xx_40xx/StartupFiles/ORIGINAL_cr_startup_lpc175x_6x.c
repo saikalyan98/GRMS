@@ -3,7 +3,7 @@
 	The reset handled initializes the RAM and calls system library initializers as well as
 	the platform-specific initializer and the main() function.
 */
-
+#define DEBUG_DEFAULT_INTERRUPT_HANDLERS
 extern void *_estack;
 
 #define NULL ((void *)0)

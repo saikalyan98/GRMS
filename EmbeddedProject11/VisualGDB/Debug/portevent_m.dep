@@ -1,6 +1,6 @@
-VisualGDB/Debug/portevent_m.o: ModBus\ Src/port/RTU/portevent_m.c \
- ModBus\ Src/modbus/include/mb.h \
- C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h \
+VisualGDB/Debug/portevent_m.o: ModBus_Src/port/RTU/portevent_m.c \
+ ModBus_Src/modbus/include/mb.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus_Src/port/COMMON/port.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
@@ -15,11 +15,11 @@ VisualGDB/Debug/portevent_m.o: ModBus\ Src/port/RTU/portevent_m.c \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
  c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h \
- ModBus\ Src/modbus/include/mbport.h ModBus\ Src/modbus/include/mbproto.h \
- ModBus\ Src/modbus/include/mb_m.h ModBus\ Src/modbus/include/mbport.h \
- C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/mbconfig.h
-ModBus\ Src/modbus/include/mb.h:
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h:
+ ModBus_Src/modbus/include/mbport.h ModBus_Src/modbus/include/mbproto.h \
+ ModBus_Src/modbus/include/mb_m.h ModBus_Src/modbus/include/mbport.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus_Src/port/COMMON/mbconfig.h
+ModBus_Src/modbus/include/mb.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus_Src/port/COMMON/port.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:
@@ -34,8 +34,8 @@ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h:
 c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h:
-ModBus\ Src/modbus/include/mbport.h:
-ModBus\ Src/modbus/include/mbproto.h:
-ModBus\ Src/modbus/include/mb_m.h:
-ModBus\ Src/modbus/include/mbport.h:
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/mbconfig.h:
+ModBus_Src/modbus/include/mbport.h:
+ModBus_Src/modbus/include/mbproto.h:
+ModBus_Src/modbus/include/mb_m.h:
+ModBus_Src/modbus/include/mbport.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus_Src/port/COMMON/mbconfig.h:

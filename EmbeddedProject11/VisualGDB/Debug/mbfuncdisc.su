@@ -1,1 +1,1 @@
-ModBus Src/modbus/functions/mbfuncdisc.c:57:1:eMBFuncReadDiscreteInputs	32	static
+ModBus_Src/modbus/functions/mbfuncdisc.c:57:1:eMBFuncReadDiscreteInputs	32	static

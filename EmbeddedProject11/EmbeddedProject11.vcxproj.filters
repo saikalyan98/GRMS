@@ -1151,15 +1151,6 @@
     <ClInclude Include="lwip\lwip\src\netif\ppp\vj.h">
       <Filter>Header files\lwip\lwip\src\netif\ppp</Filter>
     </ClInclude>
-    <ClCompile Include="lwip\contrib\apps\ping\ping.c">
-      <Filter>Source files\lwip\lwip\apps\ping</Filter>
-    </ClCompile>
-    <ClCompile Include="lwip\contrib\apps\tcpecho_raw\echo.c">
-      <Filter>Source files\lwip\lwip\apps\tcpecho_raw</Filter>
-    </ClCompile>
-    <ClCompile Include="lwip\contrib\apps\udpecho\udpecho.c">
-      <Filter>Source files\lwip\lwip\apps\udpecho</Filter>
-    </ClCompile>
     <ClCompile Include="GRMS.c">
       <Filter>Source files</Filter>
     </ClCompile>
@@ -1179,9 +1170,6 @@
     </ClInclude>
     <ClInclude Include="ModBus Src\modbus\include\mbutils.h">
       <Filter>Header files\ModBus Source\Common\include</Filter>
-    </ClInclude>
-    <ClInclude Include="ModBus Src\modbus\tcp\mbtcp.h">
-      <Filter>Header files\ModBus Source\ModBus TCP\modbus\tcp</Filter>
     </ClInclude>
     <ClInclude Include="ModBus Src\modbus\include\mbconfig.h">
       <Filter>Header files\ModBus Source\Common\include</Filter>
@@ -1213,82 +1201,85 @@
     <ClInclude Include="ModBus Src\port\user_mb_app.h">
       <Filter>Header files\ModBus Source\Common</Filter>
     </ClInclude>
+    <ClInclude Include="ModBus_Src\modbus\tcp\mbtcp.h">
+      <Filter>Header files\ModBus Source\ModBus TCP\modbus\tcp</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ModBus Src\modbus\mb.c">
-      <Filter>Source files\ModBus Source\ModBus TCP\modbus</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfunccoils.c">
       <Filter>Source files\ModBus Source\ModBus TCP\modbus\functions</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfunccoils_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncdisc_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncholding_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncinput_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncdisc.c">
       <Filter>Source files\ModBus Source\ModBus TCP\modbus\functions</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncholding.c">
       <Filter>Source files\ModBus Source\ModBus TCP\modbus\functions</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncinput.c">
       <Filter>Source files\ModBus Source\ModBus TCP\modbus\functions</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\tcp\mbtcp.c">
-      <Filter>Source files\ModBus Source\ModBus TCP\modbus\tcp</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdiag.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncdiag.c">
       <Filter>Source files\ModBus Source\Common</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbutils.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncother.c">
       <Filter>Source files\ModBus Source\Common</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncother.c">
+    <ClCompile Include="ModBus_Src\modbus\functions\mbutils.c">
       <Filter>Source files\ModBus Source\Common</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\modbus\functions</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\rtu\mbcrc.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\modbus\rtu</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\rtu\mbrtu_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\modbus\rtu</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\modbus\mb_m.c">
+    <ClCompile Include="ModBus_Src\modbus\mb_m.c">
       <Filter>Source files\ModBus Source\ModBus RTU\modbus</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\RTU\portevent_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\port</Filter>
+    <ClCompile Include="ModBus_Src\modbus\mb.c">
+      <Filter>Source files\ModBus Source\ModBus TCP\modbus</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\RTU\portserial_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\port</Filter>
+    <ClCompile Include="ModBus_Src\modbus\tcp\mbtcp.c">
+      <Filter>Source files\ModBus Source\ModBus TCP\modbus\tcp</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\RTU\porttimer_m.c">
-      <Filter>Source files\ModBus Source\ModBus RTU\port</Filter>
+    <ClCompile Include="ModBus_Src\modbus\rtu\mbcrc.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\modbus\rtu</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\TCP\portevent.c">
-      <Filter>Source files\ModBus Source\ModBus TCP\port</Filter>
+    <ClCompile Include="ModBus_Src\modbus\rtu\mbrtu_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\modbus\rtu</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\TCP\portother.c">
-      <Filter>Source files\ModBus Source\ModBus TCP\port</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\port\TCP\porttcp.c">
-      <Filter>Source files\ModBus Source\ModBus TCP\port</Filter>
-    </ClCompile>
-    <ClCompile Include="ModBus Src\port\COMMON\port.c">
+    <ClCompile Include="ModBus_Src\port\COMMON\port.c">
       <Filter>Source files\ModBus Source\Common</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\TCP\user_mb_app.c">
-      <Filter>Source files\ModBus Source\ModBus TCP</Filter>
+    <ClCompile Include="ModBus_Src\port\RTU\portevent_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\port</Filter>
     </ClCompile>
-    <ClCompile Include="ModBus Src\port\RTU\user_mb_app_m.c">
+    <ClCompile Include="ModBus_Src\port\RTU\portserial_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\port</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\port\RTU\porttimer_m.c">
+      <Filter>Source files\ModBus Source\ModBus RTU\port</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\port\RTU\user_mb_app_m.c">
       <Filter>Source files\ModBus Source\ModBus RTU</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\port\TCP\portevent.c">
+      <Filter>Source files\ModBus Source\ModBus TCP\port</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\port\TCP\portother.c">
+      <Filter>Source files\ModBus Source\ModBus TCP\port</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\port\TCP\porttcp.c">
+      <Filter>Source files\ModBus Source\ModBus TCP\port</Filter>
+    </ClCompile>
+    <ClCompile Include="ModBus_Src\port\TCP\user_mb_app.c">
+      <Filter>Source files\ModBus Source\ModBus TCP</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

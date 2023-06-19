@@ -103,7 +103,7 @@
     </Link>
     <ClCompile>
       <DumpStackUsage>true</DumpStackUsage>
-      <AdditionalIncludeDirectories>C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port\COMMON;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port\RTU;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port\TCP;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\modbus\rtu;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port;lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;ModBus Src/modbus/include;ModBus Src/port;ModBus Src/modbus/tcp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus_Src\port\COMMON;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus_Src\port\RTU;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus_Src\port\TCP;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus_Src\modbus\rtu;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus_Src\port;lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;ModBus Src/modbus/include;ModBus Src/port;ModBus Src/modbus/tcp;ModBus_Src/modbus/include;ModBus_Src/modbus/tcp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
@@ -141,33 +141,33 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils_m.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdiag.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc_m.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding_m.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput_m.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbfuncother.c" />
-    <ClCompile Include="ModBus Src\modbus\functions\mbutils.c" />
-    <ClCompile Include="ModBus Src\modbus\mb.c" />
-    <ClCompile Include="ModBus Src\modbus\mb_m.c" />
-    <ClCompile Include="ModBus Src\modbus\rtu\mbcrc.c" />
-    <ClCompile Include="ModBus Src\modbus\rtu\mbrtu_m.c" />
-    <ClCompile Include="ModBus Src\modbus\tcp\mbtcp.c" />
-    <ClCompile Include="ModBus Src\port\COMMON\port.c" />
-    <ClCompile Include="ModBus Src\port\RTU\portevent_m.c" />
-    <ClCompile Include="ModBus Src\port\RTU\portserial_m.c" />
-    <ClCompile Include="ModBus Src\port\RTU\porttimer_m.c" />
-    <ClCompile Include="ModBus Src\port\RTU\user_mb_app_m.c" />
-    <ClCompile Include="ModBus Src\port\TCP\portevent.c" />
-    <ClCompile Include="ModBus Src\port\TCP\portother.c" />
-    <ClCompile Include="ModBus Src\port\TCP\porttcp.c" />
     <ClCompile Include="GRMS.c" />
     <ClCompile Include="lpc_core\lpc_board\board_common\lpc_phy_smsc87x0.c" />
-    <ClCompile Include="ModBus Src\port\TCP\user_mb_app.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfunccoils.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfunccoils_m.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncdiag.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncdisc.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncdisc_m.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncholding.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncholding_m.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncinput.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncinput_m.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbfuncother.c" />
+    <ClCompile Include="ModBus_Src\modbus\functions\mbutils.c" />
+    <ClCompile Include="ModBus_Src\modbus\mb.c" />
+    <ClCompile Include="ModBus_Src\modbus\mb_m.c" />
+    <ClCompile Include="ModBus_Src\modbus\rtu\mbcrc.c" />
+    <ClCompile Include="ModBus_Src\modbus\rtu\mbrtu_m.c" />
+    <ClCompile Include="ModBus_Src\modbus\tcp\mbtcp.c" />
+    <ClCompile Include="ModBus_Src\port\COMMON\port.c" />
+    <ClCompile Include="ModBus_Src\port\RTU\portevent_m.c" />
+    <ClCompile Include="ModBus_Src\port\RTU\portserial_m.c" />
+    <ClCompile Include="ModBus_Src\port\RTU\porttimer_m.c" />
+    <ClCompile Include="ModBus_Src\port\RTU\user_mb_app_m.c" />
+    <ClCompile Include="ModBus_Src\port\TCP\portevent.c" />
+    <ClCompile Include="ModBus_Src\port\TCP\portother.c" />
+    <ClCompile Include="ModBus_Src\port\TCP\porttcp.c" />
+    <ClCompile Include="ModBus_Src\port\TCP\user_mb_app.c" />
     <ClInclude Include="lwip\Config Files\lpc_17xx40xx_emac_config.h" />
     <ClInclude Include="lwip\Config Files\lwipopts.h" />
     <ClInclude Include="ModBus Src\modbus\include\mb.h" />
@@ -179,10 +179,10 @@
     <ClInclude Include="ModBus Src\modbus\include\mbutils.h" />
     <ClInclude Include="ModBus Src\modbus\include\mb_m.h" />
     <ClInclude Include="ModBus Src\modbus\rtu\mbrtu.h" />
-    <ClInclude Include="ModBus Src\modbus\tcp\mbtcp.h" />
     <ClInclude Include="ModBus Src\port\mbconfig.h" />
     <ClInclude Include="ModBus Src\port\port.h" />
     <ClInclude Include="ModBus Src\port\user_mb_app.h" />
+    <ClInclude Include="ModBus_Src\modbus\tcp\mbtcp.h" />
     <ClInclude Include="User_Config.h" />
     <None Include="nxp_lpc.props" />
     <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.c" />

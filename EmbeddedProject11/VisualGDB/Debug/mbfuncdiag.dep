@@ -1,1 +1,1 @@
-VisualGDB/Debug/mbfuncdiag.o: ModBus\ Src/modbus/functions/mbfuncdiag.c
+VisualGDB/Debug/mbfuncdiag.o: ModBus_Src/modbus/functions/mbfuncdiag.c
