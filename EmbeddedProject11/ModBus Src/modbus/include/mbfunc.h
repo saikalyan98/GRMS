@@ -1,4 +1,4 @@
-/* 
+/*
  * FreeModbus Libary: A portable Modbus implementation for Modbus ASCII/RTU.
  * Copyright (c) 2006-2018 Christian Walter <cwalter@embedded-solutions.at>
  * All rights reserved.
@@ -25,8 +25,9 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
+ * File: $Id: mbfunc.h,v 1.12 2006/12/07 22:10:34 wolti Exp $
  */
- 
+
 #ifndef _MB_FUNC_H
 #define _MB_FUNC_H
 
@@ -34,7 +35,7 @@
 PR_BEGIN_EXTERN_C
 #endif
 #if MB_FUNC_OTHER_REP_SLAVEID_BUF > 0
-    eMBException eMBFuncReportSlaveID( UCHAR * pucFrame, USHORT * usLen );
+eMBException    eMBFuncReportSlaveID( UCHAR * pucFrame, USHORT * usLen );
 #endif
 
 #if MB_FUNC_READ_INPUT_ENABLED > 0

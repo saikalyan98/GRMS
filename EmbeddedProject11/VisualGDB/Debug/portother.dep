@@ -1,4 +1,4 @@
-VisualGDB/Debug/portother.o: ModBus\ Src/port/portother.c \
+VisualGDB/Debug/portother.o: ModBus\ Src/port/TCP/portother.c \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\types.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
@@ -31,9 +31,14 @@ VisualGDB/Debug/portother.o: ModBus\ Src/port/portother.c \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\reent.h \
  c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/string.h \
- ModBus\ Src/port/port.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h \
- c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\types.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:
@@ -66,6 +71,11 @@ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\lock.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\reent.h:
 c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h:
 C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/string.h:
-ModBus\ Src/port/port.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h:

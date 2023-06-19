@@ -57,6 +57,7 @@ static volatile u32_t systick_timems;
 /* Current system clock rate, mainly used for sysTick */
 extern uint32_t SystemCoreClock;
 extern uint16_t LED1_Count;
+extern uint16_t OneSec_Count;
 
 /*****************************************************************************
  * Private functions
@@ -112,6 +113,9 @@ void SysTick_Handler(void)
 	
 	/*LED1 Toggle count*/
 	LED1_Count++;
+
+	/*One second Toggle count*/
+	OneSec_Count++;
 }
 
 

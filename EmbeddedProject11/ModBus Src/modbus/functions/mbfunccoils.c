@@ -1,4 +1,4 @@
-/* 
+/*
  * FreeModbus Libary: A portable Modbus implementation for Modbus ASCII/RTU.
  * Copyright (c) 2006-2018 Christian Walter <cwalter@embedded-solutions.at>
  * All rights reserved.
@@ -25,6 +25,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
+ * File: $Id: mbfunccoils.c,v 1.8 2007/02/18 23:47:16 wolti Exp $
  */
 
 /* ----------------------- System includes ----------------------------------*/
@@ -85,7 +86,7 @@ eMBFuncReadCoils( UCHAR * pucFrame, USHORT * usLen )
         usCoilCount |= ( USHORT )( pucFrame[MB_PDU_FUNC_READ_COILCNT_OFF + 1] );
 
         /* Check if the number of registers to read is valid. If not
-         * return Modbus illegal data value exception. 
+         * return Modbus illegal data value exception.
          */
         if( ( usCoilCount >= 1 ) &&
             ( usCoilCount < MB_PDU_FUNC_READ_COILCNT_MAX ) )
@@ -123,7 +124,7 @@ eMBFuncReadCoils( UCHAR * pucFrame, USHORT * usLen )
             else
             {
                 /* The response contains the function code, the starting address
-                 * and the quantity of registers. We reuse the old values in the 
+                 * and the quantity of registers. We reuse the old values in the
                  * buffer because they are still valid. */
                 *usLen += ucNBytes;;
             }
@@ -141,6 +142,7 @@ eMBFuncReadCoils( UCHAR * pucFrame, USHORT * usLen )
     }
     return eStatus;
 }
+#endif
 
 #if MB_FUNC_WRITE_COIL_ENABLED > 0
 eMBException
@@ -245,7 +247,7 @@ eMBFuncWriteMultipleCoils( UCHAR * pucFrame, USHORT * usLen )
             else
             {
                 /* The response contains the function code, the starting address
-                 * and the quantity of registers. We reuse the old values in the 
+                 * and the quantity of registers. We reuse the old values in the
                  * buffer because they are still valid. */
                 *usLen = MB_PDU_FUNC_WRITE_MUL_BYTECNT_OFF;
             }
@@ -263,7 +265,5 @@ eMBFuncWriteMultipleCoils( UCHAR * pucFrame, USHORT * usLen )
     }
     return eStatus;
 }
-
-#endif
 
 #endif

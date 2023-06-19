@@ -1,0 +1,4 @@
+ModBus Src/port/TCP/user_mb_app.c:54:14:eMBRegInputCB	32	static
+ModBus Src/port/TCP/user_mb_app.c:101:14:eMBRegHoldingCB	40	static
+ModBus Src/port/TCP/user_mb_app.c:165:14:eMBRegCoilsCB	56	static
+ModBus Src/port/TCP/user_mb_app.c:242:14:eMBRegDiscreteCB	48	static

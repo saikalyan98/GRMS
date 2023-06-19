@@ -1,6 +1,6 @@
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.h:145:20:Chip_RIT_SetCOMPVAL	16	static
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.h:156:20:Chip_RIT_EnableCTRL	16	static
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:53:6:Chip_RIT_Init	16	static
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:63:6:Chip_RIT_DeInit	16	static
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:70:6:Chip_RIT_SetTimerInterval	24	static
-C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:86:11:Chip_RIT_GetIntStatus	24	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.h:145:20:Chip_RIT_SetCOMPVAL	16	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.h:156:20:Chip_RIT_EnableCTRL	16	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:53:6:Chip_RIT_Init	16	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:63:6:Chip_RIT_DeInit	16	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:70:6:Chip_RIT_SetTimerInterval	24	static
+C:/Users/Hp/OneDrive/Desktop/Freelancing/Freelancer/Selected_Projects/3. Firmware for LPC1768/2. Testing/VisualGDB/Local/LPC1768-GPIO/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/ritimer_17xx_40xx.c:86:11:Chip_RIT_GetIntStatus	24	static

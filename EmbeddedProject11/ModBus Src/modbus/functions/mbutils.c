@@ -1,4 +1,4 @@
-/* 
+/*
  * FreeModbus Libary: A portable Modbus implementation for Modbus ASCII/RTU.
  * Copyright (c) 2006-2018 Christian Walter <cwalter@embedded-solutions.at>
  * All rights reserved.
@@ -25,11 +25,13 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
+ * File: $Id: mbutils.c,v 1.6 2007/02/18 23:49:07 wolti Exp $
  */
 
 /* ----------------------- System includes ----------------------------------*/
 #include "stdlib.h"
 #include "string.h"
+#include "assert.h"
 
 /* ----------------------- Platform includes --------------------------------*/
 #include "port.h"
@@ -52,8 +54,8 @@ xMBUtilSetBits( UCHAR * ucByteBuf, USHORT usBitOffset, UCHAR ucNBits,
     USHORT          usNPreBits;
     USHORT          usValue = ucValue;
 
-    assert( ucNBits <= 8 );
-    assert( ( size_t )BITS_UCHAR == sizeof( UCHAR ) * 8 );
+//    assert_param( ucNBits <= 8 );
+ //   assert_param( ( size_t )BITS_UCHAR == sizeof( UCHAR ) * 8 );
 
     /* Calculate byte offset for first byte containing the bit values starting
      * at usBitOffset. */

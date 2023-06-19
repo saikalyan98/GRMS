@@ -1,0 +1,46 @@
+VisualGDB/Debug/user_mb_app.o: ModBus\ Src/port/TCP/user_mb_app.c \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/user_mb_app.h \
+ ModBus\ Src/modbus/include/mb.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
+ c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h \
+ c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h \
+ ModBus\ Src/modbus/include/mbport.h ModBus\ Src/modbus/include/mbproto.h \
+ ModBus\ Src/modbus/include/mb_m.h \
+ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/mbconfig.h \
+ ModBus\ Src/modbus/include/mbframe.h \
+ ModBus\ Src/modbus/include/mbutils.h
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/user_mb_app.h:
+ModBus\ Src/modbus/include/mb.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/port.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_ansi.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\newlib.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\_newlib_version.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\config.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\features.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/lpc_types.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\_default_types.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h:
+c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_stdint.h:
+c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h:
+ModBus\ Src/modbus/include/mbport.h:
+ModBus\ Src/modbus/include/mbproto.h:
+ModBus\ Src/modbus/include/mb_m.h:
+C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/COMMON/mbconfig.h:
+ModBus\ Src/modbus/include/mbframe.h:
+ModBus\ Src/modbus/include/mbutils.h:

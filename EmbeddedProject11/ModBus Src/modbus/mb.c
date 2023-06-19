@@ -1,4 +1,4 @@
-/* 
+/*
  * FreeModbus Libary: A portable Modbus implementation for Modbus ASCII/RTU.
  * Copyright (c) 2006-2018 Christian Walter <cwalter@embedded-solutions.at>
  * All rights reserved.
@@ -25,6 +25,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
+ * File: $Id: mb.c,v 1.27 2007/02/18 23:45:41 wolti Exp $
  */
 
 /* ----------------------- System includes ----------------------------------*/
@@ -35,6 +36,7 @@
 #include "port.h"
 
 /* ----------------------- Modbus includes ----------------------------------*/
+
 #include "mb.h"
 #include "mbconfig.h"
 #include "mbframe.h"
@@ -42,13 +44,13 @@
 #include "mbfunc.h"
 
 #include "mbport.h"
-#if MB_RTU_ENABLED == 1
+#if MB_SLAVE_RTU_ENABLED == 1
 #include "mbrtu.h"
 #endif
-#if MB_ASCII_ENABLED == 1
+#if MB_SLAVE_ASCII_ENABLED == 1
 #include "mbascii.h"
 #endif
-#if MB_TCP_ENABLED == 1
+#if MB_SLAVE_TCP_ENABLED == 1
 #include "mbtcp.h"
 #endif
 
@@ -70,6 +72,7 @@ static enum
 
 /* Functions pointer which are initialized in eMBInit( ). Depending on the
  * mode (RTU or ASCII) the are set to the correct implementations.
+ * Using for Modbus Slave
  */
 static peMBFrameSend peMBFrameSendCur;
 static pvMBFrameStart pvMBFrameStartCur;
@@ -80,6 +83,7 @@ static pvMBFrameClose pvMBFrameCloseCur;
 /* Callback functions required by the porting layer. They are called when
  * an external event has happend which includes a timeout or the reception
  * or transmission of a character.
+ * Using for Modbus Slave
  */
 BOOL( *pxMBFrameCBByteReceived ) ( void );
 BOOL( *pxMBFrameCBTransmitterEmpty ) ( void );
@@ -142,7 +146,7 @@ eMBInit( eMBMode eMode, UCHAR ucSlaveAddress, UCHAR ucPort, ULONG ulBaudRate, eM
 
         switch ( eMode )
         {
-#if MB_RTU_ENABLED > 0
+#if MB_SLAVE_RTU_ENABLED > 0
         case MB_RTU:
             pvMBFrameStartCur = eMBRTUStart;
             pvMBFrameStopCur = eMBRTUStop;
@@ -156,7 +160,7 @@ eMBInit( eMBMode eMode, UCHAR ucSlaveAddress, UCHAR ucPort, ULONG ulBaudRate, eM
             eStatus = eMBRTUInit( ucMBAddress, ucPort, ulBaudRate, eParity );
             break;
 #endif
-#if MB_ASCII_ENABLED > 0
+#if MB_SLAVE_ASCII_ENABLED > 0
         case MB_ASCII:
             pvMBFrameStartCur = eMBASCIIStart;
             pvMBFrameStopCur = eMBASCIIStop;
@@ -172,6 +176,7 @@ eMBInit( eMBMode eMode, UCHAR ucSlaveAddress, UCHAR ucPort, ULONG ulBaudRate, eM
 #endif
         default:
             eStatus = MB_EINVAL;
+            break;
         }
 
         if( eStatus == MB_ENOERR )
@@ -191,7 +196,7 @@ eMBInit( eMBMode eMode, UCHAR ucSlaveAddress, UCHAR ucPort, ULONG ulBaudRate, eM
     return eStatus;
 }
 
-#if MB_TCP_ENABLED > 0
+#if MB_SLAVE_TCP_ENABLED > 0
 eMBErrorCode
 eMBTCPInit( USHORT ucTCPPort )
 {
@@ -229,7 +234,7 @@ eMBRegisterCB( UCHAR ucFunctionCode, pxMBFunctionHandler pxHandler )
 
     if( ( 0 < ucFunctionCode ) && ( ucFunctionCode <= 127 ) )
     {
-//        ENTER_CRITICAL_SECTION(  );
+        ENTER_CRITICAL_SECTION(  );
         if( pxHandler != NULL )
         {
             for( i = 0; i < MB_FUNC_HANDLERS_MAX; i++ )
@@ -258,7 +263,7 @@ eMBRegisterCB( UCHAR ucFunctionCode, pxMBFunctionHandler pxHandler )
             /* Remove can't fail. */
             eStatus = MB_ENOERR;
         }
-//        EXIT_CRITICAL_SECTION(  );
+        EXIT_CRITICAL_SECTION(  );
     }
     else
     {
@@ -286,6 +291,7 @@ eMBClose( void )
     }
     return eStatus;
 }
+
 
 eMBErrorCode
 eMBEnable( void )
@@ -327,8 +333,7 @@ eMBDisable( void )
     return eStatus;
 }
 
-eMBErrorCode
-eMBPoll( void )
+eMBErrorCode eMBPoll( void )
 {
     static UCHAR   *ucMBFrame;
     static UCHAR    ucRcvAddress;
@@ -395,10 +400,6 @@ eMBPoll( void )
                     ucMBFrame[usLength++] = ( UCHAR )( ucFunctionCode | MB_FUNC_ERROR );
                     ucMBFrame[usLength++] = eException;
                 }
-                if( ( eMBCurrentMode == MB_ASCII ) && MB_ASCII_TIMEOUT_WAIT_BEFORE_SEND_MS )
-                {
-                    vMBPortTimersDelay( MB_ASCII_TIMEOUT_WAIT_BEFORE_SEND_MS );
-                }                
                 eStatus = peMBFrameSendCur( ucMBAddress, ucMBFrame, usLength );
             }
             break;

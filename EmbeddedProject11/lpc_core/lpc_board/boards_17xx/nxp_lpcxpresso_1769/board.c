@@ -51,12 +51,17 @@
 #define JOYSTICK_PRESS_GPIO_BIT_NUM             17
 #define LED0_GPIO_PORT_NUM                      2
 #define LED0_GPIO_BIT_NUM						0
-#define LED1_GPIO_PORT_NUM						2
-#define LED1_GPIO_BIT_NUM						1
+#define LED1_GPIO_PORT_NUM						3
+#define LED1_GPIO_BIT_NUM						26
 #define LED2_GPIO_PORT_NUM						2
 #define LED2_GPIO_BIT_NUM						2
 #define LED3_GPIO_PORT_NUM						2
 #define LED3_GPIO_BIT_NUM						3
+
+#define RS_485_REBar_GPIO_PORT_NUM              1
+#define RS_485_REBar_GPIO_BIT_NUM				21
+#define RS_485_DE_GPIO_PORT_NUM					1
+#define RS_485_DE_GPIO_BIT_NUM					20
 
 /*****************************************************************************
  * Public types/enumerations/variables
@@ -73,10 +78,21 @@ const uint32_t RTCOscRateIn = 32768;
 /* Initializes board LED(s) */
 static void Board_LED_Init(void)
 {
-	/* Pin PIO0_22 is configured as GPIO pin during SystemInit */
-	/* Set the PIO_22 as output */
+	/* Pin PIO2_0, PIO2_1, PIO2_2, PIO2_3 are configured as GPIO pin during SystemInit */
+	/* Set the PIO2_0, PIO2_1, PIO2_2, PIO2_3 as output */
 	Chip_GPIO_WriteDirBit(LPC_GPIO, LED0_GPIO_PORT_NUM, LED0_GPIO_BIT_NUM, true);
 	Chip_GPIO_WriteDirBit(LPC_GPIO, LED1_GPIO_PORT_NUM, LED1_GPIO_BIT_NUM, true);
+	Chip_GPIO_WriteDirBit(LPC_GPIO, LED2_GPIO_PORT_NUM, LED2_GPIO_BIT_NUM, true);
+	Chip_GPIO_WriteDirBit(LPC_GPIO, LED3_GPIO_PORT_NUM, LED3_GPIO_BIT_NUM, true);
+}
+
+/* Initializes board LED(s) */
+static void Board_GPIOs_Init(void)
+{
+	/* Pin PIO0_22 is configured as GPIO pin during SystemInit */
+	/* Set the PIO_22 as output */
+	Chip_GPIO_WriteDirBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);
+	Chip_GPIO_WriteDirBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);
 }
 
 /*****************************************************************************
@@ -193,12 +209,15 @@ void Board_Init(void)
 
 	/* Initialize LEDs */
 	Board_LED_Init();
+
+	/* Initialize GPIOs */
+	Board_GPIOs_Init();
 }
 
 /* Returns the MAC address assigned to this board */
 void Board_ENET_GetMacADDR(uint8_t *mcaddr)
 {
-	const uint8_t boardmac[] = {0x00, 0x60, 0x37, 0x12, 0x34, 0x56};
+	const uint8_t boardmac[] = {0x00, 0x60, 0x37, 0x12, 0x34, 0x57};
 
 	memcpy(mcaddr, boardmac, 6);
 }

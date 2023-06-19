@@ -1,11 +1,7 @@
 C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:681:20:Chip_ENET_Set100Mbps	16	static
 C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:691:20:Chip_ENET_Set10Mbps	16	static
-TCP_ModBus.c:112:13:prvSetupHardware	8	static
-TCP_ModBus.c:136:5:main	48	static
-TCP_ModBus.c:221:1:eMBRegInputCB	24	static
-TCP_ModBus.c:245:1:eMBRegHoldingCB	32	static
-TCP_ModBus.c:287:1:eMBRegCoilsCB	32	static
-TCP_ModBus.c:321:1:eMBRegDiscreteCB	16	static
-TCP_ModBus.c:326:10:u32_TCPPoll	16	static
-TCP_ModBus.c:411:6:vToggleLed	8	static
-TCP_ModBus.c:426:6:vMBToggleLeds	8	static
+TCP_ModBus.c:111:13:prvSetupHardware	8	static
+TCP_ModBus.c:135:5:main	48	static
+TCP_ModBus.c:217:10:u32_TCPPoll	16	static
+TCP_ModBus.c:302:6:vToggleLed	8	static
+TCP_ModBus.c:317:6:vMBToggleLeds	8	static

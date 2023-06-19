@@ -1,6 +1,5 @@
 VisualGDB/Debug/pbuf.o: lwip/lwip/src/core/pbuf.c \
- lwip/lwip/src/include/lwip/opt.h \
- lwip/contrib/ports/old/coldfire/proj/lwipopts.h \
+ lwip/lwip/src/include/lwip/opt.h lwip/Config\ Files/lwipopts.h \
  C:/SysGCC/arm-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h \
@@ -39,7 +38,7 @@ VisualGDB/Debug/pbuf.o: lwip/lwip/src/core/pbuf.c \
  lwip/lwip/src/include/ipv4/lwip/inet_chksum.h \
  C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/string.h
 lwip/lwip/src/include/lwip/opt.h:
-lwip/contrib/ports/old/coldfire/proj/lwipopts.h:
+lwip/Config\ Files/lwipopts.h:
 C:/SysGCC/arm-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h:

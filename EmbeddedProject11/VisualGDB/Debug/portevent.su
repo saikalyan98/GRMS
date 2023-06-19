@@ -1,3 +1,3 @@
-ModBus Src/port/portevent.c:32:1:xMBPortEventInit	4	static
-ModBus Src/port/portevent.c:39:1:xMBPortEventPost	16	static
-ModBus Src/port/portevent.c:47:1:xMBPortEventGet	24	static
+ModBus Src/port/TCP/portevent.c:32:1:xMBPortEventInit	4	static
+ModBus Src/port/TCP/portevent.c:39:1:xMBPortEventPost	16	static
+ModBus Src/port/TCP/portevent.c:47:1:xMBPortEventGet	24	static

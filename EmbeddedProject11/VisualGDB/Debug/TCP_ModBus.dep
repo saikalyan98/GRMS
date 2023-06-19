@@ -21,9 +21,8 @@ VisualGDB/Debug/TCP_ModBus.o: TCP_ModBus.c \
  C:/SysGCC/arm-eabi/arm-none-eabi/include/sys/string.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h User_Config.h \
  lwip/lwip/src/include/lwip/init.h lwip/lwip/src/include/lwip/opt.h \
- lwip/contrib/ports/old/coldfire/proj/lwipopts.h \
- lwip/lwip/src/include/lwip/debug.h lwip/lwip/src/include/lwip/arch.h \
- lwip/lpclwip/arch/cc.h \
+ lwip/Config\ Files/lwipopts.h lwip/lwip/src/include/lwip/debug.h \
+ lwip/lwip/src/include/lwip/arch.h lwip/lpclwip/arch/cc.h \
  c:\sysgcc\arm-eabi\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\stdint.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\sys\_intsup.h \
@@ -80,7 +79,7 @@ VisualGDB/Debug/TCP_ModBus.o: TCP_ModBus.c \
  C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/error.h \
  lpc_core/lpc_board/board_common/board_api.h \
  lpc_core/lpc_board/board_common/lpc_phy.h \
- lwip/contrib/apps/tcpecho_raw/echo.h ModBus\ Src/modbus/include/mb.h \
+ ModBus\ Src/modbus/include/mb.h \
  C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/port.h \
  ModBus\ Src/modbus/include/mbport.h ModBus\ Src/modbus/include/mbproto.h
 C:/SysGCC/arm-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h:
@@ -107,7 +106,7 @@ c:\sysgcc\arm-eabi\arm-none-eabi\include\assert.h:
 User_Config.h:
 lwip/lwip/src/include/lwip/init.h:
 lwip/lwip/src/include/lwip/opt.h:
-lwip/contrib/ports/old/coldfire/proj/lwipopts.h:
+lwip/Config\ Files/lwipopts.h:
 lwip/lwip/src/include/lwip/debug.h:
 lwip/lwip/src/include/lwip/arch.h:
 lwip/lpclwip/arch/cc.h:
@@ -174,7 +173,6 @@ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lp
 C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/error.h:
 lpc_core/lpc_board/board_common/board_api.h:
 lpc_core/lpc_board/board_common/lpc_phy.h:
-lwip/contrib/apps/tcpecho_raw/echo.h:
 ModBus\ Src/modbus/include/mb.h:
 C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/ModBus\ Src/port/port.h:
 ModBus\ Src/modbus/include/mbport.h:

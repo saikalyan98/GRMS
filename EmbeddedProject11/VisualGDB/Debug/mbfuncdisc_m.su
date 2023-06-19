@@ -1,0 +1,2 @@
+ModBus Src/modbus/functions/mbfuncdisc_m.c:73:1:eMBMasterReqReadDiscreteInputs	32	static
+ModBus Src/modbus/functions/mbfuncdisc_m.c:97:1:eMBMasterFuncReadDiscreteInputs	32	static

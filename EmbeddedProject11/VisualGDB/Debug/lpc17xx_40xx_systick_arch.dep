@@ -1,7 +1,6 @@
 VisualGDB/Debug/lpc17xx_40xx_systick_arch.o: \
  lwip/lpclwip/arch/lpc17xx_40xx_systick_arch.c \
- lwip/lwip/src/include/lwip/opt.h \
- lwip/contrib/ports/old/coldfire/proj/lwipopts.h \
+ lwip/lwip/src/include/lwip/opt.h lwip/Config\ Files/lwipopts.h \
  C:/SysGCC/arm-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h \
  c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h \
@@ -68,7 +67,7 @@ VisualGDB/Debug/lpc17xx_40xx_systick_arch.o: \
  C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_common/error.h \
  lwip/lpclwip/arch/lpc_arch.h
 lwip/lwip/src/include/lwip/opt.h:
-lwip/contrib/ports/old/coldfire/proj/lwipopts.h:
+lwip/Config\ Files/lwipopts.h:
 C:/SysGCC/arm-eabi/arm-none-eabi/include/c++/10.3.1/stdlib.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\stdlib.h:
 c:\sysgcc\arm-eabi\arm-none-eabi\include\machine\ieeefp.h:

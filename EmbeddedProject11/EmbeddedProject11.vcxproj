@@ -1,9 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|VisualGDB">
       <Configuration>Debug</Configuration>
       <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Guest Room Management System|ARM">
+      <Configuration>Guest Room Management System</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Guest Room Management System|VisualGDB">
+      <Configuration>Guest Room Management System</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|VisualGDB">
       <Configuration>Release</Configuration>
@@ -17,11 +33,20 @@
     <BSP_VERSION>1.0</BSP_VERSION>
     <InPlaceBSPSubdir>BSP</InPlaceBSPSubdir>
     <RelativeBSPPath />
+    <ProjectName>Embeddedproject11</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration" />
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Guest Room Management System|ARM'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Guest Room Management System|VisualGDB'">
+    <PlatformToolset />
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -37,6 +62,14 @@
     <PreserveSubdirectoriesForObjectFiles>False</PreserveSubdirectoriesForObjectFiles>
     <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>10.3.1/10.2.90/r1</ToolchainVersion>
+    <GenerateHexFile>true</GenerateHexFile>
+    <PreserveSubdirectoriesForObjectFiles>False</PreserveSubdirectoriesForObjectFiles>
+    <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
     <ToolchainVersion>10.3.1/10.2.90/r1</ToolchainVersion>
@@ -44,7 +77,17 @@
     <PreserveSubdirectoriesForObjectFiles>False</PreserveSubdirectoriesForObjectFiles>
     <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ToolchainID>com.visualgdb.arm-eabi</ToolchainID>
+    <ToolchainVersion>10.3.1/10.2.90/r1</ToolchainVersion>
+    <GenerateHexFile>true</GenerateHexFile>
+    <PreserveSubdirectoriesForObjectFiles>False</PreserveSubdirectoriesForObjectFiles>
+    <MCUPropertyListFile>$(ProjectDir)nxp_lpc.props</MCUPropertyListFile>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Link />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
@@ -60,11 +103,36 @@
     </Link>
     <ClCompile>
       <DumpStackUsage>true</DumpStackUsage>
-      <AdditionalIncludeDirectories>C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port;lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;ModBus Src/modbus/include;ModBus Src/port;ModBus Src/modbus/tcp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port\COMMON;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port\RTU;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port\TCP;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\modbus\rtu;C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port;lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;ModBus Src/modbus/include;ModBus Src/port;ModBus Src/modbus/tcp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions />
       <CLanguageStandard />
       <CPPLanguageStandard />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <PreprocessLinkerScript>true</PreprocessLinkerScript>
+      <RemoveUnusedSections>false</RemoveUnusedSections>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LibrarySearchDirectories>%(Link.LibrarySearchDirectories)</LibrarySearchDirectories>
+      <AdditionalLibraryNames>%(Link.AdditionalLibraryNames)</AdditionalLibraryNames>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <LinkerScript>
+      </LinkerScript>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </Link>
+    <ClCompile>
+      <DumpStackUsage>true</DumpStackUsage>
+      <AdditionalIncludeDirectories>C:\Users\Hp\OneDrive\Desktop\EmbeddedProject11\ModBus Src\port;lpc_core/lpc_board/board_common;lpc_core/lpc_board/boards_17xx/nxp_lpcxpresso_1769;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1;C:\SysGCC\arm-eabi/arm-none-eabi/include/c++/10.3.1/parallel;lwip/contrib/ports/old/coldfire/proj;lwip/lpclwip;lwip/lwip/src/include;lwip/lwip/src/include/ipv4;C:\SysGCC\arm-eabi/arm-none-eabi/include/sys;lwip/contrib/apps/tcpecho_raw;lwip/Config Files;ModBus Src/modbus/include;ModBus Src/port;ModBus Src/modbus/tcp;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <CLanguageStandard>
+      </CLanguageStandard>
+      <CPPLanguageStandard>
+      </CPPLanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -74,19 +142,32 @@
   </ImportGroup>
   <ItemGroup>
     <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfunccoils_m.c" />
     <ClCompile Include="ModBus Src\modbus\functions\mbfuncdiag.c" />
     <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncdisc_m.c" />
     <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncholding_m.c" />
     <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput.c" />
+    <ClCompile Include="ModBus Src\modbus\functions\mbfuncinput_m.c" />
     <ClCompile Include="ModBus Src\modbus\functions\mbfuncother.c" />
     <ClCompile Include="ModBus Src\modbus\functions\mbutils.c" />
     <ClCompile Include="ModBus Src\modbus\mb.c" />
+    <ClCompile Include="ModBus Src\modbus\mb_m.c" />
+    <ClCompile Include="ModBus Src\modbus\rtu\mbcrc.c" />
+    <ClCompile Include="ModBus Src\modbus\rtu\mbrtu_m.c" />
     <ClCompile Include="ModBus Src\modbus\tcp\mbtcp.c" />
-    <ClCompile Include="ModBus Src\port\portevent.c" />
-    <ClCompile Include="ModBus Src\port\portother.c" />
-    <ClCompile Include="ModBus Src\port\porttcp.c" />
-    <ClCompile Include="TCP_ModBus.c" />
+    <ClCompile Include="ModBus Src\port\COMMON\port.c" />
+    <ClCompile Include="ModBus Src\port\RTU\portevent_m.c" />
+    <ClCompile Include="ModBus Src\port\RTU\portserial_m.c" />
+    <ClCompile Include="ModBus Src\port\RTU\porttimer_m.c" />
+    <ClCompile Include="ModBus Src\port\RTU\user_mb_app_m.c" />
+    <ClCompile Include="ModBus Src\port\TCP\portevent.c" />
+    <ClCompile Include="ModBus Src\port\TCP\portother.c" />
+    <ClCompile Include="ModBus Src\port\TCP\porttcp.c" />
+    <ClCompile Include="GRMS.c" />
     <ClCompile Include="lpc_core\lpc_board\board_common\lpc_phy_smsc87x0.c" />
+    <ClCompile Include="ModBus Src\port\TCP\user_mb_app.c" />
     <ClInclude Include="lwip\Config Files\lpc_17xx40xx_emac_config.h" />
     <ClInclude Include="lwip\Config Files\lwipopts.h" />
     <ClInclude Include="ModBus Src\modbus\include\mb.h" />
@@ -96,9 +177,12 @@
     <ClInclude Include="ModBus Src\modbus\include\mbport.h" />
     <ClInclude Include="ModBus Src\modbus\include\mbproto.h" />
     <ClInclude Include="ModBus Src\modbus\include\mbutils.h" />
+    <ClInclude Include="ModBus Src\modbus\include\mb_m.h" />
+    <ClInclude Include="ModBus Src\modbus\rtu\mbrtu.h" />
     <ClInclude Include="ModBus Src\modbus\tcp\mbtcp.h" />
     <ClInclude Include="ModBus Src\port\mbconfig.h" />
     <ClInclude Include="ModBus Src\port\port.h" />
+    <ClInclude Include="ModBus Src\port\user_mb_app.h" />
     <ClInclude Include="User_Config.h" />
     <None Include="nxp_lpc.props" />
     <ClCompile Include="$(BSP_ROOT)\LPC17xx_40xx\lpc_chip_17xx\lpc_chip\chip_17xx_40xx\adc_17xx_40xx.c" />
@@ -284,9 +368,6 @@
     <ClInclude Include="lpc_core\lpc_board\boards_17xx\nxp_lpcxpresso_1769\board.h" />
     <ClInclude Include="lpc_core\lpc_board\board_common\board_api.h" />
     <ClInclude Include="lpc_core\lpc_board\board_common\lpc_phy.h" />
-    <ClInclude Include="lwip\contrib\apps\ping\ping.h" />
-    <ClInclude Include="lwip\contrib\apps\tcpecho\tcpecho.h" />
-    <ClInclude Include="lwip\contrib\apps\udpecho\udpecho.h" />
     <ClInclude Include="lwip\lpclwip\arch\cc.h" />
     <ClInclude Include="lwip\lpclwip\arch\lpc17xx_40xx_emac.h" />
     <ClInclude Include="lwip\lpclwip\arch\lpc_arch.h" />
@@ -354,16 +435,5 @@
     <ClInclude Include="lwip\lwip\src\netif\ppp\ppp_impl.h" />
     <ClInclude Include="lwip\lwip\src\netif\ppp\randm.h" />
     <ClInclude Include="lwip\lwip\src\netif\ppp\vj.h" />
-    <ClInclude Include="lwip\lwip\test\unit\lwipopts.h" />
-    <ClInclude Include="lwip\lwip\test\unit\lwip_check.h" />
-    <ClInclude Include="lwip\lwip\test\unit\core\test_mem.h" />
-    <ClInclude Include="lwip\lwip\test\unit\etharp\test_etharp.h" />
-    <ClInclude Include="lwip\lwip\test\unit\tcp\tcp_helper.h" />
-    <ClInclude Include="lwip\lwip\test\unit\tcp\test_tcp.h" />
-    <ClInclude Include="lwip\lwip\test\unit\tcp\test_tcp_oos.h" />
-    <ClInclude Include="lwip\lwip\test\unit\udp\test_udp.h" />
-    <ClCompile Include="lwip\contrib\apps\ping\ping.c" />
-    <ClCompile Include="lwip\contrib\apps\tcpecho_raw\echo.c" />
-    <ClCompile Include="lwip\contrib\apps\udpecho\udpecho.c" />
   </ItemGroup>
 </Project>

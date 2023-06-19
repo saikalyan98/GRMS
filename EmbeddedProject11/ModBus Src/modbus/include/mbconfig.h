@@ -1,4 +1,4 @@
-/* 
+/*
  * FreeModbus Libary: A portable Modbus implementation for Modbus ASCII/RTU.
  * Copyright (c) 2006-2018 Christian Walter <cwalter@embedded-solutions.at>
  * All rights reserved.
@@ -25,6 +25,8 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
+ * File: $Id: mbconfig.h,v 1.14 2006/12/07 22:10:34 wolti Exp $
+ *       $Id: mbconfig.h,v 1.60 2013/08/13 21:19:55 Armink Add Master Functions $
  */
 
 #ifndef _MB_CONFIG_H
@@ -45,15 +47,18 @@ PR_BEGIN_EXTERN_C
 /*! \addtogroup modbus_cfg
  *  @{
  */
-/*! \brief If Modbus ASCII support is enabled. */
-#define MB_ASCII_ENABLED                        (  0 )
-
-/*! \brief If Modbus RTU support is enabled. */
-#define MB_RTU_ENABLED                          (  0 )
-
-/*! \brief If Modbus TCP support is enabled. */
-#define MB_TCP_ENABLED                          (  1 )
-
+/*! \brief If Modbus Master ASCII support is enabled. */
+#define MB_MASTER_ASCII_ENABLED                 (  0 )
+/*! \brief If Modbus Master RTU support is enabled. */
+#define MB_MASTER_RTU_ENABLED                   (  1 )
+/*! \brief If Modbus Master TCP support is enabled. */
+#define MB_MASTER_TCP_ENABLED                   (  0 )
+/*! \brief If Modbus Slave ASCII support is enabled. */
+#define MB_SLAVE_ASCII_ENABLED                  (  0 )
+/*! \brief If Modbus Slave RTU support is enabled. */
+#define MB_SLAVE_RTU_ENABLED                    (  0 )
+/*! \brief If Modbus Slave TCP support is enabled. */
+#define MB_SLAVE_TCP_ENABLED                    (  1 )
 /*! \brief The character timeout value for Modbus ASCII.
  *
  * The character timeout value is not fixed for Modbus ASCII and is therefore
@@ -61,20 +66,6 @@ PR_BEGIN_EXTERN_C
  * time of the network.
  */
 #define MB_ASCII_TIMEOUT_SEC                    (  1 )
-
-/*! \brief Timeout to wait in ASCII prior to enabling transmitter.
- *
- * If defined the function calls vMBPortSerialDelay with the argument
- * MB_ASCII_TIMEOUT_WAIT_BEFORE_SEND_MS to allow for a delay before
- * the serial transmitter is enabled. This is required because some
- * targets are so fast that there is no time between receiving and
- * transmitting the frame. If the master is to slow with enabling its 
- * receiver then he will not receive the response correctly.
- */
-#ifndef MB_ASCII_TIMEOUT_WAIT_BEFORE_SEND_MS
-#define MB_ASCII_TIMEOUT_WAIT_BEFORE_SEND_MS    ( 0 )
-#endif
-
 /*! \brief Maximum number of Modbus functions codes the protocol stack
  *    should support.
  *
@@ -83,7 +74,6 @@ PR_BEGIN_EXTERN_C
  * handlers. If set to small adding more functions will fail.
  */
 #define MB_FUNC_HANDLERS_MAX                    ( 16 )
-
 /*! \brief Number of bytes which should be allocated for the <em>Report Slave ID
  *    </em>command.
  *
@@ -93,39 +83,42 @@ PR_BEGIN_EXTERN_C
  * is set to <code>1</code>.
  */
 #define MB_FUNC_OTHER_REP_SLAVEID_BUF           ( 32 )
-
 /*! \brief If the <em>Report Slave ID</em> function should be enabled. */
 #define MB_FUNC_OTHER_REP_SLAVEID_ENABLED       (  1 )
-
 /*! \brief If the <em>Read Input Registers</em> function should be enabled. */
 #define MB_FUNC_READ_INPUT_ENABLED              (  1 )
-
 /*! \brief If the <em>Read Holding Registers</em> function should be enabled. */
 #define MB_FUNC_READ_HOLDING_ENABLED            (  1 )
-
 /*! \brief If the <em>Write Single Register</em> function should be enabled. */
 #define MB_FUNC_WRITE_HOLDING_ENABLED           (  1 )
-
 /*! \brief If the <em>Write Multiple registers</em> function should be enabled. */
 #define MB_FUNC_WRITE_MULTIPLE_HOLDING_ENABLED  (  1 )
-
 /*! \brief If the <em>Read Coils</em> function should be enabled. */
 #define MB_FUNC_READ_COILS_ENABLED              (  1 )
-
 /*! \brief If the <em>Write Coils</em> function should be enabled. */
 #define MB_FUNC_WRITE_COIL_ENABLED              (  1 )
-
 /*! \brief If the <em>Write Multiple Coils</em> function should be enabled. */
 #define MB_FUNC_WRITE_MULTIPLE_COILS_ENABLED    (  1 )
-
 /*! \brief If the <em>Read Discrete Inputs</em> function should be enabled. */
 #define MB_FUNC_READ_DISCRETE_INPUTS_ENABLED    (  1 )
-
 /*! \brief If the <em>Read/Write Multiple Registers</em> function should be enabled. */
 #define MB_FUNC_READWRITE_HOLDING_ENABLED       (  1 )
-
 /*! @} */
 #ifdef __cplusplus
     PR_END_EXTERN_C
 #endif
+
+#if MB_MASTER_RTU_ENABLED > 0 || MB_MASTER_ASCII_ENABLED > 0
+/*! \brief If master send a broadcast frame,the master will wait time of convert to delay,
+ * then master can send other frame */
+#define MB_MASTER_DELAY_MS_CONVERT              (200 )
+/*! \brief If master send a frame which is not broadcast,the master will wait sometime for slave.
+ * And if slave is not respond in this time,the master will process this timeout error.
+ * Then master can send other frame */
+#define MB_MASTER_TIMEOUT_MS_RESPOND            (100 )
+/*! \brief The total slaves in Modbus Master system. Default 16.
+ * \note : The slave ID must be continuous from 1.*/
+#define MB_MASTER_TOTAL_SLAVE_NUM               ( 16 )
+#endif
+
 #endif

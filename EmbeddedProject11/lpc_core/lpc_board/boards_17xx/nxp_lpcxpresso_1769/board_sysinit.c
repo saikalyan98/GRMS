@@ -41,13 +41,17 @@
 
 /* Pin muxing configuration */
 STATIC const PINMUX_GRP_T pinmuxing[] = {
-//	{0,  0,   IOCON_MODE_INACT | IOCON_FUNC2},	/* TXD3 */
-//	{0,  1,   IOCON_MODE_INACT | IOCON_FUNC2},	/* RXD3 */
-//	{0,  4,   IOCON_MODE_INACT | IOCON_FUNC2},	/* CAN-RD2 */
-//	{0,  5,   IOCON_MODE_INACT | IOCON_FUNC2},	/* CAN-TD2 */
-	{2,  0,  IOCON_MODE_INACT | IOCON_FUNC0},	/* Led 0 */
-//	{0,  23,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ADC 0 */
-//	{0,  26,  IOCON_MODE_INACT | IOCON_FUNC2},	/* DAC */
+	/* RS-485 MODBUS */
+	{0,  25,  IOCON_MODE_INACT		| IOCON_FUNC3},	/* TXD3 */
+	{0,  26,  IOCON_MODE_INACT		| IOCON_FUNC3},	/* RXD3 */
+	{1,  21,  IOCON_MODE_PULLUP		| IOCON_FUNC0},	/* RECV ENABLE */
+	{1,  20,  IOCON_MODE_PULLDOWN	| IOCON_FUNC0},	/* DATA ENABLE */
+
+	/* LED Pinouts */
+	{2,  0,   IOCON_MODE_INACT | IOCON_FUNC0},	/* Led 0 */
+	{2,  1,   IOCON_MODE_INACT | IOCON_FUNC0},	/* Led 1 */
+	{2,  2,   IOCON_MODE_INACT | IOCON_FUNC0},	/* Led 2 */
+	{2,  3,   IOCON_MODE_INACT | IOCON_FUNC0},	/* Led 3 */
 
 	/* ENET */
 	{0x1, 0,  IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_TXD0 */
@@ -61,14 +65,6 @@ STATIC const PINMUX_GRP_T pinmuxing[] = {
 	{0x1, 16, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_MDC */
 	{0x1, 17, IOCON_MODE_INACT | IOCON_FUNC1},	/* ENET_MDIO */
 	{0x1, 27, IOCON_MODE_INACT | IOCON_FUNC1},	/* CLKOUT */
-
-	/* Joystick buttons. */
-//	{2, 3,  IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_UP */
-//	{0, 15, IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_DOWN */
-//	{2, 4,  IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_LEFT */
-//	{0, 16, IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_RIGHT */
-//	{0, 17, IOCON_MODE_INACT | IOCON_FUNC0},	/* JOYSTICK_PRESS */
-
 };
 
 /*****************************************************************************

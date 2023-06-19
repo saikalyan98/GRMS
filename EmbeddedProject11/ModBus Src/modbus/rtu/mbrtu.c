@@ -1,4 +1,4 @@
-/* 
+/*
  * FreeModbus Libary: A portable Modbus implementation for Modbus ASCII/RTU.
  * Copyright (c) 2006-2018 Christian Walter <cwalter@embedded-solutions.at>
  * All rights reserved.
@@ -25,6 +25,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
+ * File: $Id: mbrtu.c,v 1.18 2007/09/12 10:15:56 wolti Exp $
  */
 
 /* ----------------------- System includes ----------------------------------*/
@@ -149,11 +150,10 @@ eMBRTUStop( void )
 eMBErrorCode
 eMBRTUReceive( UCHAR * pucRcvAddress, UCHAR ** pucFrame, USHORT * pusLength )
 {
-    BOOL            xFrameReceived = FALSE;
     eMBErrorCode    eStatus = MB_ENOERR;
 
     ENTER_CRITICAL_SECTION(  );
-    assert( usRcvBufferPos < MB_SER_PDU_SIZE_MAX );
+    assert_param( usRcvBufferPos < MB_SER_PDU_SIZE_MAX );
 
     /* Length and CRC check */
     if( ( usRcvBufferPos >= MB_SER_PDU_SIZE_MIN )
@@ -171,7 +171,6 @@ eMBRTUReceive( UCHAR * pucRcvAddress, UCHAR ** pucFrame, USHORT * pusLength )
 
         /* Return the start of the Modbus PDU to the caller. */
         *pucFrame = ( UCHAR * ) & ucRTUBuf[MB_SER_PDU_PDU_OFF];
-        xFrameReceived = TRUE;
     }
     else
     {
@@ -227,7 +226,7 @@ xMBRTUReceiveFSM( void )
     BOOL            xTaskNeedSwitch = FALSE;
     UCHAR           ucByte;
 
-    assert( eSndState == STATE_TX_IDLE );
+    assert_param( eSndState == STATE_TX_IDLE );
 
     /* Always read the character. */
     ( void )xMBPortSerialGetByte( ( CHAR * ) & ucByte );
@@ -238,14 +237,14 @@ xMBRTUReceiveFSM( void )
          * wait until the frame is finished.
          */
     case STATE_RX_INIT:
-        vMBPortTimersEnable(  );
+        vMBPortTimersEnable( );
         break;
 
         /* In the error state we wait until all characters in the
          * damaged frame are transmitted.
          */
     case STATE_RX_ERROR:
-        vMBPortTimersEnable(  );
+        vMBPortTimersEnable( );
         break;
 
         /* In the idle state we wait for a new character. If a character
@@ -258,7 +257,7 @@ xMBRTUReceiveFSM( void )
         eRcvState = STATE_RX_RCV;
 
         /* Enable t3.5 timers. */
-        vMBPortTimersEnable(  );
+        vMBPortTimersEnable( );
         break;
 
         /* We are currently receiving a frame. Reset the timer after
@@ -275,7 +274,7 @@ xMBRTUReceiveFSM( void )
         {
             eRcvState = STATE_RX_ERROR;
         }
-        vMBPortTimersEnable(  );
+        vMBPortTimersEnable();
         break;
     }
     return xTaskNeedSwitch;
@@ -286,7 +285,7 @@ xMBRTUTransmitFSM( void )
 {
     BOOL            xNeedPoll = FALSE;
 
-    assert( eRcvState == STATE_RX_IDLE );
+    assert_param( eRcvState == STATE_RX_IDLE );
 
     switch ( eSndState )
     {
@@ -343,8 +342,9 @@ xMBRTUTimerT35Expired( void )
 
         /* Function called in an illegal state. */
     default:
-        assert( ( eRcvState == STATE_RX_INIT ) ||
+        assert_param( ( eRcvState == STATE_RX_INIT ) ||
                 ( eRcvState == STATE_RX_RCV ) || ( eRcvState == STATE_RX_ERROR ) );
+         break;
     }
 
     vMBPortTimersDisable(  );

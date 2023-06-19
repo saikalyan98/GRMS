@@ -1,0 +1,6 @@
+ModBus Src/modbus/functions/mbfunccoils_m.c:88:1:eMBMasterReqReadCoils	32	static
+ModBus Src/modbus/functions/mbfunccoils_m.c:113:1:eMBMasterFuncReadCoils	32	static
+ModBus Src/modbus/functions/mbfunccoils_m.c:194:1:eMBMasterReqWriteCoil	32	static
+ModBus Src/modbus/functions/mbfunccoils_m.c:219:1:eMBMasterFuncWriteCoil	24	static
+ModBus Src/modbus/functions/mbfunccoils_m.c:287:1:eMBMasterReqWriteMultipleCoils	32	static
+ModBus Src/modbus/functions/mbfunccoils_m.c:329:1:eMBMasterFuncWriteMultipleCoils	32	static
