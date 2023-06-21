@@ -81,35 +81,47 @@ void vMBMasterPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
         /* enable RX interrupt */
         Chip_UART_IntEnable(LPC_UART3, UART_IER_RBRINT);
         /* switch 485 to receive mode */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false); /* Enable Receiving from RS-485 */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);        /* Disable Transmit from RS-485 */
+		LPC_GPIO[1].PIN &= ~(0X300000);
+		__NOP();
+		//		LPC_GPIO1->PIN &= ~(1 << RS_485_DE_GPIO_BIT_NUM);
+		//        Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false); /* Enable Receiving from RS-485 */
+		//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);		 /* Disable Transmit from RS-485 */
     }
     else
     {
         /* disable RX interrupt */
         Chip_UART_IntDisable(LPC_UART3, UART_IER_RBRINT);
-        /* switch 485 to transmit mode */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);  /* Disable Receiving from RS-485 */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);        /* Enable Transmit from RS-485 */
+		/* switch 485 to transmit mode */
+		LPC_GPIO[1].PIN |= (0X300000);
+		__NOP();
+//		LPC_GPIO1->PIN |= 1 << RS_485_DE_GPIO_BIT_NUM;
+//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true); /* Disable Receiving from RS-485 */
+//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);		/* Enable Transmit from RS-485 */
     }
     if (xTxEnable)
     {
         /* Start serial transmit */
         Chip_UART_IntEnable(LPC_UART3, UART_IER_THREINT);
-		NVIC_SetPendingIRQ(UART0_IRQn);
+		NVIC_SetPendingIRQ(UART3_IRQn);
 
 		/* switch 485 to Transmit mode */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);  /* Disable Receiving from RS-485 */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);        /* Enable Transmit from RS-485 */
+		LPC_GPIO[1].PIN |= (0X300000);
+		__NOP();
+//		LPC_GPIO1->PIN |= 1 << RS_485_DE_GPIO_BIT_NUM;
+//        Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);  /* Disable Receiving from RS-485 */
+//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);		 /* Enable Transmit from RS-485 */
     }
     else
     {
         /* Disable serial transmit */
         Chip_UART_IntDisable(LPC_UART3, UART_IER_THREINT);
 
-        /* switch 485 to receive mode */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false); /* Enable Receiving from RS-485 */
-        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);        /* Disable Transmit from RS-485 */
+		/* switch 485 to receive mode */
+		LPC_GPIO[1].PIN &= ~((0X300000));
+		__NOP();
+//		LPC_GPIO1->PIN &= ~(1 << RS_485_DE_GPIO_BIT_NUM);
+//        Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false); /* Enable Receiving from RS-485 */
+//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);		 /* Disable Transmit from RS-485 */
     }
 }
 

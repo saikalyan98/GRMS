@@ -519,7 +519,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316727191794377</LastUsed>
+          <LastUsed>133318370120457197</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -551,7 +551,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>0</LastUsed>
+          <LastUsed>133318392297083188</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -567,7 +567,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317691155081412</LastUsed>
+          <LastUsed>133318374133023541</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -607,7 +607,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318313508519782</LastUsed>
+          <LastUsed>133318364072348506</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -840,6 +840,86 @@
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
           <LastUsed>133318311060046270</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO2.DIR</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318368150533782</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO0.DIR.FIO0DIR</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318364595306081</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO0.DIR</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>0</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO1.SET</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318392536580794</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO1.CLR</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318392231909260</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO1.PIN</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318392474789258</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>SYSCTL.PCON</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318374248336774</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>SYSCTL.PCONP.PCGPIO</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318375782221854</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO0.PIN</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318377486254335</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO1.MASK</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318388690102938</LastUsed>
         </State>
       </HardwareRegisterRecord>
     </HardwareRegisters>
