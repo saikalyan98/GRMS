@@ -51,8 +51,8 @@
 #define JOYSTICK_PRESS_GPIO_BIT_NUM             17
 #define LED0_GPIO_PORT_NUM                      2
 #define LED0_GPIO_BIT_NUM						0
-#define LED1_GPIO_PORT_NUM						3
-#define LED1_GPIO_BIT_NUM						26
+#define LED1_GPIO_PORT_NUM						2
+#define LED1_GPIO_BIT_NUM						1
 #define LED2_GPIO_PORT_NUM						2
 #define LED2_GPIO_BIT_NUM						2
 #define LED3_GPIO_PORT_NUM						2

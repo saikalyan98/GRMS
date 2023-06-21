@@ -92,6 +92,7 @@ static USHORT usRegCoilBuf[REG_HOLDING_NREGS];
 static struct netif lpc_netif;
 uint16_t LED1_Count = 0;
 uint16_t OneSec_Count = 0;
+uint8_t u8_Poll_State = 0;
 
 /*****************************************************************************
  * Public types/enumerations/variables
@@ -126,6 +127,8 @@ static void prvSetupHardware(void)
 	
 	/*Board Pins Initialisations*/
 	Board_SystemInit();
+
+	LPC_SYSCTL->PCONP |= 1 << 25;
 }
 
 /*****************************************************************************
@@ -222,18 +225,27 @@ int main(void)
 				if (OneSec_Count == 1000)
 				{
 					OneSec_Count = 0;
-					/* Configure the Touch Panel Button 1 LED for Manual Operation */
-					eMBMasterReqWriteHoldingRegister(0, 20, 1, 100);
-
-					/* Read the Touch Panel Button 1 Holding Register */
-					eMBMasterReqReadHoldingRegister(0, 0,	1, 100);
-					if (usMRegHoldBuf[0][0])
+					switch (u8_Poll_State)
 					{
-						eMBMasterReqWriteHoldingRegister(0, 10, 1, 100);
-					}
-					else
-					{
-						eMBMasterReqWriteHoldingRegister(0, 10, 0, 100);
+					case 0:
+						/* Configure the Touch Panel Button 1 LED for Manual Operation */
+						eMBMasterReqWriteHoldingRegister(1, 20, 1, 100);
+						u8_Poll_State = 1;
+						break;
+					case 1:
+						/* Read the Touch Panel Button 1 Holding Register */
+						eMBMasterReqReadHoldingRegister(1, 0, 1, 100);
+						u8_Poll_State = 2;
+						break;
+					case 2:
+						if (usMRegHoldBuf[0][0])
+							eMBMasterReqWriteHoldingRegister(1, 10, 1, 100);
+						else
+							eMBMasterReqWriteHoldingRegister(1, 10, 0, 100);
+						u8_Poll_State = 0;
+						break;
+					default:
+						break;
 					}
 				}
 				

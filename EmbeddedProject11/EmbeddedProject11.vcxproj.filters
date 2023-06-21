@@ -1171,9 +1171,6 @@
     <ClInclude Include="ModBus Src\modbus\include\mbutils.h">
       <Filter>Header files\ModBus Source\Common\include</Filter>
     </ClInclude>
-    <ClInclude Include="ModBus Src\modbus\include\mbconfig.h">
-      <Filter>Header files\ModBus Source\Common\include</Filter>
-    </ClInclude>
     <ClInclude Include="User_Config.h">
       <Filter>Header files</Filter>
     </ClInclude>
@@ -1185,9 +1182,6 @@
     </ClInclude>
     <ClInclude Include="ModBus Src\modbus\include\mb.h">
       <Filter>Header files\ModBus Source\ModBus TCP\modbus\include</Filter>
-    </ClInclude>
-    <ClInclude Include="ModBus Src\port\mbconfig.h">
-      <Filter>Header files\ModBus Source\Common</Filter>
     </ClInclude>
     <ClInclude Include="ModBus Src\modbus\include\mb_m.h">
       <Filter>Header files\ModBus Source\ModBus RTU\modbus\include</Filter>
@@ -1203,6 +1197,12 @@
     </ClInclude>
     <ClInclude Include="ModBus_Src\modbus\tcp\mbtcp.h">
       <Filter>Header files\ModBus Source\ModBus TCP\modbus\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="ModBus Src\port\mbconfig.h">
+      <Filter>Header files\ModBus Source\Common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="ModBus Src\modbus\include\mbconfig.h">
+      <Filter>Header files\ModBus Source\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
