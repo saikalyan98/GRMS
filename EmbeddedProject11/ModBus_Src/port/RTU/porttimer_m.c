@@ -48,7 +48,7 @@ BOOL xMBMasterPortTimersInit(USHORT usTimeOut50us)
     Chip_Clock_SetPCLKDiv(SYSCTL_PCLK_TIMER0, SYSCTL_CLKDIV_1);             // Set Peripheral Clock to 1
     Chip_TIMER_MatchEnableInt(LPC_TIMER0, 0);                               // Enable match Interrupt
     Chip_TIMER_ResetOnMatchEnable(LPC_TIMER0, 0);                           // Reset TC on Match
-    Chip_TIMER_SetMatch(LPC_TIMER0, 0, (usT35TimeOut50us * 4800));          // Set match to 4800 (For 50uS)
+    Chip_TIMER_SetMatch(LPC_TIMER0, 0, (usT35TimeOut50us * (SystemCoreClock/20000)));          // Set match to 4800 (For 50uS)
     NVIC_EnableIRQ(TIMER0_IRQn);                                            // Enable Interrupt for Timer0
 
     Chip_TIMER_Enable(LPC_TIMER0);                                          // Enable TC Counter for Timer0
@@ -63,7 +63,7 @@ void vMBMasterPortTimersT35Enable()
     Chip_TIMER_Disable(LPC_TIMER0);                                         // Disable TC Counter for Timer0
 	
 	Chip_TIMER_Reset(LPC_TIMER0);
-    Chip_TIMER_SetMatch(LPC_TIMER0, 0, (usT35TimeOut50us * 4800));          // Set match to usT35TimeOut50us (For (T3.5) * (50uS))
+	Chip_TIMER_SetMatch(LPC_TIMER0, 0, (usT35TimeOut50us * (SystemCoreClock / 20000)));          // Set match to usT35TimeOut50us (For (T3.5) * (50uS))
 	/* Set current timer mode, don't change it.*/
     vMBMasterSetCurTimerMode(MB_TMODE_T35);
 	
@@ -78,7 +78,7 @@ void vMBMasterPortTimersConvertDelayEnable()
 	Chip_TIMER_Disable(LPC_TIMER0); // Disable TC Counter for Timer0
 	
 	Chip_TIMER_Reset(LPC_TIMER0);
-	Chip_TIMER_SetMatch(LPC_TIMER0, 0, (MB_MASTER_DELAY_MS_CONVERT * 96000)); // Set match to usT35TimeOut50us (For (T3.5) * (50uS))
+	Chip_TIMER_SetMatch(LPC_TIMER0, 0, (MB_MASTER_DELAY_MS_CONVERT * (SystemCoreClock / 1000))); // Set match to usT35TimeOut50us (For (T3.5) * (50uS))
 	/* Set current timer mode, don't change it.*/
 	vMBMasterSetCurTimerMode(MB_TMODE_CONVERT_DELAY);
 	
@@ -93,7 +93,7 @@ void vMBMasterPortTimersRespondTimeoutEnable()
 	Chip_TIMER_Disable(LPC_TIMER0); // Disable TC Counter for Timer0
 	
 	Chip_TIMER_Reset(LPC_TIMER0);
-    Chip_TIMER_SetMatch(LPC_TIMER0, 0, (MB_MASTER_TIMEOUT_MS_RESPOND * 96000));          // Set match to usT35TimeOut50us (For (T3.5) * (50uS))
+	Chip_TIMER_SetMatch(LPC_TIMER0, 0, (MB_MASTER_TIMEOUT_MS_RESPOND * (SystemCoreClock / 1000)));          // Set match to usT35TimeOut50us (For (T3.5) * (50uS))
     /* Set current timer mode, don't change it.*/
 	vMBMasterSetCurTimerMode(MB_TMODE_RESPOND_TIMEOUT);
 	
@@ -116,7 +116,9 @@ void prvvTIMERExpiredISR(void)
 
 void TIMER0_IRQHandler()
 {
+	/* Clear Timer Interrupt */
 	LPC_TIMER0->IR |= (1 << 0);
+	
     prvvTIMERExpiredISR();
 }
 

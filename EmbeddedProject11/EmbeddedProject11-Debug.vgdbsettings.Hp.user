@@ -196,12 +196,45 @@
           <Enabled>false</Enabled>
         </Breakpoint>
         <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
+        <IsCollapsed>true</IsCollapsed>
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
         <Expression>ucMasterRTURcvBuf</Expression>
         <Type>com.sysprogs.fixed</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>true</IsCollapsed>
+        <IsFavorite>false</IsFavorite>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>clkin</Expression>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+        <IsFavorite>false</IsFavorite>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>divh</Expression>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+        <IsFavorite>false</IsFavorite>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>divl</Expression>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -319,7 +352,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316662596333368</LastUsed>
+          <LastUsed>133318414170904328</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -327,7 +360,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316727730284772</LastUsed>
+          <LastUsed>133318414179961545</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -335,7 +368,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316662625565651</LastUsed>
+          <LastUsed>133318414197250198</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -351,7 +384,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806216500978</LastUsed>
+          <LastUsed>133318540352433814</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -359,7 +392,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806226369725</LastUsed>
+          <LastUsed>133318540360336283</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -367,7 +400,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806236957527</LastUsed>
+          <LastUsed>133318540368502334</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -375,7 +408,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806247422299</LastUsed>
+          <LastUsed>133318540384440314</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -383,7 +416,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806295198417</LastUsed>
+          <LastUsed>133318540376708918</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -391,7 +424,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806274594234</LastUsed>
+          <LastUsed>133318540394881605</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -399,7 +432,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806332128903</LastUsed>
+          <LastUsed>133318540405645693</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -407,7 +440,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806353608605</LastUsed>
+          <LastUsed>133318422852373973</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -415,7 +448,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806366455971</LastUsed>
+          <LastUsed>133318422859951919</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -423,7 +456,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806374736937</LastUsed>
+          <LastUsed>133318422867614666</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -431,7 +464,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806383341276</LastUsed>
+          <LastUsed>133318422875421881</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -439,7 +472,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806394158359</LastUsed>
+          <LastUsed>133318422882386143</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -447,7 +480,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806401562411</LastUsed>
+          <LastUsed>133318422889686073</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -455,7 +488,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806409890353</LastUsed>
+          <LastUsed>133318422903323938</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -463,7 +496,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806413885672</LastUsed>
+          <LastUsed>133318554057373987</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -471,7 +504,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806456528701</LastUsed>
+          <LastUsed>133318422919139876</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -479,7 +512,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806515609119</LastUsed>
+          <LastUsed>133318422966293449</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -487,7 +520,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806484191873</LastUsed>
+          <LastUsed>133318422952324685</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -495,7 +528,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316665794916258</LastUsed>
+          <LastUsed>133318422753029376</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -503,7 +536,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316665802453191</LastUsed>
+          <LastUsed>133318422726682770</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -543,7 +576,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317577388857440</LastUsed>
+          <LastUsed>133318422555747868</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -551,7 +584,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318392297083188</LastUsed>
+          <LastUsed>133318393599497669</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -567,7 +600,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318374133023541</LastUsed>
+          <LastUsed>133318422484981787</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -591,7 +624,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806591605122</LastUsed>
+          <LastUsed>133318423011367172</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -631,7 +664,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806525390404</LastUsed>
+          <LastUsed>133318422975592171</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -639,7 +672,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806534737671</LastUsed>
+          <LastUsed>133318422982682768</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -647,7 +680,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806543148711</LastUsed>
+          <LastUsed>133318422989042553</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -655,7 +688,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806569258181</LastUsed>
+          <LastUsed>133318422995859483</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -663,7 +696,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316806580116981</LastUsed>
+          <LastUsed>133318423002787565</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -671,7 +704,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133316807245888147</LastUsed>
+          <LastUsed>133318467053356088</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -719,7 +752,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317577399824522</LastUsed>
+          <LastUsed>133318422563073254</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -727,7 +760,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317577411478454</LastUsed>
+          <LastUsed>133318422569941563</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -735,7 +768,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317577420437005</LastUsed>
+          <LastUsed>133318422577813148</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -743,7 +776,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317577430892404</LastUsed>
+          <LastUsed>133318422584705481</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -751,7 +784,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133317577442637001</LastUsed>
+          <LastUsed>133318422591944076</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -847,7 +880,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318368150533782</LastUsed>
+          <LastUsed>133318414009049544</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -871,7 +904,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318392536580794</LastUsed>
+          <LastUsed>133318393337337682</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -887,7 +920,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318392474789258</LastUsed>
+          <LastUsed>133318393610777742</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -919,7 +952,23 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133318388690102938</LastUsed>
+          <LastUsed>133318393591177485</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO0.MASK</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318414006938032</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>GPIO0.SET</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133318414008305554</LastUsed>
         </State>
       </HardwareRegisterRecord>
     </HardwareRegisters>

@@ -52,8 +52,8 @@ BOOL xMBMasterPortSerialInit(UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, e
     /* Enable Clock for UART3*/
     Chip_UART_Init(LPC_UART3);
 	/* Set Buadrate to 115200 */
-    Chip_UART_SetBaud(LPC_UART3, ulBaudRate);
-    /* Config data as 8 Data bits and 1 Stop bit */
+	Chip_UART_SetBaudFDR(LPC_UART3, ulBaudRate);
+	/* Config data as 8 Data bits and 1 Stop bit */
 	Chip_UART_ConfigData(LPC_UART3, (UART_LCR_WLEN8 | UART_LCR_SBS_1BIT ));
     /* Enable FIFO and Set Level to 0 */
 	Chip_UART_SetupFIFOS(LPC_UART3, (UART_FCR_FIFO_EN | UART_FCR_TRG_LEV0));
@@ -81,22 +81,19 @@ void vMBMasterPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
         /* enable RX interrupt */
         Chip_UART_IntEnable(LPC_UART3, UART_IER_RBRINT);
         /* switch 485 to receive mode */
-		LPC_GPIO[1].PIN &= ~(0X300000);
-		__NOP();
-		//		LPC_GPIO1->PIN &= ~(1 << RS_485_DE_GPIO_BIT_NUM);
-		//        Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false); /* Enable Receiving from RS-485 */
-		//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);		 /* Disable Transmit from RS-485 */
+//		LPC_GPIO[1].PIN &= ~(0X300000);
+		
+		Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false);     /* Enable Receiving from RS-485 */
+		Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);		    /* Disable Transmit from RS-485 */
     }
     else
     {
         /* disable RX interrupt */
         Chip_UART_IntDisable(LPC_UART3, UART_IER_RBRINT);
 		/* switch 485 to transmit mode */
-		LPC_GPIO[1].PIN |= (0X300000);
-		__NOP();
-//		LPC_GPIO1->PIN |= 1 << RS_485_DE_GPIO_BIT_NUM;
-//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true); /* Disable Receiving from RS-485 */
-//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);		/* Enable Transmit from RS-485 */
+		//LPC_GPIO[1].PIN |= (0X300000);
+		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);     /* Disable Receiving from RS-485 */
+		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);		    /* Enable Transmit from RS-485 */
     }
     if (xTxEnable)
     {
@@ -105,11 +102,9 @@ void vMBMasterPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
 		NVIC_SetPendingIRQ(UART3_IRQn);
 
 		/* switch 485 to Transmit mode */
-		LPC_GPIO[1].PIN |= (0X300000);
-		__NOP();
-//		LPC_GPIO1->PIN |= 1 << RS_485_DE_GPIO_BIT_NUM;
-//        Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);  /* Disable Receiving from RS-485 */
-//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);		 /* Enable Transmit from RS-485 */
+//		LPC_GPIO[1].PIN |= (0X300000);
+        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);      /* Disable Receiving from RS-485 */
+		Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);		    /* Enable Transmit from RS-485 */
     }
     else
     {
@@ -117,11 +112,9 @@ void vMBMasterPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
         Chip_UART_IntDisable(LPC_UART3, UART_IER_THREINT);
 
 		/* switch 485 to receive mode */
-		LPC_GPIO[1].PIN &= ~((0X300000));
-		__NOP();
-//		LPC_GPIO1->PIN &= ~(1 << RS_485_DE_GPIO_BIT_NUM);
-//        Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false); /* Enable Receiving from RS-485 */
-//		Chip_GPIO_WritePortBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);		 /* Disable Transmit from RS-485 */
+//		LPC_GPIO[1].PIN &= ~((0X300000));
+        Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, false);     /* Enable Receiving from RS-485 */
+		Chip_GPIO_WritePortBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, false);		    /* Disable Transmit from RS-485 */
     }
 }
 
@@ -174,7 +167,6 @@ void UART3_IRQHandler()
 
 	if ((LPC_UART3->IIR & (7 << 1)) == 0x02)
 	{
-		/* Need to Write that Called when THRE Interrupts Occured */
 		prvvUARTTxReadyISR();
 	}
 	else if ((LPC_UART3->LSR & 1<<5) == (1<<5))
@@ -184,9 +176,7 @@ void UART3_IRQHandler()
 	
 	
 	if ((LPC_UART3->IIR & (7 << 1)) == 0x04)
-		/* Need to write that Called when RBR Interrupt Occured */
         prvvUARTRxISR();
-  
 }
 
 #endif

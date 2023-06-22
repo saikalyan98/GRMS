@@ -77,12 +77,14 @@
 #include "user_mb_app.h"
 
 /* ----------------------- Static variables ---------------------------------*/
+/*
 static USHORT usRegInputStart = REG_INPUT_START;
 static USHORT usRegInputBuf[REG_INPUT_NREGS];
 static USHORT usRegHoldingStart = REG_HOLDING_START;
 static USHORT usRegHoldingBuf[REG_HOLDING_NREGS];
 static USHORT usRegCoilStart = REG_HOLDING_START;
 static USHORT usRegCoilBuf[REG_HOLDING_NREGS];
+*/
 
 /*****************************************************************************
  * Private types/enumerations/variables
@@ -98,6 +100,7 @@ uint8_t u8_Poll_State = 0;
  * Public types/enumerations/variables
  ****************************************************************************/
 extern USHORT usMRegHoldBuf[MB_MASTER_TOTAL_SLAVE_NUM][M_REG_HOLDING_NREGS];
+extern USHORT usSRegHoldBuf[S_REG_HOLDING_NREGS];
 
 /*****************************************************************************
  * Private functions
@@ -216,9 +219,6 @@ int main(void)
 				
 				/* Toggle Led for every one second */
 				vToggleLed();
-				
-				/* Toggle Led for every ModBus Command */
-				vMBToggleLeds();
 
 
 				/* Read Touch Panel for every 1 Second */
@@ -228,23 +228,32 @@ int main(void)
 					switch (u8_Poll_State)
 					{
 					case 0:
-						/* Configure the Touch Panel Button 1 LED for Manual Operation */
-						eMBMasterReqWriteHoldingRegister(1, 20, 1, 100);
-						u8_Poll_State = 1;
+						/* Configure the Touch Panel Button 1 to 8 LED for Manual Operation */
+						eMBMasterReqWriteMultipleHoldingRegister(1, 0, 50, &usSRegHoldBuf[0], 100);
+//						/* Configure the Touch Panel Button 1 LED for Manual Operation */
+//						eMBMasterReqWriteHoldingRegister(1, 20, 1, 100);
+						u8_Poll_State = 0;
 						break;
 					case 1:
-						/* Read the Touch Panel Button 1 Holding Register */
-						eMBMasterReqReadHoldingRegister(1, 0, 1, 100);
+						/* Configure the Touch Panel Button 1 to 8 LED for Manual Operation */
+						eMBMasterReqWriteHoldingRegister(1, 20, 1, 100);
+//						/* Configure the Touch Panel Button 1 LED for Manual Operation */
+//						eMBMasterReqReadHoldingRegister(1, 0, 8, 100);
 						u8_Poll_State = 2;
 						break;
 					case 2:
-						if (usMRegHoldBuf[0][0])
-							eMBMasterReqWriteHoldingRegister(1, 10, 1, 100);
-						else
-							eMBMasterReqWriteHoldingRegister(1, 10, 0, 100);
+						eMBMasterReqWriteHoldingRegister(1, 10, 1, 100);
+//						/* Configure the Touch Panel Button 1 LED for Manual Operation */
+//						eMBMasterReqWriteHoldingRegister(1, 10, 1, 100);
+						u8_Poll_State = 0;
+						break;
+					case 3:
+						/* Configure the Touch Panel Button 1 LED for Manual Operation */
+						eMBMasterReqWriteMultipleHoldingRegister(1, 10, 8, &usSRegHoldBuf[10],100);
 						u8_Poll_State = 0;
 						break;
 					default:
+						u8_Poll_State = 4;
 						break;
 					}
 				}
@@ -350,36 +359,11 @@ void vToggleLed(void)
 	if (LED1_Count == 1000)
 	{
 		Board_LED_Set(1, false);
-		usRegCoilBuf[0] = 0x01;
 	}
 	else if (LED1_Count == 2000)
 	{
 		Board_LED_Set(1, true);
-		usRegCoilBuf[0] = 0x00;
 		LED1_Count = 0;
-	}
-}
-
-void vMBToggleLeds(void)
-{
-	/* LED 2 (GPIO2.2) Toggle from ModBus */
-	if ((usRegCoilBuf[0] & (1 << 1)) == (1 << 1))
-	{
-		Board_LED_Set(2, true);
-	}
-	else if((usRegCoilBuf[0] & (1 << 1)) != (1 << 1))
-	{
-		Board_LED_Set(2, false);
-	}
-
-	/* LED 3 (GPIO2.3) Toggle from ModBus */
-	if ((usRegCoilBuf[0] & (1 << 2)) == (1 << 2))
-	{
-		Board_LED_Set(3, true);
-	}
-	else if ((usRegCoilBuf[0] & (1 << 2)) != (1 << 2))
-	{
-		Board_LED_Set(3, false);
 	}
 }
 

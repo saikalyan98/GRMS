@@ -91,10 +91,8 @@ static void Board_GPIOs_Init(void)
 {
 	/* Pin PIO0_22 is configured as GPIO pin during SystemInit */
 	/* Set the PIO_22 as output */
-	Chip_GPIO_WriteDirBit(LPC_GPIO1, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);
-	LPC_GPIO[1].DIR |= 1 << RS_485_REBar_GPIO_BIT_NUM;
-	Chip_GPIO_WriteDirBit(LPC_GPIO1, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);
-	LPC_GPIO[1].DIR |= 1 << RS_485_DE_GPIO_BIT_NUM;
+	Chip_GPIO_WriteDirBit(LPC_GPIO, RS_485_REBar_GPIO_PORT_NUM, RS_485_REBar_GPIO_BIT_NUM, true);
+	Chip_GPIO_WriteDirBit(LPC_GPIO, RS_485_DE_GPIO_PORT_NUM, RS_485_DE_GPIO_BIT_NUM, true);
 }
 
 /*****************************************************************************
@@ -208,7 +206,7 @@ void Board_Init(void)
 	/* Initializes GPIO */
 	Chip_GPIO_Init(LPC_GPIO);
 	Chip_GPIO_Init(LPC_GPIO1);
-	LPC_SYSCTL->PCONP |= 1 << 15;
+//	LPC_SYSCTL->PCONP |= 1 << 15;
 	Chip_IOCON_Init(LPC_IOCON);
 
 	/* Initialize LEDs */
