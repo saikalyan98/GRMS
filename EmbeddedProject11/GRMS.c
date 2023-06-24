@@ -94,8 +94,13 @@ static USHORT usRegCoilBuf[REG_HOLDING_NREGS];
 static struct netif lpc_netif;
 uint16_t LED1_Count = 0;
 uint16_t OneSec_Count = 0;
-uint8_t u8_Poll_State = 0;
+uint8_t u8_Poll_State = 4;
+uint8_t change = 0;
 
+uint8_t u8ChangeValue[50] = {0}, u8ChangeRegister = 0, u8ChangeHappened = 0, u8WriteChange = 0, u8ChangeUpdated = 1;
+;
+
+USHORT Touch_Panel_LED_Config[8] = {1, 1, 1, 1, 1, 1, 1, 1};
 /*****************************************************************************
  * Public types/enumerations/variables
  ****************************************************************************/
@@ -190,6 +195,14 @@ int main(void)
 
 	eMBMasterInit(MB_RTU, 2, 19200, MB_PAR_NONE);
 	eMBMasterEnable();
+	while (OneSec_Count != 300)
+		;
+	eMBMasterReqWriteHoldingRegister(1, 10, 0, 100);
+
+	while (OneSec_Count != 600)
+		;
+	eMBMasterReqWriteHoldingRegister(1, 20, 0, 100);
+	OneSec_Count = 0;
 
 	while (true)
 	{
@@ -220,42 +233,69 @@ int main(void)
 				/* Toggle Led for every one second */
 				vToggleLed();
 
+				/* From TCP to Slave */
+				if ((u8ChangeValue[20] != usSRegHoldBuf[20]) && u8ChangeUpdated)
+				{
+					u8ChangeUpdated = 0;
+					u8ChangeHappened = 1;
+					u8ChangeRegister = 20;
+					u8WriteChange = u8ChangeValue[20] = usSRegHoldBuf[20];
+					u8_Poll_State = 0;
+				}
+				if ((u8ChangeValue[10] != usSRegHoldBuf[10]) && u8ChangeUpdated)
+				{
+					u8ChangeUpdated = 0;
+					u8ChangeHappened = 1;
+					u8ChangeRegister = 10;
+					u8WriteChange = u8ChangeValue[10] = usSRegHoldBuf[10];
+					u8_Poll_State = 0;
+				}
 
+				if ((u8ChangeValue[0] != usSRegHoldBuf[0]) && u8ChangeUpdated)
+				{
+					u8ChangeUpdated = 0;
+					u8ChangeHappened = 1;
+					u8ChangeRegister = 0;
+					u8WriteChange = u8ChangeValue[0] = usSRegHoldBuf[0];
+					u8_Poll_State = 0;
+				}
+				
 				/* Read Touch Panel for every 1 Second */
-				if (OneSec_Count == 1000)
+				if (OneSec_Count == 200)
 				{
 					OneSec_Count = 0;
 					switch (u8_Poll_State)
 					{
-					case 0:
-						/* Configure the Touch Panel Button 1 to 8 LED for Manual Operation */
-						eMBMasterReqWriteMultipleHoldingRegister(1, 0, 50, &usSRegHoldBuf[0], 100);
-//						/* Configure the Touch Panel Button 1 LED for Manual Operation */
-//						eMBMasterReqWriteHoldingRegister(1, 20, 1, 100);
-						u8_Poll_State = 0;
-						break;
-					case 1:
-						/* Configure the Touch Panel Button 1 to 8 LED for Manual Operation */
-						eMBMasterReqWriteHoldingRegister(1, 20, 1, 100);
-//						/* Configure the Touch Panel Button 1 LED for Manual Operation */
-//						eMBMasterReqReadHoldingRegister(1, 0, 8, 100);
-						u8_Poll_State = 2;
-						break;
-					case 2:
-						eMBMasterReqWriteHoldingRegister(1, 10, 1, 100);
-//						/* Configure the Touch Panel Button 1 LED for Manual Operation */
-//						eMBMasterReqWriteHoldingRegister(1, 10, 1, 100);
-						u8_Poll_State = 0;
-						break;
-					case 3:
-						/* Configure the Touch Panel Button 1 LED for Manual Operation */
-						eMBMasterReqWriteMultipleHoldingRegister(1, 10, 8, &usSRegHoldBuf[10],100);
-						u8_Poll_State = 0;
-						break;
-					default:
-						u8_Poll_State = 4;
-						break;
+						case 0:
+							eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
+							u8_Poll_State = 1;
+							break;
+						case 1:
+							eMBMasterReqReadHoldingRegister(1, u8ChangeRegister, 1, 100);
+							u8_Poll_State = 2;
+							break;
+						case 2:
+							usSRegHoldBuf[u8ChangeRegister] = usMRegHoldBuf[1][u8ChangeRegister];
+							u8_Poll_State = 3;
+							break;
+						case 3:
+							/* From Slave to TCP */
+							eMBMasterReqReadHoldingRegister(1, 0, 50, 100);
+							u8_Poll_State = 4;
+							break;
+						default:
+							/* From Slave to TCP */
+							eMBMasterReqReadHoldingRegister(1, 0, 50, 100);
+							
+							usSRegHoldBuf[0] = usMRegHoldBuf[1][0];
+							usSRegHoldBuf[10] = usMRegHoldBuf[1][10];
+							usSRegHoldBuf[20] = usMRegHoldBuf[1][20];
+							
+							u8ChangeUpdated = 1;
+							u8_Poll_State = 4;
+							break;
 					}
+					
 				}
 				
 			} while (xStatus == MB_ENOERR);

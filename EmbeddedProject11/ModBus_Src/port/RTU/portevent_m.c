@@ -28,8 +28,11 @@
 
 #if MB_MASTER_RTU_ENABLED > 0 || MB_MASTER_ASCII_ENABLED > 0
 /* ----------------------- Defines ------------------------------------------*/
+#define SUPPORTED_NUMBER_OF_EVENTS 8
 /* ----------------------- Variables ----------------------------------------*/
-static eMBEventType eQueuedEvent;
+static eMBMasterEventType eQueuedEvent[SUPPORTED_NUMBER_OF_EVENTS];
+static uint8_t u8QueuedEventFillCount = 0;
+static uint8_t u8QueuedEventProcessCount = 0;
 static BOOL     xEventInQueue;
 /*
 static struct rt_semaphore xMasterRunRes;
@@ -39,16 +42,21 @@ static struct rt_event     xMasterOsEvent;
 BOOL
 xMBMasterPortEventInit( void )
 {
-    xEventInQueue = FALSE;
-    return TRUE;
+	xEventInQueue = FALSE;
+	u8QueuedEventFillCount = 0;
+	u8QueuedEventProcessCount = 0;
+	return TRUE;
 }
 
 BOOL
 xMBMasterPortEventPost( eMBMasterEventType eEvent )
 {
     xEventInQueue = TRUE;
-    eQueuedEvent = eEvent;
-    return TRUE;
+	
+	if (u8QueuedEventFillCount < SUPPORTED_NUMBER_OF_EVENTS)
+	    eQueuedEvent[u8QueuedEventFillCount++] = eEvent;
+    
+	return TRUE;
 }
 
 BOOL
@@ -58,9 +66,20 @@ xMBMasterPortEventGet( eMBMasterEventType * eEvent )
 
     if (xEventInQueue)
     {
-        *eEvent = eQueuedEvent;
-        xEventInQueue = FALSE;
-        xEventHappened = TRUE;
+		if (u8QueuedEventProcessCount != u8QueuedEventFillCount)
+		{
+			*eEvent = eQueuedEvent[u8QueuedEventProcessCount++];
+			xEventInQueue = TRUE;
+			xEventHappened = TRUE;
+		}
+		
+		if (u8QueuedEventProcessCount >= u8QueuedEventFillCount)
+		{
+			u8QueuedEventFillCount = 0;
+			u8QueuedEventProcessCount = 0;
+			
+			xEventInQueue = FALSE;
+		}
     }
     return xEventHappened;
 }
