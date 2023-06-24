@@ -224,7 +224,6 @@
       </LiveVariable>
       <LiveVariable>
         <Expression>prev_10_reg_value</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -236,7 +235,6 @@
       </LiveVariable>
       <LiveVariable>
         <Expression>prev_20_reg_value</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -260,6 +258,42 @@
       <LiveVariable>
         <Expression>usSRegHoldBuf[20]</Expression>
         <Type>com.sysprogs.types.builtin.HexInt16</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+        <IsFavorite>false</IsFavorite>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>u8ChangeValue[20]</Expression>
+        <Type>com.sysprogs.types.builtin.UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+        <IsFavorite>false</IsFavorite>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>u8ChangeUpdated</Expression>
+        <Type>com.sysprogs.types.builtin.UInt8</Type>
+        <Enabled>true</Enabled>
+        <Breakpoint>
+          <ComparisonMode>Equals</ComparisonMode>
+          <Enabled>false</Enabled>
+        </Breakpoint>
+        <Plot>false</Plot>
+        <IsCollapsed>false</IsCollapsed>
+        <IsFavorite>false</IsFavorite>
+      </LiveVariable>
+      <LiveVariable>
+        <Expression>u8_Poll_State</Expression>
+        <Type>com.sysprogs.types.builtin.UInt8</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -1033,7 +1067,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216493525149</LastUsed>
+          <LastUsed>133321020846007081</LastUsed>
         </State>
       </HardwareRegisterRecord>
     </HardwareRegisters>

@@ -94,7 +94,7 @@ static USHORT usRegCoilBuf[REG_HOLDING_NREGS];
 static struct netif lpc_netif;
 uint16_t LED1_Count = 0;
 uint16_t OneSec_Count = 0;
-uint8_t u8_Poll_State = 4;
+uint8_t u8_Poll_State = 1;
 uint8_t change = 0;
 
 uint8_t u8ChangeValue[50] = {0}, u8ChangeRegister = 0, u8ChangeHappened = 0, u8WriteChange = 0, u8ChangeUpdated = 1;
@@ -195,13 +195,15 @@ int main(void)
 
 	eMBMasterInit(MB_RTU, 2, 19200, MB_PAR_NONE);
 	eMBMasterEnable();
+	eMBMasterReqWriteHoldingRegister(1, 10, 0, 100);
 	while (OneSec_Count != 300)
 		;
-	eMBMasterReqWriteHoldingRegister(1, 10, 0, 100);
-
+	eMBMasterReqWriteHoldingRegister(1, 20, 0, 100);
 	while (OneSec_Count != 600)
 		;
-	eMBMasterReqWriteHoldingRegister(1, 20, 0, 100);
+	eMBMasterReqReadHoldingRegister(1, u8ChangeRegister, 50, 100);
+	while (OneSec_Count != 1000)
+		;
 	OneSec_Count = 0;
 
 	while (true)
@@ -234,70 +236,48 @@ int main(void)
 				vToggleLed();
 
 				/* From TCP to Slave */
-				if ((u8ChangeValue[20] != usSRegHoldBuf[20]) && u8ChangeUpdated)
+				if (u8ChangeValue[20] != usSRegHoldBuf[20])
 				{
 					u8ChangeUpdated = 0;
 					u8ChangeHappened = 1;
 					u8ChangeRegister = 20;
 					u8WriteChange = u8ChangeValue[20] = usSRegHoldBuf[20];
 					u8_Poll_State = 0;
+					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
 				}
-				if ((u8ChangeValue[10] != usSRegHoldBuf[10]) && u8ChangeUpdated)
+				if (u8ChangeValue[10] != usSRegHoldBuf[10])
 				{
 					u8ChangeUpdated = 0;
 					u8ChangeHappened = 1;
 					u8ChangeRegister = 10;
 					u8WriteChange = u8ChangeValue[10] = usSRegHoldBuf[10];
 					u8_Poll_State = 0;
+					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
 				}
 
-				if ((u8ChangeValue[0] != usSRegHoldBuf[0]) && u8ChangeUpdated)
+				if (u8ChangeValue[0] != usSRegHoldBuf[0])
 				{
 					u8ChangeUpdated = 0;
 					u8ChangeHappened = 1;
 					u8ChangeRegister = 0;
 					u8WriteChange = u8ChangeValue[0] = usSRegHoldBuf[0];
 					u8_Poll_State = 0;
+					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
 				}
 				
 				/* Read Touch Panel for every 1 Second */
-				if (OneSec_Count == 200)
+				if (OneSec_Count == 1000)
+				{
+					eMBMasterReqReadHoldingRegister(1, u8ChangeRegister, 50, 100);
+				}
+				else if (OneSec_Count == 2000)
 				{
 					OneSec_Count = 0;
-					switch (u8_Poll_State)
-					{
-						case 0:
-							eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
-							u8_Poll_State = 1;
-							break;
-						case 1:
-							eMBMasterReqReadHoldingRegister(1, u8ChangeRegister, 1, 100);
-							u8_Poll_State = 2;
-							break;
-						case 2:
-							usSRegHoldBuf[u8ChangeRegister] = usMRegHoldBuf[1][u8ChangeRegister];
-							u8_Poll_State = 3;
-							break;
-						case 3:
-							/* From Slave to TCP */
-							eMBMasterReqReadHoldingRegister(1, 0, 50, 100);
-							u8_Poll_State = 4;
-							break;
-						default:
-							/* From Slave to TCP */
-							eMBMasterReqReadHoldingRegister(1, 0, 50, 100);
-							
-							usSRegHoldBuf[0] = usMRegHoldBuf[1][0];
-							usSRegHoldBuf[10] = usMRegHoldBuf[1][10];
-							usSRegHoldBuf[20] = usMRegHoldBuf[1][20];
-							
-							u8ChangeUpdated = 1;
-							u8_Poll_State = 4;
-							break;
-					}
-					
+					usSRegHoldBuf[0] = usMRegHoldBuf[1][0];
+					usSRegHoldBuf[10] = usMRegHoldBuf[1][10];
+					usSRegHoldBuf[20] = usMRegHoldBuf[1][20];
 				}
-				
+
 			} while (xStatus == MB_ENOERR);
 		}
 		/* An error occured. Maybe we can restart. */

@@ -2,5 +2,5 @@ C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lp
 C:/Users/Hp/OneDrive/Desktop/EmbeddedProject11/BSP/LPC17xx_40xx/lpc_chip_17xx/lpc_chip/chip_17xx_40xx/enet_17xx_40xx.h:691:20:Chip_ENET_Set10Mbps	16	static
 GRMS.c:124:13:prvSetupHardware	8	static
 GRMS.c:150:5:main	48	static
-GRMS.c:312:10:u32_TCPPoll	16	static
-GRMS.c:397:6:vToggleLed	8	static
+GRMS.c:292:10:u32_TCPPoll	16	static
+GRMS.c:377:6:vToggleLed	8	static
