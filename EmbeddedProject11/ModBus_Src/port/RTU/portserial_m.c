@@ -133,13 +133,13 @@ void vMBMasterPortSerialEnable(BOOL xRxEnable, BOOL xTxEnable)
     if (xTxEnable)
 	{
 #if ACTIVATE_UART3
-        /* Start serial transmit */
-        Chip_UART_IntEnable(LPC_UART3, UART_IER_THREINT);
-		NVIC_SetPendingIRQ(UART3_IRQn);
+		/* Start serial transmit */
+		Chip_UART_IntEnable(LPC_UART3, UART_IER_THREINT);
+		prvvUARTTxReadyISR();
 #elif ACTIVATE_UART0
 		/* Start serial transmit */
 		Chip_UART_IntEnable(LPC_UART0, UART_IER_THREINT);
-		NVIC_SetPendingIRQ(UART0_IRQn);
+		prvvUARTTxReadyISR();
 #endif
 
 		/* switch 485 to Transmit mode */
@@ -217,18 +217,8 @@ void prvvUARTRxISR(void)
 void UART3_IRQHandler() 
 {
 	int x = LPC_UART3->IIR;
-
-	if ((LPC_UART3->IIR & (7 << 1)) == 0x02)
-	{
-		prvvUARTTxReadyISR();
-	}
-	else if ((LPC_UART3->LSR & 1<<5) == (1<<5))
-	{
-		prvvUARTTxReadyISR();		
-	}
 	
-	
-	if ((LPC_UART3->IIR & (7 << 1)) == 0x04)
+	if (((LPC_UART3->IIR) & UART_IIR_INTID_MASK) == UART_IIR_INTID_RDA)
         prvvUARTRxISR();
 }
 #elif ACTIVATE_UART0
@@ -236,14 +226,10 @@ void UART0_IRQHandler()
 {
 	int x = LPC_UART0->IIR;
 
-	if ((LPC_UART0->IIR & (7 << 1)) == 0x02)
-	{
-		prvvUARTTxReadyISR();
-	}
-	else if ((LPC_UART0->LSR & 1 << 5) == (1 << 5))
-	{
-		prvvUARTTxReadyISR();
-	}
+//	if (((LPC_UART0->LSR) & UART_LSR_THRE) == UART_LSR_THRE)
+//	{
+//		prvvUARTTxReadyISR();
+//	}
 
 	if ((LPC_UART0->IIR & (7 << 1)) == 0x04)
 		prvvUARTRxISR();

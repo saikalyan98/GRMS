@@ -315,13 +315,13 @@ xMBMasterRTUTransmitFSM( void )
 
     case STATE_M_TX_XMIT:
         /* check if we are finished. */
-        if( usMasterSndBufferCount != 0 )
+        while( usMasterSndBufferCount != 0 )
         {
             xMBMasterPortSerialPutByte( ( CHAR )*pucMasterSndBufferCur );
             pucMasterSndBufferCur++;  /* next byte in sendbuffer. */
             usMasterSndBufferCount--;
         }
-        else
+       // else
         {
             xFrameIsBroadcast = ( ucMasterRTUSndBuf[MB_SER_PDU_ADDR_OFF] == MB_ADDRESS_BROADCAST ) ? TRUE : FALSE;
             /* Disable transmitter. This prevents another transmit buffer

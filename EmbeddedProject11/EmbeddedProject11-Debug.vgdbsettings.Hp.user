@@ -13,19 +13,8 @@
     <MemoryWindowPreferences />
     <LiveVariables>
       <LiveVariable>
-        <Expression>physts</Expression>
-        <Type>com.sysprogs.types.builtin.UInt32</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>lpc_netif</Expression>
+        <Expression>ucMasterRTUSndBuf</Expression>
+        <Type>com.sysprogs.fixed</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -36,68 +25,7 @@
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
-        <Expression>lpc_enetif-&gt;prxd</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>boardmac</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>MR_0</Expression>
-        <PreprocessedExpression>((*((unsigned long *)0x40004018)))</PreprocessedExpression>
-        <Type>com.sysprogs.types.builtin.HexInt32</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>TC</Expression>
-        <PreprocessedExpression>((*((unsigned long *)0x40004008)))</PreprocessedExpression>
-        <Type>com.sysprogs.types.builtin.HexInt32</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>TC</Expression>
-        <PreprocessedExpression>((*((unsigned long *)0x40004008)))</PreprocessedExpression>
-        <Type>com.sysprogs.types.builtin.HexInt32</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>OneSec_Count</Expression>
+        <Expression>usMasterSndBufferCount</Expression>
         <Type>com.sysprogs.types.builtin.UInt16</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
@@ -109,86 +37,7 @@
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
-        <Expression>pUART</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>divl</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>divh</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>clkin</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>usMRegHoldBuf</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>true</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>ucRcvAddress</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>ucMBMasterDestAddress</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>ucMBFrame</Expression>
+        <Expression>pucMasterSndBufferCur</Expression>
         <Type>com.sysprogs.fixed</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
@@ -197,51 +46,6 @@
         </Breakpoint>
         <Plot>false</Plot>
         <IsCollapsed>true</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>ucMasterRTURcvBuf</Expression>
-        <Type>com.sysprogs.fixed</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>true</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>clkin</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>prev_10_reg_value</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>prev_20_reg_value</Expression>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
@@ -256,7 +60,7 @@
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
-        <Expression>usSRegHoldBuf[20]</Expression>
+        <Expression>usMRegHoldBuf[0][0]</Expression>
         <Type>com.sysprogs.types.builtin.HexInt16</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
@@ -268,8 +72,8 @@
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
-        <Expression>u8ChangeValue[20]</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
+        <Expression>usMRegHoldBuf[0][1]</Expression>
+        <Type>com.sysprogs.types.builtin.HexInt16</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -280,20 +84,8 @@
         <IsFavorite>false</IsFavorite>
       </LiveVariable>
       <LiveVariable>
-        <Expression>u8ChangeUpdated</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
-        <Enabled>true</Enabled>
-        <Breakpoint>
-          <ComparisonMode>Equals</ComparisonMode>
-          <Enabled>false</Enabled>
-        </Breakpoint>
-        <Plot>false</Plot>
-        <IsCollapsed>false</IsCollapsed>
-        <IsFavorite>false</IsFavorite>
-      </LiveVariable>
-      <LiveVariable>
-        <Expression>u8_Poll_State</Expression>
-        <Type>com.sysprogs.types.builtin.UInt8</Type>
+        <Expression>usMRegHoldBuf[1][0]</Expression>
+        <Type>com.sysprogs.types.builtin.HexInt16</Type>
         <Enabled>true</Enabled>
         <Breakpoint>
           <ComparisonMode>Equals</ComparisonMode>
@@ -635,7 +427,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216335405819</LastUsed>
+          <LastUsed>133322739260988196</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -811,7 +603,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216305408077</LastUsed>
+          <LastUsed>133322739253844481</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -819,7 +611,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216349526658</LastUsed>
+          <LastUsed>133322739271307985</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -827,7 +619,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216376854026</LastUsed>
+          <LastUsed>133322739331591398</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -835,7 +627,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216383569117</LastUsed>
+          <LastUsed>133322739344267393</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -843,7 +635,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216399837179</LastUsed>
+          <LastUsed>133322772496796510</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -851,7 +643,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216408165897</LastUsed>
+          <LastUsed>133322760270060785</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -859,7 +651,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216417097768</LastUsed>
+          <LastUsed>133322760241890876</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -867,7 +659,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216426915999</LastUsed>
+          <LastUsed>133322756669555487</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -1035,7 +827,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216458195895</LastUsed>
+          <LastUsed>133322768418168874</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -1043,7 +835,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216467273437</LastUsed>
+          <LastUsed>133322768392798190</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -1051,7 +843,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216477814429</LastUsed>
+          <LastUsed>133322768385543429</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -1059,7 +851,7 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133320216485781495</LastUsed>
+          <LastUsed>133322768377789929</LastUsed>
         </State>
       </HardwareRegisterRecord>
       <HardwareRegisterRecord>
@@ -1067,7 +859,31 @@
         <State>
           <IsFavorite>false</IsFavorite>
           <IsLive>false</IsLive>
-          <LastUsed>133321020846007081</LastUsed>
+          <LastUsed>133322768369779110</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>UART0.FCR.RX</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133322770871373037</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>UART0.FDR</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133322768360171469</LastUsed>
+        </State>
+      </HardwareRegisterRecord>
+      <HardwareRegisterRecord>
+        <Name>UART0.TER1</Name>
+        <State>
+          <IsFavorite>false</IsFavorite>
+          <IsLive>false</IsLive>
+          <LastUsed>133322819547616262</LastUsed>
         </State>
       </HardwareRegisterRecord>
     </HardwareRegisters>

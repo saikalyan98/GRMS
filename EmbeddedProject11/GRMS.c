@@ -243,7 +243,7 @@ int main(void)
 					u8ChangeRegister = 20;
 					u8WriteChange = u8ChangeValue[20] = usSRegHoldBuf[20];
 					u8_Poll_State = 0;
-					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
+//					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
 				}
 				if (u8ChangeValue[10] != usSRegHoldBuf[10])
 				{
@@ -252,7 +252,7 @@ int main(void)
 					u8ChangeRegister = 10;
 					u8WriteChange = u8ChangeValue[10] = usSRegHoldBuf[10];
 					u8_Poll_State = 0;
-					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
+//					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
 				}
 
 				if (u8ChangeValue[0] != usSRegHoldBuf[0])
@@ -262,20 +262,20 @@ int main(void)
 					u8ChangeRegister = 0;
 					u8WriteChange = u8ChangeValue[0] = usSRegHoldBuf[0];
 					u8_Poll_State = 0;
-					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
+//					eMBMasterReqWriteHoldingRegister(1, u8ChangeRegister, u8WriteChange, 100);
 				}
 				
 				/* Read Touch Panel for every 1 Second */
-				if (OneSec_Count == 1000)
+				if (OneSec_Count == 300)
 				{
-					eMBMasterReqReadHoldingRegister(1, u8ChangeRegister, 50, 100);
+					eMBMasterReqReadHoldingRegister(1, 0, 7, 100);
 				}
-				else if (OneSec_Count == 2000)
+				else if (OneSec_Count == 600)
 				{
 					OneSec_Count = 0;
-					usSRegHoldBuf[0] = usMRegHoldBuf[1][0];
-					usSRegHoldBuf[10] = usMRegHoldBuf[1][10];
-					usSRegHoldBuf[20] = usMRegHoldBuf[1][20];
+					usSRegHoldBuf[0] = usMRegHoldBuf[0][0];
+					usSRegHoldBuf[10] = usMRegHoldBuf[0][10];
+					usSRegHoldBuf[20] = usMRegHoldBuf[0][20];
 				}
 
 			} while (xStatus == MB_ENOERR);
